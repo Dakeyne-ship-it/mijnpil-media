@@ -1,0 +1,297 @@
+{
+  "_meta": {
+    "brand": "mijnpil.nu",
+    "written": "2026-09-09",
+    "rhythm": "ma 19:30 reel · wo 12:30 carrousel · vr 19:00 losse post of reel",
+    "standing_tags": ["#vrouwenonderelkaar", "#mijnpilnu"],
+    "disclaimer": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+    "note": "Elke post met een medische claim krijgt de disclaimer als eerste reactie."
+  },
+
+  "posts": [
+
+    {
+      "id": "w01-ma", "date": "2026-09-14", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "De stopweek",
+      "scenes": [
+        {"kind": "open",  "lines": ["3 dingen die", "niemand je vertelt", "over de <em>stopweek</em>"]},
+        {"kind": "mint",  "lines": ["1. Die bloeding is", "geen menstruatie"], "small": "Het is een onttrekkingsbloeding."},
+        {"kind": "peach", "lines": ["2. Je bent", "<em>gewoon</em> beschermd"], "small": "Als je de 21 dagen ervoor goed geslikt hebt."},
+        {"kind": "pink",  "lines": ["3. Hij is medisch", "niet nodig"], "small": "Doorslikken mag. Vraag het je huisarts."},
+        {"kind": "end",   "lines": ["Nog vragen over", "je <em>anticonceptie</em>?"], "small": "Stuur ons een DM. We antwoorden altijd."}
+      ],
+      "caption": "Stopweek overslaan, mag dat? Ja. De bloeding in je stopweek is een onttrekkingsbloeding, geen echte menstruatie, en er is medisch gezien geen reden om die week per se te houden. Veel vrouwen slaan hem over voor een vakantie, een wedstrijd of gewoon omdat het beter uitkomt. Wil je het vaker doen, overleg dan even met je huisarts welke pil zich daar goed voor leent.\n\nWat wist jij nog niet over de stopweek?",
+      "tags": ["#stopweek", "#anticonceptie", "#depil", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w01-wo", "date": "2026-09-16", "slot": "wo 12:30",
+      "concept": "mythe_feit", "format": "carousel", "disclaimer": true,
+      "subject": "Pauzeren met de pil",
+      "mythe_lines": ["Je moet af en toe", "een pauze nemen", "van de pil."],
+      "feit_statement": "Er is <b>geen medische reden</b> om te pauzeren met de pil.",
+      "feit_source": "Je lichaam heeft geen rustperiode nodig. Stoppen en herstarten geeft juist meer kans op vergeten pillen, en dus op een zwangerschap. Wil je stoppen omdat je klachten hebt, bespreek dat dan met je huisarts.",
+      "caption": "Pauzeren met de pil, moet dat af en toe? Nee. Dit hardnekkige idee komt nergens vandaan: je lichaam bouwt niets op waar het van moet bijkomen. Wat wél gebeurt bij stoppen en herstarten is dat er meer momenten ontstaan waarop het misgaat, en dat is precies waar ongeplande zwangerschappen vandaan komen.\n\nHeb je klachten waardoor je wilt stoppen? Dat is een heel ander gesprek, en een goed gesprek om met je huisarts te voeren.",
+      "tags": ["#depil", "#anticonceptie", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w01-vr", "date": "2026-09-18", "slot": "vr 19:00",
+      "concept": "de_vraag", "format": "image", "disclaimer": true,
+      "subject": "Eén pil vergeten",
+      "kicker": "Vraag van de week",
+      "lines": ["Ben ik nog", "beschermd als ik", "<em>&eacute;&eacute;n pil</em> vergeet?"],
+      "field": "var(--mint)",
+      "caption": "Pil vergeten? Meestal is er niets aan de hand. Bij de combinatiepil ben je bij één vergeten pil in de regel gewoon beschermd: neem hem alsnog zodra je eraan denkt, ook als je er daardoor twee op één dag slikt, en ga verder met de strip.\n\nHet wordt anders als je er twee of meer vergeet, of als het in de week vóór of ná je stopweek gebeurt. Dan hangt het af van waar je in de strip zit. Twijfel je, bel dan je apotheek, daar denken ze zo met je mee.\n\nEn bewaar deze even, want dit is precies zo'n vraag die je om half twaalf 's avonds hebt.",
+      "tags": ["#pilvergeten", "#depil", "#anticonceptie", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w02-ma", "date": "2026-09-21", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "De eerste zeven dagen",
+      "scenes": [
+        {"kind": "open",  "lines": ["Wat je huisarts", "bedoelt met", "<em>de eerste 7 dagen</em>"]},
+        {"kind": "mint",  "lines": ["Begin je op dag 1", "van je menstruatie?"], "small": "Dan ben je meteen beschermd."},
+        {"kind": "peach", "lines": ["Begin je later", "in je cyclus?"], "small": "Gebruik dan 7 dagen extra bescherming."},
+        {"kind": "pink",  "lines": ["Dat geldt ook", "na een pauze"], "small": "Herstarten telt als opnieuw beginnen."},
+        {"kind": "end",   "lines": ["Twijfel je over", "<em>jouw</em> situatie?"], "small": "Vraag het je huisarts of apotheker."}
+      ],
+      "caption": "Beginnen met de pil: wanneer ben je beschermd? Start je op de eerste dag van je menstruatie, dan is de combinatiepil direct betrouwbaar. Start je op een ander moment in je cyclus, dan heb je de eerste zeven dagen nog iets extra's nodig, bijvoorbeeld condooms.\n\nDat geldt net zo goed als je een tijd gestopt was en weer begint. Herstarten is opnieuw beginnen.\n\nBewaar deze voor als je binnenkort start of wisselt.",
+      "tags": ["#anticonceptie", "#depil", "#startenmetdepil", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w02-wo", "date": "2026-09-23", "slot": "wo 12:30",
+      "concept": "anatomie", "format": "carousel", "disclaimer": true,
+      "subject": "De strip van 28 dagen",
+      "variant": "strip28",
+      "caption": "Anatomie van een strip. 21 pillen met hormonen, dan 7 dagen zonder. In die zeven dagen daalt het hormoonniveau, en daar komt de bloeding vandaan. Het is een onttrekkingsbloeding, geen echte menstruatie, want je hebt geen eisprong gehad.\n\nDaarom kun je die week ook overslaan zonder dat er iets misgaat. Wil je dat vaker doen, vraag dan even welke pil zich daar goed voor leent.\n\nBewaar 'm, dit is de uitleg die je in de bijsluiter niet zo krijgt.",
+      "tags": ["#depil", "#anticonceptie", "#stopweek", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w02-vr", "date": "2026-09-25", "slot": "vr 19:00",
+      "concept": "de_cyclus", "format": "reel", "disclaimer": true,
+      "subject": "Wat de pil met je hormonen doet",
+      "variant": "hormonen",
+      "caption": "Zo ziet het verschil eruit. Zonder pil stijgen en dalen je hormonen door je cyclus heen, met een piek rond je eisprong. Met de combinatiepil blijft dat niveau vlak, en juist die vlakke lijn zorgt dat er geen eisprong komt. Dat is precies hoe de pil werkt.\n\nHet verklaart ook waarom sommige vrouwen zich op de pil stabieler voelen en anderen juist niet: je vervangt een golfbeweging door een rechte lijn, en niet iedereen reageert daar hetzelfde op.\n\nBewaar 'm voor als je twijfelt over wisselen.",
+      "tags": ["#hormonen", "#depil", "#cyclus", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w03-ma", "date": "2026-09-28", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "Antibiotica en de pil",
+      "scenes": [
+        {"kind": "open",  "lines": ["Maakt <em>antibiotica</em>", "de pil minder", "betrouwbaar?"]},
+        {"kind": "mint",  "lines": ["Bij de meeste", "antibiotica: nee"], "small": "Dat idee is achterhaald."},
+        {"kind": "peach", "lines": ["Bij rifampicine", "wel"], "small": "Die wordt zelden voorgeschreven."},
+        {"kind": "pink",  "lines": ["Diarree en braken", "zijn wél een risico"], "small": "Dan neemt je lichaam de pil niet goed op."},
+        {"kind": "end",   "lines": ["Twijfel je?", "<em>Vraag het na</em>"], "small": "Je apotheek weet het meteen."}
+      ],
+      "caption": "Antibiotica en de pil: het hardnekkigste misverstand in de anticonceptie. Voor verreweg de meeste antibiotica geldt dat ze de betrouwbaarheid van de pil niet verminderen. De uitzondering is rifampicine, en die krijg je zelden voorgeschreven.\n\nWaar je wél op moet letten is ziek zijn. Als je binnen een paar uur na je pil moet braken, of flinke diarree hebt, kan je lichaam de pil niet goed opnemen. Dan geldt hij als vergeten.\n\nJe apotheek kan dit in dertig seconden voor jouw specifieke medicijn nakijken.",
+      "tags": ["#antibiotica", "#depil", "#anticonceptie", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w03-wo", "date": "2026-09-30", "slot": "wo 12:30",
+      "concept": "mythe_feit", "format": "carousel", "disclaimer": true,
+      "subject": "Aankomen van de pil",
+      "mythe_lines": ["Van de pil", "word je dik."],
+      "feit_statement": "Onderzoek vindt <b>geen aantoonbare gewichtstoename</b> door de combinatiepil.",
+      "feit_source": "Wat sommige vrouwen wel merken is vasthouden van vocht in de eerste maanden. Merk je iets anders bij jezelf, dan is dat echt, en het is een goede reden om met je huisarts te kijken of een andere pil beter past.",
+      "caption": "Word je dik van de pil? Het onderzoek is hier verrassend eenduidig: bij de combinatiepil is geen aantoonbaar verband met gewichtstoename gevonden. Wat er in de eerste maanden wel kan spelen is vocht vasthouden, en dat voelt op de weegschaal hetzelfde.\n\nDat betekent niet dat jouw ervaring niet klopt. Iedereen reageert anders op hormonen, en als jij merkt dat je lichaam verandert, is dat een prima reden om te bespreken of een ander soort pil beter bij je past.\n\nWat merkte jij toen je begon?",
+      "tags": ["#depil", "#hormonen", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w03-vr", "date": "2026-10-02", "slot": "vr 19:00",
+      "concept": "uit_de_dm", "format": "reel", "disclaimer": true,
+      "subject": "Paniek na een vergeten pil",
+      "vraag": "Ik ben gisteravond mijn pil vergeten en ik heb echt geen idee wat ik nu moet doen",
+      "antwoord": "Eerst even ademhalen. Bij <b>&eacute;&eacute;n</b> vergeten pil is er meestal niets aan de hand. Wat je moet doen hangt af van welke week je zit.",
+      "caption": "Deze vraag krijgen we het vaakst, en bijna altijd 's avonds laat. Bij één vergeten combinatiepil ben je in de regel nog beschermd: neem hem alsnog zodra je eraan denkt en ga gewoon verder.\n\nHet ligt anders bij twee of meer vergeten pillen, en het maakt uit waar je in de strip zit. Zit je in de week vlak voor of na je stopweek, dan is er meer aan de hand dan midden in een strip.\n\nJe hoeft dit niet alleen uit te zoeken om half twaalf 's avonds. Je apotheek is er ook voor dit soort vragen, en wij lezen onze DM's.",
+      "tags": ["#pilvergeten", "#anticonceptie", "#depil", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w04-ma", "date": "2026-10-05", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "Doorbraakbloeding",
+      "scenes": [
+        {"kind": "open",  "lines": ["Waarom bloed je", "<em>tussendoor</em>", "op de pil?"]},
+        {"kind": "mint",  "lines": ["Meestal: je lichaam", "went nog"], "small": "De eerste 3 maanden is dat normaal."},
+        {"kind": "peach", "lines": ["Soms: een pil", "te laat of vergeten"], "small": "Ook één keer kan genoeg zijn."},
+        {"kind": "pink",  "lines": ["Houdt het aan", "na 3 maanden?"], "small": "Dan is het een gesprek met je huisarts waard."},
+        {"kind": "end",   "lines": ["Je bent meestal", "<em>gewoon</em> beschermd"], "small": "Bloedverlies zegt niets over de werking."}
+      ],
+      "caption": "Tussendoor bloeden op de pil, een doorbraakbloeding, is vervelend maar zelden zorgwekkend. In de eerste maanden na starten of wisselen is het heel gewoon: je baarmoederslijmvlies moet wennen aan een nieuw hormoonniveau.\n\nBelangrijk om te weten: bloedverlies betekent niet dat de pil niet werkt. Je bent gewoon beschermd, mits je hem trouw slikt.\n\nHoudt het na drie maanden aan, of komt het ineens terug terwijl je het al lang niet had? Dan is het de moeite waard om het te laten bekijken.",
+      "tags": ["#doorbraakbloeding", "#depil", "#cyclus", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w04-wo", "date": "2026-10-07", "slot": "wo 12:30",
+      "concept": "anatomie", "format": "carousel", "disclaimer": true,
+      "subject": "Hoe groot een spiraal echt is",
+      "variant": "spiraal",
+      "caption": "Anatomie van een spiraaltje. Bijna iedereen schat 'm groter in dan hij is: ongeveer drie centimeter hoog, van dun, buigzaam kunststof, met twee armpjes die zich vouwen tijdens het plaatsen.\n\nEr zijn twee soorten. De hormoonspiraal geeft lokaal een klein beetje progestageen af en maakt je menstruatie meestal lichter. De koperspiraal werkt zonder hormonen en maakt je menstruatie juist vaak wat heviger. Allebei zijn ze jarenlang betrouwbaar en je hoeft er niets voor te onthouden.\n\nBewaar 'm als je erover nadenkt.",
+      "tags": ["#spiraaltje", "#anticonceptie", "#hormoonspiraal", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w04-vr", "date": "2026-10-09", "slot": "vr 19:00",
+      "concept": "de_vraag", "format": "image", "disclaimer": true,
+      "subject": "Menstruatie uitstellen",
+      "kicker": "Vraag van de week",
+      "lines": ["Kan ik mijn", "menstruatie", "<em>uitstellen</em>?"],
+      "field": "var(--peach)",
+      "caption": "Menstruatie uitstellen voor een vakantie, een bruiloft of een wedstrijd: bij de combinatiepil kan dat vaak gewoon. Je slaat de stopweek over en begint direct aan de volgende strip.\n\nDe kans bestaat dat je dan later toch wat tussendoor bloedt, en dat is niet erg. Bij sommige pillen werkt dit beter dan bij andere, en bij de minipil of een spiraal ligt het anders.\n\nWil je weten of het bij jouw pil kan? Je apotheek ziet dat meteen aan de naam.",
+      "tags": ["#menstruatieuitstellen", "#depil", "#stopweek", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w05-ma", "date": "2026-10-12", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "Stoppen met de pil",
+      "scenes": [
+        {"kind": "open",  "lines": ["Wat er gebeurt", "als je <em>stopt</em>", "met de pil"]},
+        {"kind": "mint",  "lines": ["Je kunt meteen", "zwanger worden"], "small": "Ook in de eerste maand."},
+        {"kind": "peach", "lines": ["Je eigen cyclus", "komt terug"], "small": "Meestal binnen een paar maanden."},
+        {"kind": "pink",  "lines": ["Je oude klachten", "kunnen terugkomen"], "small": "De pil onderdrukte ze, hij genas ze niet."},
+        {"kind": "end",   "lines": ["Stoppen mag", "<em>wanneer je wilt</em>"], "small": "Je hoeft je strip niet af te maken."}
+      ],
+      "caption": "Stoppen met de pil: je hoeft je strip niet af te maken en je hoeft niet af te bouwen. Je kunt gewoon stoppen.\n\nWat vrouwen vaak verrast, is hoe snel je vruchtbaarheid terugkomt. Dat kan al in de eerste maand. Wil je nog niet zwanger worden, regel dan meteen iets anders.\n\nEn dan het eerlijke deel: klachten waarvoor je ooit de pil kreeg, zoals hevige of pijnlijke menstruaties of acne, kunnen terugkomen. De pil onderdrukte ze, hij loste ze niet op. Dat is geen reden om niet te stoppen, wel iets om te weten voordat je het doet.",
+      "tags": ["#stoppenmetdepil", "#cyclus", "#anticonceptie", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w05-wo", "date": "2026-10-14", "slot": "wo 12:30",
+      "concept": "mythe_feit", "format": "carousel", "disclaimer": true,
+      "subject": "De pil en vruchtbaarheid",
+      "mythe_lines": ["Van jarenlang", "de pil slikken", "word je minder", "vruchtbaar."],
+      "feit_statement": "Hoe lang je de pil hebt geslikt, <b>heeft geen invloed</b> op je vruchtbaarheid daarna.",
+      "feit_source": "Vrouwen die twintig jaar de pil slikten worden net zo snel zwanger als vrouwen die twee jaar slikten. Wat wél meespeelt is dat je in die jaren ouder bent geworden, en leeftijd doet er voor vruchtbaarheid wel toe.",
+      "caption": "Word je minder vruchtbaar van jarenlang de pil? Nee. De duur maakt niet uit: na stoppen ligt je vruchtbaarheid weer op het niveau dat bij jouw leeftijd hoort, meestal binnen een paar maanden.\n\nDe verwarring komt ergens vandaan. Als je op je negentiende begint en op je vierendertigste stopt, ben je vijftien jaar ouder geworden, en dát heeft wel invloed. Alleen was dat ook gebeurd zonder pil.\n\nDenk je aan een kinderwens? Beginnen met foliumzuur mag al voordat je stopt.",
+      "tags": ["#vruchtbaarheid", "#kinderwens", "#stoppenmetdepil", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w05-vr", "date": "2026-10-16", "slot": "vr 19:00",
+      "concept": "de_cyclus", "format": "reel", "disclaimer": true,
+      "subject": "Wanneer ben je vruchtbaar",
+      "variant": "vruchtbaar",
+      "caption": "Je vruchtbare dagen zijn er minder dan je denkt, en ze liggen anders dan veel vrouwen aannemen. Een eicel leeft ongeveer een dag. Zaadcellen houden het tot vijf dagen vol. Samen levert dat een venster op van grofweg zes dagen: de vijf dagen vóór je eisprong en de dag zelf.\n\nDe eisprong valt bij een cyclus van 28 dagen rond dag 14, maar cycli zijn zelden zo netjes. Daarom werken ovulatietests: die meten de hormoonpiek die er een dag of twee vóór zit.\n\nBewaar 'm als je bezig bent met een kinderwens.",
+      "tags": ["#eisprong", "#vruchtbaredagen", "#kinderwens", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w06-ma", "date": "2026-10-19", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "Vaginale schimmelinfectie",
+      "scenes": [
+        {"kind": "open",  "lines": ["3 dingen over een", "<em>schimmelinfectie</em>", "die niemand zegt"]},
+        {"kind": "mint",  "lines": ["1. Het zegt niets", "over hygiëne"], "small": "Drie op de vier vrouwen krijgt het ooit."},
+        {"kind": "peach", "lines": ["2. Te veel wassen", "maakt het erger"], "small": "Zeep verstoort je natuurlijke balans."},
+        {"kind": "pink",  "lines": ["3. Jeuk is niet", "altijd schimmel"], "small": "Bij twijfel: laat het even nakijken."},
+        {"kind": "end",   "lines": ["Praat erover", "<em>zonder schaamte</em>"], "small": "#vrouwenonderelkaar"}
+      ],
+      "caption": "Een vaginale schimmelinfectie is een van de meest voorkomende en minst besproken klachten die er is. Ongeveer drie op de vier vrouwen krijgt er ooit mee te maken, en het zegt niets over hoe schoon of gezond je bent.\n\nWat het vaak juist erger maakt is grondig wassen met zeep, want daarmee verstoor je precies de balans die je wilt beschermen. Water is genoeg, of een product dat daarvoor gemaakt is.\n\nEn een belangrijke: jeuk is niet automatisch schimmel. Krijg je het vaker dan een paar keer per jaar, of helpt een gewoon middel niet, laat het dan nakijken in plaats van blijven proberen.",
+      "tags": ["#intiemegezondheid", "#schimmelinfectie", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w06-wo", "date": "2026-10-21", "slot": "wo 12:30",
+      "concept": "anatomie", "format": "carousel", "disclaimer": true,
+      "subject": "De anticonceptiepleister",
+      "variant": "pleister",
+      "caption": "Anatomie van de pleister. Drie weken lang elke week een nieuwe, dan een week zonder. Je plakt hem op je bil, buik, bovenarm of rug, niet op je borst, en je wisselt elke week van plek.\n\nHet grote voordeel: je hoeft niet aan een dagelijks tijdstip te denken, en misselijkheid of braken maakt niet uit voor de opname. Het nadeel: hij is zichtbaar, en bij sporten of zwemmen moet je even checken of hij nog goed zit.\n\nOverweeg je te wisselen van de pil? Bewaar 'm.",
+      "tags": ["#anticonceptiepleister", "#anticonceptie", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w06-vr", "date": "2026-10-23", "slot": "vr 19:00",
+      "concept": "uit_de_dm", "format": "reel", "disclaimer": true,
+      "subject": "Droogheid en intieme huid",
+      "vraag": "Sinds ik aan de pil ben voelt alles droger. Is dat normaal of verbeeld ik me dat?",
+      "antwoord": "Je verbeeldt je dat niet. Hormonale anticonceptie kan je <b>slijmvliezen</b> droger maken. Het is vervelend, maar er is meestal iets aan te doen.",
+      "caption": "Dit is een vraag die veel vaker gesteld zou moeten worden dan hij gesteld wordt. Hormonale anticonceptie kan invloed hebben op je slijmvliezen, en droogheid is daar een bekend gevolg van. Je verbeeldt het je niet en je bent zeker niet de enige.\n\nVaak helpt een goed glijmiddel al, bij voorkeur een op waterbasis zonder parfum. Blijft het aanhouden of geeft het pijn, dan is het het bespreken waard: soms past een andere pil beter bij je.\n\nEn nee, dit is geen gek onderwerp. Precies daarom praten we er hier over.",
+      "tags": ["#intiemegezondheid", "#hormonen", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w07-ma", "date": "2026-10-26", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "De morning-afterpil",
+      "scenes": [
+        {"kind": "open",  "lines": ["Wat je moet weten", "over de", "<em>morning-afterpil</em>"]},
+        {"kind": "mint",  "lines": ["Hoe eerder,", "hoe beter"], "small": "De werking neemt per uur af."},
+        {"kind": "peach", "lines": ["Hij stelt je", "eisprong uit"], "small": "Hij breekt geen zwangerschap af."},
+        {"kind": "pink",  "lines": ["Je gewone pil", "gaat gewoon door"], "small": "Wel de eerste dagen extra bescherming."},
+        {"kind": "end",   "lines": ["Zonder recept,", "<em>zonder gedoe</em>"], "small": "Gewoon bij de apotheek."}
+      ],
+      "caption": "De morning-afterpil is geen abortuspil. Hij stelt je eisprong uit, zodat er geen eicel is om te bevruchten. Is je eisprong al geweest, dan werkt hij niet meer, en dat is precies waarom snelheid uitmaakt: hoe eerder je hem neemt, hoe groter de kans dat hij op tijd is.\n\nJe hebt er geen recept voor nodig. Slik je normaal de pil, dan ga je daar gewoon mee door, maar gebruik de dagen erna wel iets extra's.\n\nGeen enkele reden om je hier ongemakkelijk over te voelen. Het is gewoon een medicijn dat doet wat het moet doen.",
+      "tags": ["#morningafterpil", "#anticonceptie", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w07-wo", "date": "2026-10-28", "slot": "wo 12:30",
+      "concept": "mythe_feit", "format": "carousel", "disclaimer": true,
+      "subject": "De pil na je 35ste",
+      "mythe_lines": ["Je moet stoppen", "met de pil", "als je 35 wordt."],
+      "feit_statement": "Leeftijd alleen is <b>geen reden</b> om te stoppen. Roken in combinatie met de pil wel.",
+      "feit_source": "Vanaf 35 jaar wordt de combinatiepil afgeraden als je rookt, omdat die combinatie het risico op trombose verhoogt. Rook je niet, dan kun je bij goede gezondheid gewoon doorgaan. Bespreek het rond die leeftijd wel een keer met je huisarts.",
+      "caption": "De pil en je 35ste verjaardag: er klopt iets aan dit verhaal, maar niet wat de meeste vrouwen ervan onthouden hebben.\n\nHet gaat niet om je leeftijd op zich. Het gaat om de combinatie van roken en de combinatiepil vanaf ongeveer 35 jaar, want die twee samen verhogen het risico op trombose. Rook je niet en ben je verder gezond, dan is er geen reden om te stoppen.\n\nWel een goed moment om het rond die leeftijd een keer met je huisarts door te nemen, want er verandert meer in dit decennium.",
+      "tags": ["#depil", "#vrouwengezondheid", "#anticonceptie", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w07-vr", "date": "2026-10-30", "slot": "vr 19:00",
+      "concept": "de_vraag", "format": "image", "disclaimer": true,
+      "subject": "Minipil versus combinatiepil",
+      "kicker": "Vraag van de week",
+      "lines": ["Wat is nou het", "verschil tussen de", "<em>minipil</em> en de pil?"],
+      "field": "var(--sky)",
+      "caption": "Kort gezegd: de combinatiepil bevat twee hormonen, oestrogeen en een progestageen. De minipil bevat er één, alleen een progestageen.\n\nDat verschil heeft gevolgen. De minipil kun je gebruiken als oestrogeen voor jou niet geschikt is, bijvoorbeeld bij borstvoeding, migraine met aura of een verhoogd tromboserisico. Je slikt hem doorlopend, dus zonder stopweek, waardoor je meestal geen vaste bloeding hebt. Daar staat tegenover dat hij nauwkeuriger op tijd genomen wil worden.\n\nWelke bij jou past is echt een gesprek met je huisarts, niet iets om zelf uit te zoeken.",
+      "tags": ["#minipil", "#depil", "#anticonceptie", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w08-ma", "date": "2026-11-02", "slot": "ma 19:30",
+      "concept": "klare_taal", "format": "reel", "disclaimer": true,
+      "subject": "Anticonceptie in de overgang",
+      "scenes": [
+        {"kind": "open",  "lines": ["Anticonceptie", "in de <em>overgang</em>:", "3 dingen"]},
+        {"kind": "mint",  "lines": ["1. Je kunt nog", "steeds zwanger worden"], "small": "Onregelmatig is niet hetzelfde als onvruchtbaar."},
+        {"kind": "peach", "lines": ["2. Stoppen mag", "meestal rond je 52ste"], "small": "Of een jaar na je laatste menstruatie."},
+        {"kind": "pink",  "lines": ["3. Het kan", "klachten dempen"], "small": "Sommige vrouwen hebben er baat bij."},
+        {"kind": "end",   "lines": ["Praat erover", "<em>op tijd</em>"], "small": "Ook dit hoort bij vrouwengezondheid."}
+      ],
+      "caption": "In de overgang wordt je cyclus onregelmatig, en dat leidt tot een misverstand met gevolgen: onregelmatig betekent niet onvruchtbaar. Zolang je nog menstrueert, kun je zwanger worden.\n\nDe vuistregel is dat je meestal kunt stoppen met anticonceptie rond je 52ste, of een jaar nadat je laatste menstruatie is geweest. Onder de 50 wordt vaak twee jaar aangehouden.\n\nEn er is een kant die weinig besproken wordt: sommige vormen van anticonceptie dempen overgangsklachten juist. Het is dus niet alleen een vraag van wel of niet stoppen.",
+      "tags": ["#overgang", "#anticonceptie", "#vrouwengezondheid", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w08-wo", "date": "2026-11-04", "slot": "wo 12:30",
+      "concept": "mythe_feit", "format": "carousel", "disclaimer": true,
+      "subject": "Bloedverlies en betrouwbaarheid",
+      "mythe_lines": ["Als je tussendoor", "bloedt, werkt", "je pil niet."],
+      "feit_statement": "Tussentijds bloedverlies zegt <b>niets</b> over de betrouwbaarheid van je pil.",
+      "feit_source": "Zolang je hem trouw en op tijd slikt, ben je beschermd. Een doorbraakbloeding komt van je baarmoederslijmvlies dat went aan het hormoonniveau, niet van een pil die het laat afweten.",
+      "caption": "Bloed je tussendoor en denk je meteen dat je niet beschermd bent? Dat is een begrijpelijke maar onterechte schrik. De twee dingen staan los van elkaar.\n\nEen doorbraakbloeding komt van je baarmoederslijmvlies dat zich aanpast aan het hormoonniveau, vooral in de eerste maanden na starten of wisselen. De pil doet ondertussen gewoon zijn werk, mits je hem trouw slikt.\n\nHoudt het langer dan drie maanden aan, of begint het opeens terwijl je het lang niet had? Dan is het een gesprek met je huisarts waard, maar om een andere reden.",
+      "tags": ["#doorbraakbloeding", "#depil", "#anticonceptie", "#vrouwenonderelkaar", "#mijnpilnu"]
+    },
+
+    {
+      "id": "w08-vr", "date": "2026-11-06", "slot": "vr 19:00",
+      "concept": "uit_de_dm", "format": "reel", "disclaimer": true,
+      "subject": "Foliumzuur en kinderwens",
+      "vraag": "Wanneer moet ik beginnen met foliumzuur? Als ik stop met de pil of pas als ik zwanger ben?",
+      "antwoord": "Eerder dan je denkt. Het advies is <b>vier weken vóór</b> je zwanger wilt worden, dus rustig al terwijl je nog de pil slikt.",
+      "caption": "Foliumzuur is een van de weinige dingen waarvan we zeker weten dat vroeg beginnen uitmaakt. Het advies is om er vier weken voordat je zwanger wilt worden mee te beginnen, en door te gaan tot en met de tiende week van de zwangerschap.\n\nDat betekent dat je er dus al mee kunt starten terwijl je nog de pil slikt. Wachten tot je een positieve test hebt is eigenlijk al te laat, want de aanleg waar het bij helpt gebeurt in de allereerste weken.\n\nDe standaarddosering is 400 microgram per dag. Bij sommige situaties adviseert je huisarts meer.",
+      "tags": ["#foliumzuur", "#kinderwens", "#zwangerworden", "#vrouwenonderelkaar", "#mijnpilnu"]
+    }
+
+  ]
+}
