@@ -93,8 +93,6 @@
   {
     "date": "2027-03-15",
     "object": "zelfbetalen",
-    "hold": true,
-    "hold_reden": "Feitencheck bij MijnPil nodig over zelf betalen en de vergoeding tot 21 jaar. Zet hold op false zodra dat klopt.",
     "cta_type": "LEARN_MORE",
     "cta_url": "https://mijnpil.nu/",
     "summary": "Je betaalt je bestelling zelf. Dat betekent dat hij niet via je zorgverzekeraar loopt en dus ook niet op een vergoedingenoverzicht verschijnt. Voor wie daar prijs op stelt is dat een bewuste keuze en geen bijkomstigheid."
