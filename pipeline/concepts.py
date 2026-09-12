@@ -107,7 +107,120 @@ def feit(statement, source, n="2 / 2", w=1080, h=1350):
 
 
 # Style C, "Studio medical plate".
-def anatomie(w=1080, h=1350):
+# One shared plate: hairline grid, precise line work in indigo, numbered pink
+# leader callouts. Each variant supplies its own title and drawing.
+
+def _callout(n, leader, num_xy, lbl_x, label, subs, side="above"):
+    """A numbered pink leader line with a heading and sub-lines.
+
+    The text block is positioned from the disc outwards, so it never collides
+    with the disc however many sub-lines it carries. `side` says whether the
+    text sits above or below the numbered disc.
+    """
+    nx, ny = num_xy
+    if side == "above":
+        last_sub = ny - 19 - 16
+        first_sub = last_sub - (len(subs) - 1) * 26
+        ly = first_sub - 34
+    else:
+        ly = ny + 19 + 42
+        first_sub = ly + 34
+    out = (f"<path d='{leader}' fill='none' stroke='#ea4f79' stroke-width='2'/>"
+           f"<circle cx='{nx}' cy='{ny}' r='19' fill='#ea4f79'/>"
+           f"<text class='num' x='{nx}' y='{ny+8}' text-anchor='middle'>{n}</text>"
+           f"<text class='lbl' x='{lbl_x}' y='{ly}'>{label}</text>")
+    for i, s in enumerate(subs):
+        out += f"<text class='sub' x='{lbl_x}' y='{first_sub + i*26}'>{s}</text>"
+    return out
+
+
+def _plate_strip28():
+    pills = ""
+    for i in range(28):
+        col, row = i % 7, i // 7
+        cx, cy = 66 + col * 84, 232 + row * 84
+        if i < 21:
+            pills += f"<circle cx='{cx}' cy='{cy}' r='29' fill='#2c2e7b'/>"
+        else:
+            pills += (f"<circle cx='{cx}' cy='{cy}' r='29' fill='none' stroke='#ea4f79' "
+                      f"stroke-width='2.5' stroke-dasharray='7 6'/>")
+    c = (_callout(1, "M 596 232 L 700 232 L 700 150", (700, 131), 596,
+                  "21 hormoondagen", ["elke dag rond hetzelfde tijdstip"], "above")
+         + _callout(2, "M 596 484 L 700 484 L 700 566", (700, 585), 596,
+                    "7 stopdagen", ["de bloeding hier is een",
+                                    "onttrekkingsbloeding"], "below"))
+    return "Een strip<br>van 28 dagen", 928, 760, pills + c
+
+
+def _plate_spiraal():
+    # drawn to scale: 110 px = 1 cm, so the body is 3,2 cm tall
+    CX, TOP, BOT = 380, 210, 562
+    arm_l, arm_r = CX - 176, CX + 176
+    d = (
+        # arms: lift very slightly at the tips so it reads as a T, not a droop
+        f"<path d='M {arm_l} {TOP+8} Q {CX-88} {TOP+30} {CX} {TOP+22} "
+        f"Q {CX+88} {TOP+30} {arm_r} {TOP+8}' fill='none' stroke='#2c2e7b' "
+        f"stroke-width='17' stroke-linecap='round'/>"
+        # stem
+        f"<path d='M {CX} {TOP+18} L {CX} {BOT}' stroke='#2c2e7b' stroke-width='19' "
+        f"stroke-linecap='round'/>"
+        # threads
+        f"<path d='M {CX-5} {BOT} Q {CX-26} {BOT+48} {CX-16} {BOT+88}' fill='none' "
+        f"stroke='#2c2e7b' stroke-width='4' stroke-linecap='round' opacity='.75'/>"
+        f"<path d='M {CX+5} {BOT} Q {CX+28} {BOT+46} {CX+14} {BOT+90}' fill='none' "
+        f"stroke='#2c2e7b' stroke-width='4' stroke-linecap='round' opacity='.75'/>"
+    )
+    # dimension line, clear to the left of the arms
+    DX = 150
+    d += (f"<path d='M {DX} {TOP+18} L {DX} {BOT}' stroke='#ea4f79' stroke-width='2'/>"
+          f"<path d='M {DX-13} {TOP+18} L {DX+13} {TOP+18}' stroke='#ea4f79' stroke-width='2'/>"
+          f"<path d='M {DX-13} {BOT} L {DX+13} {BOT}' stroke='#ea4f79' stroke-width='2'/>"
+          f"<text class='lbl' x='{DX-24}' y='{(TOP+BOT)//2+10}' text-anchor='end' "
+          f"fill='#ea4f79'>3,2 cm</text>")
+    c = (_callout(1, f"M {arm_r} {TOP+10} L 792 {TOP+10} L 792 231", (792, 212), 560,
+                  "De armpjes vouwen",
+                  ["samen tijdens het plaatsen,", "en klappen daarna open"], "above")
+         + _callout(2, "M 400 500 L 792 500 L 792 541", (792, 560), 500,
+                    "Hormoon of koper",
+                    ["hormoon maakt je menstruatie lichter,",
+                     "koper juist wat zwaarder"], "below"))
+    return "Een spiraaltje,<br>op ware grootte", 928, 760, d + c
+
+
+def _plate_pleister():
+    d = ""
+    for i in range(4):
+        x = 40 + i * 196
+        y = 250
+        if i < 3:
+            d += (f"<rect x='{x}' y='{y}' width='150' height='150' rx='34' fill='#2c2e7b'/>"
+                  f"<rect x='{x+26}' y='{y+26}' width='98' height='98' rx='20' fill='none' "
+                  f"stroke='#fef5ff' stroke-width='2' opacity='.45'/>")
+        else:
+            d += (f"<rect x='{x}' y='{y}' width='150' height='150' rx='34' fill='none' "
+                  f"stroke='#ea4f79' stroke-width='2.5' stroke-dasharray='8 7'/>")
+        d += (f"<text class='sub' x='{x+75}' y='{y+196}' text-anchor='middle'>"
+              f"week {i+1}</text>")
+    # leaders route around the squares rather than across them
+    c = (_callout(1, "M 313 250 L 313 196 L 792 196 L 792 231", (792, 212), 470,
+                  "Elke week een nieuwe",
+                  ["steeds op een andere plek:", "bil, buik, bovenarm of rug"], "above")
+         + _callout(2, "M 778 325 L 850 325 L 850 481", (850, 500), 470,
+                    "Week 4: geen pleister",
+                    ["in die week komt de bloeding,",
+                     "net als in de stopweek van de pil"], "below"))
+    return "De pleister,<br>week voor week", 928, 760, d + c
+
+
+ANATOMIE_PLATES = {
+    "strip28": _plate_strip28,
+    "spiraal": _plate_spiraal,
+    "pleister": _plate_pleister,
+}
+
+
+def anatomie(variant="strip28", w=1080, h=1350):
+    title, sw, sh, inner = ANATOMIE_PLATES[variant]()
     css = """
     .stage{background:var(--paper);color:var(--indigo);
       background-image:linear-gradient(#2c2e7b0d 1px,transparent 1px),
@@ -122,33 +235,10 @@ def anatomie(w=1080, h=1350):
     .sub{font-family:'RobotoSlab';font-size:19px;font-weight:400;fill:#2c2e7b;opacity:.62}
     .num{font-family:'Athiti';font-size:23px;font-weight:700;fill:#fef5ff}
     """
-    pills = ""
-    for i in range(28):
-        col, row = i % 7, i // 7
-        cx, cy = 66 + col * 84, 232 + row * 84
-        if i < 21:
-            pills += f"<circle cx='{cx}' cy='{cy}' r='29' fill='#2c2e7b'/>"
-        else:
-            pills += (f"<circle cx='{cx}' cy='{cy}' r='29' fill='none' stroke='#ea4f79' "
-                      f"stroke-width='2.5' stroke-dasharray='7 6'/>")
-    callouts = """
-      <path d='M 596 232 L 700 232 L 700 150' fill='none' stroke='#ea4f79' stroke-width='2'/>
-      <circle cx='700' cy='131' r='19' fill='#ea4f79'/>
-      <text class='num' x='700' y='139' text-anchor='middle'>1</text>
-      <text class='lbl' x='596' y='68'>21 hormoondagen</text>
-      <text class='sub' x='596' y='102'>elke dag rond hetzelfde tijdstip</text>
-
-      <path d='M 596 484 L 700 484 L 700 566' fill='none' stroke='#ea4f79' stroke-width='2'/>
-      <circle cx='700' cy='585' r='19' fill='#ea4f79'/>
-      <text class='num' x='700' y='593' text-anchor='middle'>2</text>
-      <text class='lbl' x='596' y='646'>7 stopdagen</text>
-      <text class='sub' x='596' y='680'>de bloeding hier is een</text>
-      <text class='sub' x='596' y='706'>onttrekkingsbloeding</text>
-    """
     return page(f"""<div class='stage'>
       <div class='head'><div class='k kicker'>Anatomie van</div>
-        <div class='t'>Een strip<br>van 28 dagen</div></div>
-      <div class='mid plate'><svg width='928' height='760'>{pills}{callouts}</svg></div>
+        <div class='t'>{title}</div></div>
+      <div class='mid plate'><svg width='{sw}' height='{sh}'>{inner}</svg></div>
       <div class='foot'>{MARK}<div class='note'>bewaar 'm voor later</div></div>
     </div>""", css, w, h)
 
@@ -202,8 +292,10 @@ def de_vraag_v(kicker, lines, note="het antwoord staat in de caption",
     return html, round(settle + REST, 2)
 
 
-# Style D, "Soft data illustration" in motion: the curve draws itself.
-def cyclus_v(w=1080, h=1920):
+# Style D, "Soft data illustration" in motion.
+def cyclus_v(variant="hormonen", w=1080, h=1920):
+    if variant == "vruchtbaar":
+        return _cyclus_vruchtbaar(w, h)
     W, H = 900, 720
     L, R, TOP, BOT = 64, W - 64, 60, 520
     x = lambda d: L + (R - L) * d / 28
@@ -261,6 +353,64 @@ def cyclus_v(w=1080, h=1920):
         <div class='note anim'>bewaar 'm voor later</div></div>
     </div>""", css, w, h)
     return html, round(4.8 + REST, 2)
+
+
+# The fertile window: a six-day band, not a single day.
+def _cyclus_vruchtbaar(w=1080, h=1920):
+    W, H = 900, 720
+    L, R, BOT = 64, W - 64, 470
+    x = lambda d: L + (R - L) * d / 28
+    band_l, band_r = x(9), x(14)
+    OV = x(14)
+    ticks = "".join(
+        f"<line x1='{x(d)}' y1='{BOT}' x2='{x(d)}' y2='{BOT+13}' stroke='#2c2e7b' "
+        f"stroke-width='2' opacity='.3'/>"
+        f"<text class='ax' x='{x(d)}' y='{BOT+50}' text-anchor='middle'>dag {d}</text>"
+        for d in (0, 7, 14, 21, 28))
+    css = f"""
+    .stage{{background:linear-gradient(168deg,var(--paper) 0%,#ece3f6 100%);
+      color:var(--indigo);padding:200px 90px 330px}}
+    .k{{color:var(--pink);animation:rise .7s .05s}}
+    .t{{font-family:'Athiti';font-size:98px;font-weight:600;line-height:1.02;
+       letter-spacing:-.025em;margin-top:8px;animation:rise .8s .3s}}
+    .chart{{flex:1 1 auto;position:relative}}
+    svg{{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}}
+    .ax{{font-family:'RobotoSlab';font-size:21px;font-weight:400;fill:#2c2e7b;opacity:.45}}
+    .lg{{font-family:'RobotoSlab';font-size:25px;font-weight:500;fill:#2c2e7b}}
+    .big{{font-family:'Athiti';font-size:42px;font-weight:700;fill:#2c2e7b}}
+    #axis{{--len:{R-L};stroke-dasharray:{R-L};animation:draw .6s .7s}}
+    #tk{{animation:fade .7s 1.1s}}
+    #band{{transform-origin:{band_l}px 0;animation:wipe .9s 1.5s}}
+    #ovl{{animation:pop .6s 2.5s}}
+    #sperm{{animation:fade .7s 3.0s}} #egg{{animation:fade .7s 3.4s}}
+    .mark{{animation:fade .7s 3.9s}} .note{{animation:fade .7s 3.9s}}
+    """
+    html = page(f"""<div class='stage'>
+      <div class='head'><div class='k kicker anim'>De cyclus, in beeld</div>
+        <div class='t'>Wanneer ben je<br>vruchtbaar?</div></div>
+      <div class='mid chart'><svg width='{W}' height='{H}'>
+        <g id='band' class='anim'>
+          <rect x='{band_l}' y='250' width='{band_r-band_l}' height='{BOT-250}'
+                fill='#f9d2b8' opacity='.85' rx='6'/>
+          <text class='big' x='{(band_l+band_r)/2}' y='226' text-anchor='middle'>6 dagen</text>
+        </g>
+        <line id='axis' class='anim' x1='{L}' y1='{BOT}' x2='{R}' y2='{BOT}'
+              stroke='#2c2e7b' stroke-width='2.5' opacity='.45'/>
+        <g id='tk' class='anim'>{ticks}</g>
+        <g id='ovl' class='anim'>
+          <line x1='{OV}' y1='250' x2='{OV}' y2='{BOT}' stroke='#ea4f79' stroke-width='5'/>
+          <circle cx='{OV}' cy='250' r='13' fill='#ea4f79'/>
+          <text class='lg' x='{OV+22}' y='244' fill='#ea4f79'>eisprong</text>
+        </g>
+        <g id='sperm' class='anim'><circle cx='14' cy='574' r='9' fill='#f9d2b8'/>
+          <text class='lg' x='42' y='583'>zaadcellen overleven tot 5 dagen</text></g>
+        <g id='egg' class='anim'><circle cx='14' cy='626' r='9' fill='#ea4f79'/>
+          <text class='lg' x='42' y='635'>een eicel leeft ongeveer 24 uur</text></g>
+      </svg></div>
+      <div class='foot'>{MARK.replace("mark'","mark anim'")}
+        <div class='note anim'>bewaar 'm voor later</div></div>
+    </div>""", css, w, h)
+    return html, round(4.6 + REST, 2)
 
 
 # Style E, "Soft UI" in motion: bubble, typing dots, answer.

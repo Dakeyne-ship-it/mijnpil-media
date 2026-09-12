@@ -91,12 +91,14 @@ def build(browser, p):
         v = p["variant"]
         take, sub = ANATOMIE_SLOT2[v]
         return [
-            shot(browser, f"{pid}__1-plaat", C.anatomie(w=FEED[0], h=FEED[1]), FEED),
+            shot(browser, f"{pid}__1-plaat", C.anatomie(v, w=FEED[0], h=FEED[1]), FEED),
             shot(browser, f"{pid}__2-onthoud", C.anatomie_slot2(take, sub, w=FEED[0], h=FEED[1]), FEED),
         ]
 
     if concept == "de_cyclus":
-        return [clip(browser, pid, pid, [C.cyclus_v(w=VERT[0], h=VERT[1])], VERT)]
+        return [clip(browser, pid, pid,
+                     [C.cyclus_v(p.get("variant", "hormonen"),
+                                 w=VERT[0], h=VERT[1])], VERT)]
 
     if concept == "uit_de_dm":
         return [clip(browser, pid, pid,
