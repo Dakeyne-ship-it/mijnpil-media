@@ -1,4 +1,4 @@
-import math
+import math, pathlib
 from base import page
 
 MARK = "<div class='mark'><span class='dot'></span>mijnpil.nu</div>"
@@ -504,4 +504,171 @@ def reel_scene_v(kind, lines, small="", w=1080, h=1920):
     # last thing to land is either the final headline line or the sub-line
     settle = max(0.3 + (len(lines) - 1) * 0.26 + 0.7,
                  1.15 + 0.7 if small else 0, 1.8)
+    return html, round(settle + REST, 2)
+
+
+# ===================================================== STYLE G, "ONDER ONS"
+# The recognition pillar. No illustration: the line is the whole image, so the
+# type fills the frame and the real logo is placed large enough to survive being
+# screenshotted, cropped or reposted without a caption.
+#
+# The logo is two-coloured, so it always sits on an off-white surface, never
+# straight on a saturated field. That off-white footer is the pillar's signature.
+#
+#   masthead  line left, off-white brand strip along the bottom
+#   midden    line centred on a light field, logo centred underneath
+#   vullend   line edge to edge, logo in an off-white chip in the corner
+
+_LOGO = (pathlib.Path(__file__).parent / "brand" / "mijnpil-logo.png").resolve()
+_LOGO_RATIO = 1489 / 350
+
+
+def _logo(width, anim_style=""):
+    return (f"<img class='logo{anim_style}' src='file://{_LOGO}' alt='MijnPil.nu' "
+            f"style='width:{width}px;height:{width / _LOGO_RATIO:.0f}px'>")
+
+
+MEME_THEMES = {
+    # bg: the field. text: the line. acc: the one highlighted phrase.
+    # paper: the surface the logo sits on, always off-white.
+    "pink":   {"bg": "#ea4f79", "text": "#fef5ff", "acc": "#f9d2b8",
+               "paper": "#fef5ff", "grain": "#2c2e7b", "light": False},
+    "indigo": {"bg": "#2c2e7b", "text": "#fef5ff", "acc": "#ea4f79",
+               "paper": "#fef5ff", "grain": "#fef5ff", "light": False},
+    "peach":  {"bg": "#f9d2b8", "text": "#2c2e7b", "acc": "#ea4f79",
+               "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+    "mint":   {"bg": "#cfeae5", "text": "#2c2e7b", "acc": "#ea4f79",
+               "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+}
+
+# character width of Athiti 600 relative to its font size, measured on the
+# rendered face: used to fit the longest authored line to the column
+_ATHITI = 0.455
+
+
+def _fit(lines, avail, cap):
+    longest = max(len(x.replace("<em>", "").replace("</em>", "")) for x in lines)
+    return max(52, min(cap, int(avail / (longest * _ATHITI))))
+
+
+def _grain(col):
+    return (f"<div class='grain' style=\"background-image:radial-gradient("
+            f"circle,{col} 1.5px,transparent 1.6px)\"></div>")
+
+
+BASE_G = """
+.grain{position:absolute;inset:0;pointer-events:none;opacity:.18;
+  background-size:15px 15px}
+.eyebrow{font-family:'RobotoSlab';font-size:21px;font-weight:500;
+  letter-spacing:.30em;text-transform:uppercase}
+.line{font-family:'Athiti';font-weight:600;letter-spacing:-.032em;line-height:1.08}
+.line span{display:block;white-space:nowrap}
+.line em{font-style:normal;font-weight:700}
+.logo{display:block}
+"""
+
+
+def _spans(lines, anim, t0, step=0.2):
+    return "".join(
+        (f"<span class='anim' style='animation:rise .65s {t0+i*step:.2f}s'>{x}</span>"
+         if anim else f"<span>{x}</span>") for i, x in enumerate(lines))
+
+
+def _eyebrow(anim, text="onder ons"):
+    return "<div class='eyebrow%s'>%s</div>" % (
+        " anim' style='animation:fade .5s .05s" if anim else "", text)
+
+
+def _meme_masthead(lines, t, anim, w, h):
+    strip_h = 198 if h <= 1400 else 240
+    pad = 84
+    size = _fit(lines, w - 2 * pad, 122 if h <= 1400 else 132)
+    logo_w = 430 if h <= 1400 else 500
+    css = BASE_G + f"""
+    .stage{{background:{t['bg']};color:{t['text']};padding:{pad}px {pad}px {strip_h + 40}px}}
+    .eyebrow{{color:{t['acc']}}}
+    .rule{{width:132px;height:9px;border-radius:5px;background:{t['acc']};
+      margin-top:26px;transform-origin:left}}
+    .mid{{justify-content:center}}
+    .line{{font-size:{size}px}}
+    .line em{{color:{t['acc']}}}
+    .strip{{position:absolute;left:0;right:0;bottom:0;height:{strip_h}px;
+      background:{t['paper']};display:flex;align-items:center;justify-content:center}}
+    """
+    t_last = 0.75 + (len(lines) - 1) * 0.2 + 0.65
+    strip = "<div class='strip%s'>%s</div>" % (
+        " anim' style='animation:fade .6s %.2fs" % t_last if anim else "",
+        _logo(logo_w))
+    rl = "<div class='rule%s'></div>" % (
+        " anim' style='animation:wipe .45s .3s" if anim else "")
+    html = page(f"""<div class='stage'>{_grain(t['grain'])}
+      <div class='head'>{_eyebrow(anim)}{rl}</div>
+      <div class='mid'><div class='line'>{_spans(lines, anim, 0.75)}</div></div>
+    </div>{strip}""", css, w, h)
+    return html, (t_last + 0.6 if anim else 0)
+
+
+def _meme_midden(lines, t, anim, w, h):
+    """Light field only: the logo sits straight on the background."""
+    pad = 92
+    size = _fit(lines, w - 2 * pad, 112 if h <= 1400 else 122)
+    logo_w = 400 if h <= 1400 else 460
+    css = BASE_G + f"""
+    .stage{{background:{t['bg']};color:{t['text']};align-items:center;
+      text-align:center;padding:{pad}px}}
+    .eyebrow{{color:{t['acc']};font-size:19px}}
+    .mid{{align-items:center;gap:0;justify-content:center}}
+    .line{{font-size:{size}px}}
+    .line em{{color:{t['acc']}}}
+    .sep{{width:150px;height:4px;background:{t['acc']};opacity:.6;margin:60px 0 42px}}
+    .foot{{justify-content:center}}
+    """
+    t_last = 0.55 + len(lines) * 0.2
+    logo = _logo(logo_w, " anim' style='animation:fade .6s %.2fs" % t_last if anim else "")
+    html = page(f"""<div class='stage'>{_grain(t['grain'])}
+      <div class='head'>{_eyebrow(anim)}</div>
+      <div class='mid'><div class='line'>{_spans(lines, anim, 0.55)}</div>
+        <div class='sep'></div>{logo}</div>
+      <div class='foot'></div>
+    </div>""", css, w, h)
+    return html, (t_last + 0.6 if anim else 0)
+
+
+def _meme_vullend(lines, t, anim, w, h):
+    pad = 68
+    size = _fit(lines, w - 2 * pad, 150 if h <= 1400 else 160)
+    logo_w = 300 if h <= 1400 else 340
+    css = BASE_G + f"""
+    .stage{{background:{t['bg']};color:{t['text']};padding:{pad}px}}
+    .mid{{justify-content:center}}
+    .line{{font-size:{size}px;line-height:1.02}}
+    .line em{{color:{t['acc']}}}
+    .foot{{align-items:center;justify-content:flex-start}}
+    .chip{{background:{t['paper']};border-radius:999px;padding:26px 40px;
+      display:flex;align-items:center}}
+    .head .eyebrow{{color:{t['acc']};font-size:19px}}
+    """
+    t_last = 0.5 + len(lines) * 0.2
+    chip = "<div class='chip%s'>%s</div>" % (
+        " anim' style='animation:pop .6s %.2fs" % t_last if anim else "", _logo(logo_w))
+    html = page(f"""<div class='stage'>{_grain(t['grain'])}
+      <div class='head'>{_eyebrow(anim)}</div>
+      <div class='mid'><div class='line'>{_spans(lines, anim, 0.5)}</div></div>
+      <div class='foot'>{chip}</div>
+    </div>""", css, w, h)
+    return html, (t_last + 0.6 if anim else 0)
+
+
+LAYOUTS = {"masthead": _meme_masthead, "midden": _meme_midden,
+           "vullend": _meme_vullend}
+
+
+def onder_ons(lines, layout="masthead", theme="pink", w=1080, h=1350):
+    """Static 4:5 feed post. The shareable unit of this pillar."""
+    return LAYOUTS[layout](lines, MEME_THEMES[theme], False, w, h)[0]
+
+
+def onder_ons_v(lines, layout="masthead", theme="pink", w=1080, h=1920):
+    """Animated 9:16 story or reel cut of the same post."""
+    html, settle = LAYOUTS[layout](lines, MEME_THEMES[theme], True, w, h)
     return html, round(settle + REST, 2)
