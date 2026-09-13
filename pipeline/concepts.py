@@ -646,7 +646,9 @@ def _meme_midden(lines, t, anim, w, h):
     return html, (t_last + 0.6 if anim else 0)
 
 
-def _meme_vullend(lines, t, anim, w, h):
+def _meme_vullend(lines, t, anim, w, h, tag="eyebrow"):
+    """tag: where #vrouwenonderelkaar goes. "eyebrow" top left, "label" next to
+    the logo, "caption" not in the image at all."""
     pad = 68
     size = _fit(lines, w - 2 * pad, 150 if h <= 1400 else 160)
     logo_w = 300 if h <= 1400 else 340
@@ -661,11 +663,20 @@ def _meme_vullend(lines, t, anim, w, h):
       border:{'3px solid #2c2e7b1f' if t['light'] else '0'}}}
     .head .eyebrow{{color:{t['acc']};font-size:19px}}
     """
+    css += f"""
+    .chip .hash{{font-family:'RobotoSlab';font-size:27px;font-weight:500;
+      color:{t['bg'] if t['light'] else '#2c2e7b'};margin-left:26px;
+      padding-left:26px;border-left:2px solid #2c2e7b26;white-space:nowrap}}
+    """
     t_last = 0.5 + len(lines) * 0.2
+    inner = _logo(logo_w if tag != "label" else int(logo_w * 0.8))
+    if tag == "label":
+        inner += "<span class='hash'>#vrouwenonderelkaar</span>"
     chip = "<div class='chip%s'>%s</div>" % (
-        " anim' style='animation:pop .6s %.2fs" % t_last if anim else "", _logo(logo_w))
+        " anim' style='animation:pop .6s %.2fs" % t_last if anim else "", inner)
+    eb_text = "#vrouwenonderelkaar" if tag == "eyebrow" else "onder ons"
     html = page(f"""<div class='stage'>{_grain(t['grain'])}
-      <div class='head'>{_eyebrow(anim)}</div>
+      <div class='head'>{_eyebrow(anim, eb_text)}</div>
       <div class='mid'><div class='line'>{_spans(lines, anim, 0.5)}</div></div>
       <div class='foot'>{chip}</div>
     </div>""", css, w, h)
@@ -676,12 +687,16 @@ LAYOUTS = {"masthead": _meme_masthead, "midden": _meme_midden,
            "vullend": _meme_vullend}
 
 
-def onder_ons(lines, layout="vullend", theme="roze", w=1080, h=1350):
+def onder_ons(lines, layout="vullend", theme="roze", w=1080, h=1350, tag="eyebrow"):
     """Static 4:5 feed post. The shareable unit of this pillar."""
-    return LAYOUTS[layout](lines, MEME_THEMES[theme], False, w, h)[0]
+    f = LAYOUTS[layout]
+    args = (lines, MEME_THEMES[theme], False, w, h)
+    return (f(*args, tag=tag) if layout == "vullend" else f(*args))[0]
 
 
-def onder_ons_v(lines, layout="vullend", theme="roze", w=1080, h=1920):
+def onder_ons_v(lines, layout="vullend", theme="roze", w=1080, h=1920, tag="eyebrow"):
     """Animated 9:16 story or reel cut of the same post."""
-    html, settle = LAYOUTS[layout](lines, MEME_THEMES[theme], True, w, h)
+    f = LAYOUTS[layout]
+    args = (lines, MEME_THEMES[theme], True, w, h)
+    html, settle = f(*args, tag=tag) if layout == "vullend" else f(*args)
     return html, round(settle + REST, 2)
