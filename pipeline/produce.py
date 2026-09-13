@@ -13,6 +13,9 @@ from anim import render_clip, encode, HTML, OUT, FPS
 
 HERE = pathlib.Path(__file__).parent
 QUEUE = json.loads((HERE / "queue.json").read_text(encoding="utf-8"))
+_MEMES = HERE / "queue-memes.json"
+if _MEMES.exists():
+    QUEUE["posts"] = QUEUE["posts"] + json.loads(_MEMES.read_text(encoding="utf-8"))["posts"]
 PROD = OUT / "production"
 PROD.mkdir(parents=True, exist_ok=True)
 
@@ -99,6 +102,16 @@ def build(browser, p):
         return [clip(browser, pid, pid,
                      [C.cyclus_v(p.get("variant", "hormonen"),
                                  w=VERT[0], h=VERT[1])], VERT)]
+
+    if concept == "onder_ons":
+        out = [shot(browser, pid,
+                    C.onder_ons(p["lines"], "vullend", p["theme"],
+                                w=FEED[0], h=FEED[1], tag="eyebrow"), FEED)]
+        if p.get("story"):
+            out.append(clip(browser, pid, f"{pid}-story",
+                            [C.onder_ons_v(p["lines"], "vullend", p["theme"],
+                                           w=VERT[0], h=VERT[1], tag="eyebrow")], VERT))
+        return out
 
     if concept == "uit_de_dm":
         return [clip(browser, pid, pid,

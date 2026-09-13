@@ -15,6 +15,11 @@ import json, os, sys, subprocess, base64, datetime, zoneinfo, pathlib, shutil
 HERE = pathlib.Path(__file__).parent.resolve()
 REPO = HERE.parent
 QUEUE = json.loads((HERE / "queue.json").read_text(encoding="utf-8"))
+MEMES = json.loads((HERE / "queue-memes.json").read_text(encoding="utf-8"))
+# one day can hold an uitlegpost and a meme; they never share a slot
+ALL_POSTS = QUEUE["posts"] + MEMES["posts"]
+META = {p["id"]: (MEMES["_meta"] if p["id"].startswith("m") else QUEUE["_meta"])
+        for p in ALL_POSTS}
 TZ = zoneinfo.ZoneInfo("Europe/Amsterdam")
 PAGES = "https://dakeyne-ship-it.github.io/mijnpil-media"
 REMOTE = "https://github.com/Dakeyne-ship-it/mijnpil-media.git"
@@ -47,7 +52,8 @@ def main():
     else:
         day = datetime.datetime.now(TZ).date().isoformat()
 
-    post = next((p for p in QUEUE["posts"] if p["date"] == day), None)
+    todays = [p for p in ALL_POSTS if p["date"] == day]
+    post = todays[0] if todays else None
     if post is None:
         print(f"NO POST TODAY ({day}). Niets te doen.")
         return 0
@@ -97,7 +103,10 @@ def main():
         "format": post["format"],
         "urls": urls,
         "caption": post["caption"] + "\n\n" + " ".join(post["tags"]),
-        "disclaimer_comment": QUEUE["_meta"]["disclaimer"] if post.get("disclaimer") else None,
+        "first_comment": (post.get("first_comment")
+                          or (QUEUE["_meta"]["disclaimer"] if post.get("disclaimer") else None)),
+        "alt": post.get("alt"),
+        "story_url": next((u for u in urls if u.endswith("-story.mp4")), None),
         "wait_for_pages_seconds": 100,
     }
     print("BEGIN PUBLISH")
