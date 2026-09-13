@@ -531,15 +531,27 @@ def _logo(width, anim_style=""):
 MEME_THEMES = {
     # bg: the field. text: the line. acc: the one highlighted phrase.
     # paper: the surface the logo sits on, always off-white.
-    "pink":   {"bg": "#ea4f79", "text": "#fef5ff", "acc": "#f9d2b8",
-               "paper": "#fef5ff", "grain": "#2c2e7b", "light": False},
-    "indigo": {"bg": "#2c2e7b", "text": "#fef5ff", "acc": "#ea4f79",
-               "paper": "#fef5ff", "grain": "#fef5ff", "light": False},
-    "peach":  {"bg": "#f9d2b8", "text": "#2c2e7b", "acc": "#ea4f79",
-               "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
-    "mint":   {"bg": "#cfeae5", "text": "#2c2e7b", "acc": "#ea4f79",
-               "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+    # light: a pale field, where the logo label needs a hairline to read as a label.
+    "roze":       {"bg": "#ea4f79", "text": "#fef5ff", "acc": "#f9d2b8",
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": False},
+    "indigo":     {"bg": "#2c2e7b", "text": "#fef5ff", "acc": "#ea4f79",
+                   "paper": "#fef5ff", "grain": "#fef5ff", "light": False},
+    "lavendel":   {"bg": "#9e9dce", "text": "#2c2e7b", "acc": "#fef5ff",
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": False},
+    "perzik":     {"bg": "#f9d2b8", "text": "#2c2e7b", "acc": "#ea4f79",
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+    "mint":       {"bg": "#cfeae5", "text": "#2c2e7b", "acc": "#ea4f79",
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+    "lichtblauw": {"bg": "#d4eff9", "text": "#2c2e7b", "acc": "#ea4f79",
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+    "zalm":       {"bg": "#f9c1b7", "text": "#2c2e7b", "acc": "#ea4f79",
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
 }
+
+# the rotation the scheduled runs walk through, so no two posts in a row share
+# a field colour
+MEME_ROTATION = ["roze", "perzik", "indigo", "mint", "zalm", "lavendel", "lichtblauw"]
+
 
 # character width of Athiti 600 relative to its font size, measured on the
 # rendered face: used to fit the longest authored line to the column
@@ -645,7 +657,8 @@ def _meme_vullend(lines, t, anim, w, h):
     .line em{{color:{t['acc']}}}
     .foot{{align-items:center;justify-content:flex-start}}
     .chip{{background:{t['paper']};border-radius:999px;padding:26px 40px;
-      display:flex;align-items:center}}
+      display:flex;align-items:center;
+      border:{'3px solid #2c2e7b1f' if t['light'] else '0'}}}
     .head .eyebrow{{color:{t['acc']};font-size:19px}}
     """
     t_last = 0.5 + len(lines) * 0.2
@@ -663,12 +676,12 @@ LAYOUTS = {"masthead": _meme_masthead, "midden": _meme_midden,
            "vullend": _meme_vullend}
 
 
-def onder_ons(lines, layout="masthead", theme="pink", w=1080, h=1350):
+def onder_ons(lines, layout="vullend", theme="roze", w=1080, h=1350):
     """Static 4:5 feed post. The shareable unit of this pillar."""
     return LAYOUTS[layout](lines, MEME_THEMES[theme], False, w, h)[0]
 
 
-def onder_ons_v(lines, layout="masthead", theme="pink", w=1080, h=1920):
+def onder_ons_v(lines, layout="vullend", theme="roze", w=1080, h=1920):
     """Animated 9:16 story or reel cut of the same post."""
     html, settle = LAYOUTS[layout](lines, MEME_THEMES[theme], True, w, h)
     return html, round(settle + REST, 2)
