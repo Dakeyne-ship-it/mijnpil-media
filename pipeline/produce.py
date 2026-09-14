@@ -107,12 +107,13 @@ def build(browser, p):
         out = [shot(browser, pid,
                     C.onder_ons(p["lines"], "vullend", p["theme"],
                                 w=FEED[0], h=FEED[1], tag="eyebrow",
-                                face="slab", anchor="onder"), FEED)]
+                                face="slab", anchor="onder", border=16), FEED)]
         if p.get("story"):
             out.append(clip(browser, pid, f"{pid}-story",
                             [C.onder_ons_v(p["lines"], "vullend", p["theme"],
                                            w=VERT[0], h=VERT[1], tag="eyebrow",
-                                           face="slab", anchor="onder")], VERT))
+                                           face="slab", anchor="onder",
+                                           border=16)], VERT))
         return out
 
     if concept == "uit_de_dm":

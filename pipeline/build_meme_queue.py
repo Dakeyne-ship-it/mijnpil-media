@@ -62,6 +62,7 @@ def main():
             "layout": "vullend",
             "face": "slab",
             "anchor": "onder",
+            "border": 16,
             "hashtag_position": "eyebrow",
             "standing_tags": STANDING,
             "disclaimer": D,

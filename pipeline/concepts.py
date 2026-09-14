@@ -655,7 +655,7 @@ def _meme_midden(lines, t, anim, w, h):
 
 
 def _meme_vullend(lines, t, anim, w, h, tag="eyebrow", face="athiti",
-                  quotes=False, anchor="midden", badge="onder ons"):
+                  quotes=False, anchor="midden", badge=None, border=0):
     """tag:    where #vrouwenonderelkaar goes, "eyebrow" top left or "label"
                next to the logo.
     face:      "athiti" matches the uitlegposts, "slab" sets the line in Roboto
@@ -669,7 +669,8 @@ def _meme_vullend(lines, t, anim, w, h, tag="eyebrow", face="athiti",
     size = _fit(lines, w - 2 * pad, cap, 0.56 if slab else _ATHITI)
     logo_w = 300 if h <= 1400 else 340
     css = BASE_G + f"""
-    .stage{{background:{t['bg']};color:{t['text']};padding:{pad}px}}
+    .stage{{background:{t['bg']};color:{t['text']};padding:{pad}px;
+      {f"box-shadow:inset 0 0 0 {border}px {t['badge']}" if border else ""}}}
     .mid{{justify-content:{'flex-end' if anchor == 'onder' else 'center'}}}
     .line{{font-size:{size}px;line-height:{1.14 if slab else 1.02};
       {"font-family:'RobotoSlab';font-weight:700;letter-spacing:-.018em" if slab else ""}}}
