@@ -8,6 +8,7 @@ from concepts import MEME_ROTATION
 START = datetime.date(2026, 9, 15)          # dinsdag
 DAYS = {1: "di 20:00", 3: "do 20:00", 5: "za 11:00"}
 STANDING = ["#vrouwenonderelkaar", "#mijnpilnu"]
+PAGES = "https://dakeyne-ship-it.github.io/mijnpil-media"
 
 
 def slots(start, n):
@@ -30,8 +31,10 @@ def main():
         day, slot = dates[i]
         theme = MEME_ROTATION[i % len(MEME_ROTATION)]
         caption = f"{opener}\n\n{share}"
+        pid = f"m{i+1:02d}"
+        base = f"{PAGES}/ig/{day.year}/{day.month:02d}"
         posts.append({
-            "id": f"m{i+1:02d}",
+            "id": pid,
             "source_line": src,
             "date": day.isoformat(),
             "slot": slot,
@@ -47,6 +50,8 @@ def main():
                     "Linksboven de hashtag vrouwen onder elkaar, linksonder het "
                     "logo van MijnPil.nu."),
             "story": True,
+            "image_url": f"{base}/{pid}.jpg",
+            "story_url": f"{base}/{pid}-story.mp4",
         })
     doc = {
         "_meta": {
@@ -55,6 +60,8 @@ def main():
             "written": "2026-09-13",
             "rhythm": "di 20:00 · do 20:00 · za 11:00, naast de uitlegqueue op ma/wo/vr",
             "layout": "vullend",
+            "face": "slab",
+            "anchor": "onder",
             "hashtag_position": "eyebrow",
             "standing_tags": STANDING,
             "disclaimer": D,

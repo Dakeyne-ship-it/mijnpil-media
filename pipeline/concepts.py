@@ -533,24 +533,31 @@ MEME_THEMES = {
     # paper: the surface the logo sits on, always off-white.
     # light: a pale field, where the logo label needs a hairline to read as a label.
     "roze":       {"bg": "#ea4f79", "text": "#fef5ff", "acc": "#f9d2b8",
-                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": False},
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": False,
+                   "badge": "#2c2e7b", "badgetext": "#fef5ff"},
     "indigo":     {"bg": "#2c2e7b", "text": "#fef5ff", "acc": "#ea4f79",
-                   "paper": "#fef5ff", "grain": "#fef5ff", "light": False},
+                   "paper": "#fef5ff", "grain": "#fef5ff", "light": False,
+                   "badge": "#ea4f79", "badgetext": "#fef5ff"},
     "lavendel":   {"bg": "#9e9dce", "text": "#2c2e7b", "acc": "#fef5ff",
-                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": False},
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": False,
+                   "badge": "#2c2e7b", "badgetext": "#fef5ff"},
     "perzik":     {"bg": "#f9d2b8", "text": "#2c2e7b", "acc": "#ea4f79",
-                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True,
+                   "badge": "#2c2e7b", "badgetext": "#fef5ff"},
     "mint":       {"bg": "#cfeae5", "text": "#2c2e7b", "acc": "#ea4f79",
-                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True,
+                   "badge": "#2c2e7b", "badgetext": "#fef5ff"},
     "lichtblauw": {"bg": "#d4eff9", "text": "#2c2e7b", "acc": "#ea4f79",
-                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True,
+                   "badge": "#2c2e7b", "badgetext": "#fef5ff"},
     "zalm":       {"bg": "#f9c1b7", "text": "#2c2e7b", "acc": "#ea4f79",
-                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True},
+                   "paper": "#fef5ff", "grain": "#2c2e7b", "light": True,
+                   "badge": "#2c2e7b", "badgetext": "#fef5ff"},
 }
 
 # the rotation the scheduled runs walk through, so no two posts in a row share
 # a field colour
-MEME_ROTATION = ["roze", "perzik", "indigo", "mint", "zalm", "lavendel", "lichtblauw"]
+MEME_ROTATION = ["roze", "indigo", "lavendel"]
 
 
 # character width of Athiti 600 relative to its font size, measured on the
@@ -558,9 +565,10 @@ MEME_ROTATION = ["roze", "perzik", "indigo", "mint", "zalm", "lavendel", "lichtb
 _ATHITI = 0.455
 
 
-def _fit(lines, avail, cap):
+def _fit(lines, avail, cap, per_char=None):
+    per_char = per_char or _ATHITI
     longest = max(len(x.replace("<em>", "").replace("</em>", "")) for x in lines)
-    return max(52, min(cap, int(avail / (longest * _ATHITI))))
+    return max(52, min(cap, int(avail / (longest * per_char))))
 
 
 def _grain(col):
@@ -646,17 +654,31 @@ def _meme_midden(lines, t, anim, w, h):
     return html, (t_last + 0.6 if anim else 0)
 
 
-def _meme_vullend(lines, t, anim, w, h, tag="eyebrow"):
-    """tag: where #vrouwenonderelkaar goes. "eyebrow" top left, "label" next to
-    the logo, "caption" not in the image at all."""
+def _meme_vullend(lines, t, anim, w, h, tag="eyebrow", face="athiti",
+                  quotes=False, anchor="midden", badge="onder ons"):
+    """tag:    where #vrouwenonderelkaar goes, "eyebrow" top left or "label"
+               next to the logo.
+    face:      "athiti" matches the uitlegposts, "slab" sets the line in Roboto
+               Slab bold so the pillar reads as a different kind of post.
+    quotes:    wrap the line in typographic quotation marks.
+    anchor:    "midden" centres the block, "onder" pushes it against the logo
+               so the silhouette in the feed differs from the uitlegposts."""
     pad = 68
-    size = _fit(lines, w - 2 * pad, 150 if h <= 1400 else 160)
+    slab = face == "slab"
+    cap = (150 if h <= 1400 else 160) if not slab else (120 if h <= 1400 else 130)
+    size = _fit(lines, w - 2 * pad, cap, 0.56 if slab else _ATHITI)
     logo_w = 300 if h <= 1400 else 340
     css = BASE_G + f"""
     .stage{{background:{t['bg']};color:{t['text']};padding:{pad}px}}
-    .mid{{justify-content:center}}
-    .line{{font-size:{size}px;line-height:1.02}}
+    .mid{{justify-content:{'flex-end' if anchor == 'onder' else 'center'}}}
+    .line{{font-size:{size}px;line-height:{1.14 if slab else 1.02};
+      {"font-family:'RobotoSlab';font-weight:700;letter-spacing:-.018em" if slab else ""}}}
     .line em{{color:{t['acc']}}}
+    .foot{{margin-top:{54 if anchor == 'onder' else 0}px}}
+    .head{{display:flex;align-items:center;justify-content:space-between;gap:24px}}
+    .badge{{font-family:'Athiti';font-size:26px;font-weight:600;letter-spacing:.02em;
+      background:{t['badge']};color:{t['badgetext']};border-radius:999px;
+      padding:11px 26px 13px;white-space:nowrap;line-height:1}}
     .foot{{align-items:center;justify-content:flex-start}}
     .chip{{background:{t['paper']};border-radius:999px;padding:26px 40px;
       display:flex;align-items:center;
@@ -668,6 +690,10 @@ def _meme_vullend(lines, t, anim, w, h, tag="eyebrow"):
       color:{t['bg'] if t['light'] else '#2c2e7b'};margin-left:26px;
       padding-left:26px;border-left:2px solid #2c2e7b26;white-space:nowrap}}
     """
+    if quotes:
+        lines = list(lines)
+        lines[0] = "\u201c" + lines[0]
+        lines[-1] = lines[-1] + "\u201d"
     t_last = 0.5 + len(lines) * 0.2
     inner = _logo(logo_w if tag != "label" else int(logo_w * 0.8))
     if tag == "label":
@@ -675,8 +701,11 @@ def _meme_vullend(lines, t, anim, w, h, tag="eyebrow"):
     chip = "<div class='chip%s'>%s</div>" % (
         " anim' style='animation:pop .6s %.2fs" % t_last if anim else "", inner)
     eb_text = "#vrouwenonderelkaar" if tag == "eyebrow" else "onder ons"
+    bd = ("<div class='badge%s'>%s</div>"
+          % (" anim' style='animation:pop .5s .15s" if anim else "", badge)
+          if badge else "")
     html = page(f"""<div class='stage'>{_grain(t['grain'])}
-      <div class='head'>{_eyebrow(anim, eb_text)}</div>
+      <div class='head'>{_eyebrow(anim, eb_text)}{bd}</div>
       <div class='mid'><div class='line'>{_spans(lines, anim, 0.5)}</div></div>
       <div class='foot'>{chip}</div>
     </div>""", css, w, h)
@@ -687,16 +716,18 @@ LAYOUTS = {"masthead": _meme_masthead, "midden": _meme_midden,
            "vullend": _meme_vullend}
 
 
-def onder_ons(lines, layout="vullend", theme="roze", w=1080, h=1350, tag="eyebrow"):
+def onder_ons(lines, layout="vullend", theme="roze", w=1080, h=1350,
+              tag="eyebrow", **kw):
     """Static 4:5 feed post. The shareable unit of this pillar."""
     f = LAYOUTS[layout]
     args = (lines, MEME_THEMES[theme], False, w, h)
-    return (f(*args, tag=tag) if layout == "vullend" else f(*args))[0]
+    return (f(*args, tag=tag, **kw) if layout == "vullend" else f(*args))[0]
 
 
-def onder_ons_v(lines, layout="vullend", theme="roze", w=1080, h=1920, tag="eyebrow"):
+def onder_ons_v(lines, layout="vullend", theme="roze", w=1080, h=1920,
+                tag="eyebrow", **kw):
     """Animated 9:16 story or reel cut of the same post."""
     f = LAYOUTS[layout]
     args = (lines, MEME_THEMES[theme], True, w, h)
-    html, settle = f(*args, tag=tag) if layout == "vullend" else f(*args)
+    html, settle = f(*args, tag=tag, **kw) if layout == "vullend" else f(*args)
     return html, round(settle + REST, 2)
