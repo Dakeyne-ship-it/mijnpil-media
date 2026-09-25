@@ -75,7 +75,7 @@ def mythe(lines, n="1 / 2", w=1080, h=1350):
        letter-spacing:-.025em}
     .s i{position:relative;font-style:normal;display:inline-block}
     .s i::after{content:'';position:absolute;left:-10px;right:-10px;top:54%;
-      height:11px;border-radius:6px;background:var(--pink)}
+      height:6px;border-radius:3px;background:var(--pink)}
     .n{font-size:18px;font-weight:500;opacity:.42}
     """
     body = "".join(f"<div><i>{t}</i></div>" for t in lines)
