@@ -830,3 +830,48 @@ def vast_slide(num, title, body, n="", field="#fef5ff", w=1080, h=1350):
       <div class='mid'><div class='num'>{num}</div><div class='t'>{title}</div>
         <div class='b'>{body}</div></div>
       <div class='foot'>{MARK}<div class='note'>{n}</div></div></div>""", css, w, h)
+
+
+def vast_slide_beeld(num, title, body, img, n="", w=1080, h=1350, band=700):
+    """Binnenslide van een vastgezette post met een illustratie als band bovenin.
+    img: pad naar een beeld van w x band uit illu.in_vak."""
+    css = f"""
+    .band{{position:absolute;left:0;top:0;width:{w}px;height:{band}px}}
+    body{{background:#fef5ff}}
+    .stage{{color:#2c2e7b;padding:{band + 64}px 90px 80px}}
+    .row{{display:flex;align-items:center;gap:28px}}
+    .num{{width:80px;height:80px;border-radius:50%;background:#ea4f79;color:#fef5ff;
+        font-family:'Athiti';font-weight:700;font-size:44px;display:flex;align-items:center;
+        justify-content:center;flex:0 0 auto}}
+    .t{{font-family:'Athiti';font-weight:600;font-size:68px;line-height:1.05;letter-spacing:-.03em}}
+    .t em{{font-style:normal;color:#ea4f79;font-weight:700}}
+    .b{{margin-top:34px;font-size:33px;line-height:1.5;max-width:900px;opacity:.85}}
+    .mid{{justify-content:flex-start}}
+    """
+    return page(f"""<img class='band' src='file://{img}'><div class='stage'>
+      <div class='mid'><div class='row'><div class='num'>{num}</div><div class='t'>{title}</div></div>
+        <div class='b'>{body}</div></div>
+      <div class='foot'>{MARK}<div class='note'>{n}</div></div></div>""", css, w, h)
+
+
+def beeld_titel(img, kicker, lines, w=1080, h=1350, top=0, band=820, pad=84, note=""):
+    """Illustratie als omslag: beeld boven, titel eronder op een licht vlak.
+    Voor slide 1 van een carrousel (4:5) en als reelomslag (9:16, dan top en
+    band zo kiezen dat alles binnen de 3:4-uitsnede van het raster valt)."""
+    css = f"""
+    body{{background:#fef5ff}}
+    .band{{position:absolute;left:0;top:{top}px;width:{w}px;height:{band}px}}
+    .txt{{position:absolute;left:{pad}px;right:{pad}px;top:{top + band + 56}px;color:#2c2e7b}}
+    .k{{font-family:'RobotoSlab';font-weight:500;font-size:20px;letter-spacing:.2em;
+        text-transform:uppercase;color:#ea4f79}}
+    .q{{margin-top:18px;font-family:'Athiti';font-weight:600;font-size:84px;line-height:1.04;
+        letter-spacing:-.03em}}
+    .q span{{display:block}}
+    .q em{{font-style:normal;color:#ea4f79;font-weight:700}}
+    .ft{{position:absolute;left:{pad}px;right:{pad}px;bottom:{(h - top - band) if top else 0}px}}
+    """
+    foot = "" if top else f"""<div class='foot' style='position:absolute;left:{pad}px;right:{pad}px;bottom:64px'>{MARK}<div class='note'>{note}</div></div>"""
+    return page(f"""<img class='band' src='file://{img}'>
+      <div class='txt'><div class='k'>{kicker}</div>
+      <div class='q'>{''.join(f'<span>{x}</span>' for x in lines)}</div></div>{foot}""",
+                css, w, h)

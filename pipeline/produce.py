@@ -9,6 +9,7 @@ also the filename that ends up in the media repository.
 import json, sys, pathlib, shutil
 from playwright.sync_api import sync_playwright
 import concepts as C
+import illu
 from anim import render_clip, encode, HTML, OUT, FPS
 
 HERE = pathlib.Path(__file__).parent
@@ -140,9 +141,14 @@ def build(browser, p):
     if concept == "vast":
         n = 1 + len(p["slides"])
         out = [shot(browser, f"{pid}__1", C.vast_cover(p["kicker"], p["lines"], p["theme"]), FEED)]
-        for k, (num, title, body) in enumerate(p["slides"]):
-            out.append(shot(browser, f"{pid}__{k+2}",
-                            C.vast_slide(num, title, body, f"{k+2} / {n}"), FEED))
+        for k, sl in enumerate(p["slides"]):
+            num, title, body = sl[:3]
+            if len(sl) > 3:
+                img, _ = illu.in_vak(sl[3], FEED[0], 700)
+                html = C.vast_slide_beeld(num, title, body, img, f"{k+2} / {n}")
+            else:
+                html = C.vast_slide(num, title, body, f"{k+2} / {n}")
+            out.append(shot(browser, f"{pid}__{k+2}", html, FEED))
         return out
 
     if concept == "uit_de_dm":

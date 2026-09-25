@@ -87,10 +87,12 @@ VAST = [
    ("1", "<em>Geregistreerd</em>",
     "MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het "
     "register van online aanbieders van het ministerie van VWS, in de categorie die "
-    "receptgeneesmiddelen mag leveren."),
+    "receptgeneesmiddelen mag leveren.",
+    "201905151830-Mijn-pil-visuals_Apotheek - green.png"),
    ("2", "Elke bestelling <em>gecontroleerd</em>",
     "Een apothekersassistente stelt je bestelling samen. Daarna controleert de apotheker alles "
-    "en tekent af. Pas dan gaat je pakket de deur uit."),
+    "en tekent af. Pas dan gaat je pakket de deur uit.",
+    "201905151830-Mijn-pil-visuals_Verificatie akkoord - orange.png"),
   ],
   "caption": ("Wie zit er eigenlijk achter @mijnpil.nu? Een echte, geregistreerde apotheek. "
    "MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het register "
@@ -107,13 +109,16 @@ VAST = [
   "slides": [
    ("1", "Je hebt al <em>een recept</em>",
     "Wij schrijven geen anticonceptie voor. Je bestelt wat je al gebruikt, of waarvoor je al "
-    "een recept hebt."),
+    "een recept hebt.",
+    "201905151830-Mijn-pil-visuals_Recept - red.png"),
    ("2", "De eerste keer: <em>een foto</em>",
     "Bij je eerste bestelling upload je een foto van je recept, of van een doosje met "
-    "apotheeketiket. De apotheker controleert dat."),
+    "apotheeketiket. De apotheker controleert dat.",
+    "201905151830-Mijn-pil-visuals_Verification foto 1 - purple.png"),
    ("3", "Daarna: gewoon <em>nabestellen</em>",
     "Bij een volgende bestelling hoef je niets opnieuw aan te leveren. Liever niet zelf "
-    "opletten? Laat je bestelling dan automatisch herhalen."),
+    "opletten? Laat je bestelling dan automatisch herhalen.",
+    "201905151830-Mijn-pil-visuals_Verification foto 2 - green.png"),
   ],
   "caption": ("Hoe werkt bestellen bij MijnPil.nu? In het kort: je bestelt de anticonceptie die je "
    "al gebruikt, en wij bezorgen het.\n\n"
@@ -130,12 +135,15 @@ VAST = [
   "slides": [
    ("1", "<em>Uitleg</em>",
     "Op maandag, woensdag en vrijdag: heldere uitleg over anticonceptie, je cyclus en je "
-    "intieme gezondheid. Zonder schaamte en zonder vakjargon."),
+    "intieme gezondheid. Zonder schaamte en zonder vakjargon.",
+    "Vraag-vrouw.png"),
    ("2", "<em>Onder ons</em>",
     "Op dinsdag, donderdag en zaterdag: de dingen die iedere vrouw herkent. Om door te sturen "
-    "naar wie het ook overkomt."),
+    "naar wie het ook overkomt.",
+    "Blije-vrouwen.png"),
    ("3", "#vrouwen<em>onderelkaar</em>",
-    "Post je zelf iets herkenbaars? Gebruik de hashtag. De leukste delen we in onze stories."),
+    "Post je zelf iets herkenbaars? Gebruik de hashtag. De leukste delen we in onze stories.",
+    "Vriendschap verschillende vrouwen.png"),
   ],
   "caption": ("Nieuw hier? Welkom. Op dit account vind je twee soorten posts: uitleg over "
    "anticonceptie en je cyclus waar je echt iets aan hebt, en posts voor als je denkt: dit ben ik. "
