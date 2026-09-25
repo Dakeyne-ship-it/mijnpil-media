@@ -247,6 +247,8 @@ def anatomie(variant="strip28", w=1080, h=1350):
 # Each returns (html, duration_seconds).
 
 # Style A, "Editorial poster" in motion: lines rise in, arc field drifts.
+# Story-veilig: de kicker staat direct boven de vraag, niet linksboven, want daar
+# legt Instagram de naam van de afzender en de voortgangsbalk over een story.
 def de_vraag_v(kicker, lines, note="het antwoord staat in de caption",
                field="var(--mint)", w=1080, h=1920):
     css = f"""
@@ -258,7 +260,7 @@ def de_vraag_v(kicker, lines, note="het antwoord staat in de caption",
     .arcs g:nth-of-type(2){{animation:spin 44s linear infinite reverse}}
     .arcs g:nth-of-type(3){{animation:spin 78s linear infinite}}
     .k{{color:var(--pink)}}
-    .rule{{width:220px;height:4px;background:var(--pink);margin-top:20px;
+    .rule{{width:220px;height:4px;background:var(--pink);margin:20px 0 44px;
       transform-origin:left;animation:wipe .6s .18s}}
     .q{{font-family:'Athiti';font-size:112px;font-weight:600;line-height:1.04;
         letter-spacing:-.03em}}
@@ -282,9 +284,8 @@ def de_vraag_v(kicker, lines, note="het antwoord staat in de caption",
         arcs += f"<g class='anim'>{ring}</g>"
     html = page(f"""<div class='stage'>
       <svg class='arcs anim' width='680' height='680'>{arcs}</svg>
-      <div class='head'><div class='k kicker anim'>{kicker}</div>
-        <div class='rule anim'></div></div>
-      <div class='mid'><div class='q'>{ls}</div></div>
+      <div class='mid'><div class='k kicker anim'>{kicker}</div>
+        <div class='rule anim'></div><div class='q'>{ls}</div></div>
       <div class='foot'>{MARK.replace("mark'","mark anim'")}
         <div class='note anim'>{note}</div></div>
     </div>""", css, w, h)

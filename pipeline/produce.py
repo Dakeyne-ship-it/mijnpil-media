@@ -136,6 +136,7 @@ def build(browser, p):
                                                   w=FEED[0], h=FEED[1]), FEED),
                 clip(browser, pid, f"{pid}-story",
                      [C.de_vraag_v(p["kicker"], p["lines"], field=p["field"],
+                                   note="het antwoord staat in onze nieuwste post",
                                    w=VERT[0], h=VERT[1])], VERT)]
 
     if concept == "vast":
