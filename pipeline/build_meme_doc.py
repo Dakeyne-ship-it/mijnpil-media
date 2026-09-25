@@ -67,6 +67,6 @@ for p in P:
     else:
         L.append("\nGeen eerste reactie. Deze post doet geen medische uitspraak.\n")
 
-out = HERE / "onder-ons-publiceerklaar.md"
+out = HERE.parent / "docs" / "instagram-onder-ons-publiceerklaar.md"
 out.write_text("".join(L), encoding="utf-8")
 print(out, out.stat().st_size // 1024, "kB")

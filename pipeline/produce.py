@@ -34,6 +34,12 @@ ANATOMIE_SLOT2 = {
     "pleister": ("Drie weken plakken,<br>één week <em>niet</em>.",
                  "Geen dagelijks tijdstip om te onthouden, en misselijkheid of "
                  "braken maakt niets uit voor de opname."),
+    "ring": ("Drie weken <em>in</em>,<br>één week <em>uit</em>.",
+             "Je hoeft niet elke dag iets te onthouden. Valt hij eruit, spoel hem dan af met "
+             "lauw water en doe hem binnen drie uur terug."),
+    "minipil": ("Geen <em>stopweek</em>,<br>geen pauze.",
+                "Je bloedingen kunnen daardoor onregelmatig zijn of helemaal wegblijven. Dat is "
+                "bij de minipil normaal en geen teken dat hij minder goed werkt."),
 }
 
 
@@ -160,21 +166,47 @@ def build(browser, p):
     raise ValueError(f"unknown concept: {concept}")
 
 
+KICKER = {"klare_taal": "klare taal", "uit_de_dm": "uit de dm", "de_cyclus": "de cyclus"}
+
+
+def omslag(browser, p):
+    """Reelomslag: illustratie uit de bibliotheek, titel onder een boog.
+    Overschrijft de omslag uit het laatste frame die clip() heeft gemaakt."""
+    img, bg = illu.in_vak(p["cover"]["img"], VERT[0], 900)
+    html = C.beeld_pil(img, bg, KICKER[p["concept"]], p["cover"]["lines"], vorm="boog")
+    f = HTML / f"{p['id']}-cover.html"
+    f.write_text(html, encoding="utf-8")
+    pg = browser.new_page(viewport={"width": VERT[0], "height": VERT[1]})
+    pg.goto(f"file://{f}")
+    pg.wait_for_timeout(400)
+    out = PROD / p["id"] / f"{p['id']}-cover.jpg"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    pg.screenshot(path=str(out), type="jpeg", quality=92)
+    pg.close()
+    return out
+
+
 def main():
     args = sys.argv[1:]
     posts = QUEUE["posts"]
     if "--until" in args:
         cut = args[args.index("--until") + 1]
         want = [p for p in posts if p["date"] <= cut]
-    elif args:
+    elif [a for a in args if not a.startswith("--")]:
         want = [p for p in posts if p["id"] in args]
     else:
         want = posts
 
     with sync_playwright() as pw:
         b = pw.chromium.launch()
+        alleen_omslag = "--omslag" in args
         for p in want:
-            paths = build(b, p)
+            if alleen_omslag:
+                paths = [omslag(b, p)] if p.get("cover") else []
+            else:
+                paths = build(b, p)
+                if p.get("cover"):
+                    paths.append(omslag(b, p))
             print(f"{p['id']:8s} {p['concept']:12s} {p['format']:9s} "
                   f"{p['subject']}")
             for path in paths:

@@ -16,6 +16,7 @@ HERE = pathlib.Path(__file__).parent
 sys.path.insert(0, str(HERE))
 from memes_source import POSTS
 from inhakers import INHAKERS, VAST
+import illu
 
 DAYS = {1: "di 20:00", 3: "do 20:00", 5: "za 11:00"}
 STANDING = ["#vrouwenonderelkaar", "#mijnpilnu"]
@@ -47,7 +48,14 @@ BOTS = {
     "2026-10-19": {"Herinneringen", "Pil kwijt of vergeten"},
     "2026-10-26": {"Pil kwijt of vergeten"},
     "2026-11-02": {"Hormonen en humeur", "Stopweek"},
-    "2026-12-07": {"Stopweek"},
+    "2026-11-09": {"Pil kwijt of vergeten"},
+    "2026-11-23": {"Menstruatie dagelijks"},
+    "2026-11-30": {"Hormonen en humeur"},
+    "2026-12-07": {"Stopweek", "Op reis"},
+    "2026-12-14": {"Menstruatie dagelijks"},
+    "2026-12-21": {"Hormonen en humeur", "Herinneringen"},
+    "2026-12-28": {"Krampen", "Tampons en cup"},
+    "2027-01-04": {"Tampons en cup"},
 }
 
 UITLEG_KLEUR = {"klare_taal": "indigo", "mythe_feit": "zalm", "anatomie": "papier",
@@ -55,6 +63,17 @@ UITLEG_KLEUR = {"klare_taal": "indigo", "mythe_feit": "zalm", "anatomie": "papie
 VELD = {"var(--mint)": "mint", "var(--peach)": "perzik", "var(--sky)": "lichtblauw",
         "var(--blush)": "zalm"}
 PALET = ["roze", "indigo", "lavendel", "perzik"]
+
+
+FAMILIE = {"roze": (234, 79, 121), "indigo": (44, 46, 123), "lavendel": (158, 157, 206),
+           "perzik": (249, 210, 184), "mint": (207, 234, 229), "zalm": (249, 193, 183),
+           "lichtblauw": (212, 239, 249), "papier": (254, 245, 255)}
+
+
+def familie(hexkleur):
+    """Dichtstbijzijnde merkkleur voor de achtergrond van een illustratie."""
+    r, g, b = (int(hexkleur[i:i + 2], 16) for i in (1, 3, 5))
+    return min(FAMILIE, key=lambda k: sum((a - c) ** 2 for a, c in zip(FAMILIE[k], (r, g, b))))
 
 
 def slots(start, n):
@@ -108,8 +127,12 @@ def main():
     uitleg = json.loads((HERE / "queue.json").read_text(encoding="utf-8"))["posts"]
     reeks = []
     for p in uitleg:
-        c = (VELD.get(p.get("field"), "mint") if p["concept"] == "de_vraag"
-             else UITLEG_KLEUR[p["concept"]])
+        if p.get("cover"):
+            c = familie(illu.in_vak(p["cover"]["img"], 1080, 900)[1])
+        elif p["concept"] == "de_vraag":
+            c = VELD.get(p.get("field"), "mint")
+        else:
+            c = UITLEG_KLEUR[p["concept"]]
         reeks.append((p["date"], 0, p["id"], c))
     reeks += [(p["date"], 1, p["id"], p["theme"]) for p in LIVE]
     for d, pid in plan:
@@ -124,8 +147,11 @@ def main():
     for i, c in enumerate(kleur):
         if c is not None:
             continue
-        buren = {kleur[j] for j in (i - 1, i - 3, i + 1, i + 3, i - 6) if 0 <= j < len(kleur)}
-        keus = [x for x in PALET if x not in buren] or PALET
+        buren = {kleur[j] for j in (i - 1, i - 2, i - 3, i + 1, i + 2, i + 3, i - 6)
+                 if 0 <= j < len(kleur)}
+        vorige = [kleur[j] for j in range(i) if ids[j].startswith("m") and kleur[j]][-1:]
+        keus = ([x for x in PALET if x not in buren and x not in vorige]
+                or [x for x in PALET if x not in vorige] or PALET)
         keus.sort(key=lambda x: (gebruikt[x], PALET.index(x)))
         kleur[i] = keus[0]
         gebruikt[keus[0]] += 1

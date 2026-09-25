@@ -1,43 +1,44 @@
-# Publicatiepijplijn
+# Publicatiepijplijn Instagram
 
-Rendert één post uit `queue.json`, zet het beeld op de publieke host, en print
-wat er gepubliceerd moet worden.
+Alles wordt vooraf gerenderd en op de beeldhost gezet. De geplande taken
+renderen niets: ze lezen alleen de publicatiedocumenten in `docs/` en
+publiceren via Windsor.
 
-## Een run
+## Bronnen
 
-    export MIJNPIL_GH_TOKEN=<token uit claude/instagram-toegang-en-beeldhost.md>
-    python3 pipeline/run.py
+    queue.json            uitlegpijler (ma, wo, vr), met per reel een omslag
+    uitleg_batch2.py      tekst van uitlegbatch 2 (9 nov t/m 15 jan)
+    memes_source.py       de regels van Onder ons
+    inhakers.py           inhakers en de drie vast te pinnen posts
+    build_meme_queue.py   bouwt queue-memes.json: volgorde op thema, kleur op rasterpositie
+    queue-memes.json      di, do, za: memes, inhakers en vastgezette posts
 
-Zonder argumenten pakt hij de post van vandaag (Europe/Amsterdam). Staat er
-niets voor vandaag in de queue, dan stopt hij met "NO POST TODAY".
+## Beeld
 
-    python3 pipeline/run.py --date 2026-09-14      # een specifieke dag
-    python3 pipeline/run.py --date 2026-09-14 --dry-run   # renderen, niet pushen
+    base.py        paginashell: merkpalet, Athiti en Roboto Slab
+    concepts.py    alle sjablonen
+    illu.py        bibliotheekillustraties klaarmaken (lavendel omzetten, vlak doortrekken)
+    anim.py        animatie naar frames naar MP4
+    produce.py     queue-item naar afgewerkte bestanden in out/production/
 
-## Wat er uit komt
+    python3 produce.py w09-ma m19          # losse posts
+    python3 produce.py --omslag w05-ma     # alleen de reelomslag opnieuw
 
-Tussen `BEGIN PUBLISH` en `END PUBLISH` staat een JSON-blok met de post-id, de
-publieke URL's, de caption inclusief hashtags, en de disclaimer die als eerste
-reactie onder de post hoort. De aanroepende sessie publiceert dat via Windsor,
-want daar is een MCP-tool voor nodig die dit script niet kan bereiken.
+## Documenten
 
-**Wacht na de push ongeveer 100 seconden** voordat je publiceert. GitHub Pages
-moet eerst opnieuw bouwen, anders haalt Instagram een URL op die nog niet
-bestaat.
+    build_uitleg_doc.py   -> docs/instagram-publiceerklaar-week-1-2.md
+    build_meme_doc.py     -> docs/instagram-onder-ons-publiceerklaar.md
 
-## Benodigdheden
+## Na een wijziging
 
-Python met Playwright en Chromium, plus ffmpeg. Beide staan standaard in de
-werkomgeving. De lettertypen zitten in `fonts/`, dus er is geen npm nodig.
+1. Bron aanpassen, `build_meme_queue.py` draaien als de memeslots veranderen.
+2. `produce.py` voor de betrokken posts, bestanden naar `ig/<jaar>/<maand>/`.
+3. Beide documenten opnieuw bouwen, committen en pushen.
 
-## Bestanden
+Pushen gaat met het token als header, zie `claude/instagram-toegang-en-beeldhost.md`.
+Wacht na een push ongeveer 100 seconden voordat Instagram een nieuw bestand ophaalt.
 
-    base.py       paginashell: merkpalet, Athiti en Roboto Slab, animatiebasis
-    concepts.py   de zes beeldconcepten
-    anim.py       animatie naar frames naar MP4
-    produce.py    queue-item naar afgewerkte bestanden
-    run.py        één run: renderen, pushen, printen wat er gepubliceerd wordt
-    queue.json    de contentqueue
+## Tempo
 
-`REST` in `concepts.py` bepaalt hoelang een scherm stil blijft staan nadat het
-laatste element is ingekomen. Staat op 1,5 seconde.
+`REST` in `concepts.py`, nu 1,0 seconde, bepaalt hoe lang een scherm stil staat
+nadat het laatste element is ingekomen.

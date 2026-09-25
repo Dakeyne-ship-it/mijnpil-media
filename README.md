@@ -8,8 +8,15 @@ URL's.
 
 ## Structuur
 
-    ig/<jaar>/<maand>/<bestandsnaam>.jpg    feed en carrousel, 1080 x 1350
-    ig/<jaar>/<maand>/<bestandsnaam>.mp4    reels en stories, 1080 x 1920
+    docs/                   de publicatiedocumenten die de geplande taken lezen,
+                            plus het overzicht van hoe alles draait
+    ig/<jaar>/<maand>/      gerenderd beeld: .jpg voor feed en carrousel (1080 x 1350),
+                            .mp4 voor reels en stories (1080 x 1920), -cover.jpg voor reelomslagen
+    library/illustraties/   bronillustraties in de huisstijl, voor nieuwe posts
+    pipeline/               de code en bronnen waarmee alles gemaakt wordt
+    gbp/                    beeld voor Google Bedrijfsprofiel
+
+In `ig/` staat alleen wat in een van de twee publicatiedocumenten voorkomt.
 
 ## Let op
 

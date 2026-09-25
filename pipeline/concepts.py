@@ -219,6 +219,43 @@ ANATOMIE_PLATES = {
 }
 
 
+def _plate_ring():
+    # op schaal: 110 px = 1 cm, buitendiameter 5,4 cm, dikte 4 mm
+    CX, CY, RO, T = 330, 360, 297, 44
+    r = RO - T // 2
+    d = (f"<circle cx='{CX}' cy='{CY}' r='{r}' fill='none' stroke='#2c2e7b' stroke-width='{T}'/>"
+         f"<circle cx='{CX}' cy='{CY}' r='{r}' fill='none' stroke='#fef5ff' stroke-width='2' "
+         f"opacity='.35'/>")
+    DY = CY + RO + 40
+    d += (f"<path d='M {CX-RO} {DY} L {CX+RO} {DY}' stroke='#ea4f79' stroke-width='2'/>"
+          f"<path d='M {CX-RO} {DY-13} L {CX-RO} {DY+13}' stroke='#ea4f79' stroke-width='2'/>"
+          f"<path d='M {CX+RO} {DY-13} L {CX+RO} {DY+13}' stroke='#ea4f79' stroke-width='2'/>"
+          f"<rect x='{CX-80}' y='{DY-22}' width='160' height='44' fill='#fef5ff'/>"
+          f"<text class='lbl' x='{CX}' y='{DY+10}' text-anchor='middle' fill='#ea4f79'>5,4 cm</text>")
+    c = (_callout(1, f"M {CX+RO} {CY-60} L 800 {CY-60} L 800 231", (800, 212), 660,
+                  "Zacht en buigzaam", ["je brengt 'm zelf in,", "net als een tampon"], "above")
+         + _callout(2, f"M {CX+RO-30} {CY+120} L 800 {CY+120} L 800 541", (800, 560), 660,
+                    "3 weken in", ["daarna een week zonder,", "dan komt de bloeding"], "below"))
+    return "De ring,<br>op ware grootte", 928, 760, d + c
+
+
+def _plate_minipil():
+    pills = ""
+    for i in range(28):
+        col, row = i % 7, i // 7
+        cx, cy = 66 + col * 84, 232 + row * 84
+        pills += f"<circle cx='{cx}' cy='{cy}' r='29' fill='#2c2e7b'/>"
+    c = (_callout(1, "M 596 232 L 700 232 L 700 150", (700, 131), 596,
+                  "28 hormoondagen", ["elke dag, zonder pauze"], "above")
+         + _callout(2, "M 596 484 L 700 484 L 700 566", (700, 585), 596,
+                    "Geen stopweek", ["na de laatste pil begin je",
+                                      "direct aan de volgende strip"], "below"))
+    return "De minipil,<br>28 dagen door", 928, 760, pills + c
+
+
+ANATOMIE_PLATES.update({"ring": _plate_ring, "minipil": _plate_minipil})
+
+
 def anatomie(variant="strip28", w=1080, h=1350):
     title, sw, sh, inner = ANATOMIE_PLATES[variant]()
     css = """
@@ -855,24 +892,29 @@ def vast_slide_beeld(num, title, body, img, n="", w=1080, h=1350, band=700):
       <div class='foot'>{MARK}<div class='note'>{n}</div></div></div>""", css, w, h)
 
 
-def beeld_titel(img, kicker, lines, w=1080, h=1350, top=0, band=820, pad=84, note=""):
-    """Illustratie als omslag: beeld boven, titel eronder op een licht vlak.
-    Voor slide 1 van een carrousel (4:5) en als reelomslag (9:16, dan top en
-    band zo kiezen dat alles binnen de 3:4-uitsnede van het raster valt)."""
+def beeld_pil(img, bg, kicker, lines, vorm="boog", w=1080, h=1920, top=250, band=900):
+    """Reelomslag: illustratie op een doorlopend vlak, de titel onder een grote witte
+    boog, naar de ronde vlakken op de website. Alles binnen de 3:4-uitsnede van het
+    raster (y 240 tot 1680). Gekozen op 25 september 2026."""
+    d = 2000
+    # de boog begint pas onder de illustratie, zodat het hele figuur zichtbaar blijft
+    shape = f""".boog{{position:absolute;left:{(w - d)//2}px;top:{top + band + 6}px;width:{d}px;
+        height:{d}px;border-radius:50%;background:#fef5ff}}
+    .pil{{position:absolute;left:90px;right:90px;top:{top + band + 50}px;height:{1680 - top - band - 70}px;display:flex;
+        flex-direction:column;align-items:center;justify-content:center;text-align:center}}"""
     css = f"""
-    body{{background:#fef5ff}}
+    body{{background:{bg}}}
     .band{{position:absolute;left:0;top:{top}px;width:{w}px;height:{band}px}}
-    .txt{{position:absolute;left:{pad}px;right:{pad}px;top:{top + band + 56}px;color:#2c2e7b}}
-    .k{{font-family:'RobotoSlab';font-weight:500;font-size:20px;letter-spacing:.2em;
-        text-transform:uppercase;color:#ea4f79}}
-    .q{{margin-top:18px;font-family:'Athiti';font-weight:600;font-size:84px;line-height:1.04;
-        letter-spacing:-.03em}}
+    {shape}
+    .k{{font-family:'RobotoSlab';font-weight:500;font-size:22px;letter-spacing:.22em;
+        text-transform:uppercase;color:#fef5ff;background:#ea4f79;border-radius:999px;
+        padding:10px 26px 10px 30px}}
+    .q{{margin-top:26px;font-family:'Athiti';font-weight:600;font-size:76px;line-height:1.04;
+        letter-spacing:-.03em;color:#2c2e7b}}
     .q span{{display:block}}
     .q em{{font-style:normal;color:#ea4f79;font-weight:700}}
-    .ft{{position:absolute;left:{pad}px;right:{pad}px;bottom:{(h - top - band) if top else 0}px}}
     """
-    foot = "" if top else f"""<div class='foot' style='position:absolute;left:{pad}px;right:{pad}px;bottom:64px'>{MARK}<div class='note'>{note}</div></div>"""
-    return page(f"""<img class='band' src='file://{img}'>
-      <div class='txt'><div class='k'>{kicker}</div>
-      <div class='q'>{''.join(f'<span>{x}</span>' for x in lines)}</div></div>{foot}""",
-                css, w, h)
+    extra = "<div class='boog'></div>"
+    return page(f"""<img class='band' src='file://{img}'>{extra}
+      <div class='pil'><div class='k'>{kicker}</div>
+      <div class='q'>{''.join(f'<span>{x}</span>' for x in lines)}</div></div>""", css, w, h)

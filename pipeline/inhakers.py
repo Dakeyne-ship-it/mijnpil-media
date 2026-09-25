@@ -84,19 +84,19 @@ VAST = [
   "lines": ["Een echte apotheek.", "Alleen dan <em>online</em>."],
   "subject": "Vastgezet 1: wie we zijn",
   "slides": [
-   ("1", "<em>Geregistreerd</em>",
-    "MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het "
-    "register van online aanbieders van het ministerie van VWS, in de categorie die "
-    "receptgeneesmiddelen mag leveren.",
+   ("1", "Een apotheek <em>in Hardenberg</em>",
+    "MijnPil.nu is een echte apotheek, gevestigd in Hardenberg. We staan in het register van "
+    "online aanbieders van het ministerie van VWS, in de categorie die receptgeneesmiddelen "
+    "mag leveren.",
     "201905151830-Mijn-pil-visuals_Apotheek - green.png"),
    ("2", "Elke bestelling <em>gecontroleerd</em>",
     "Een apothekersassistente stelt je bestelling samen. Daarna controleert de apotheker alles "
     "en tekent af. Pas dan gaat je pakket de deur uit.",
     "201905151830-Mijn-pil-visuals_Verificatie akkoord - orange.png"),
   ],
-  "caption": ("Wie zit er eigenlijk achter @mijnpil.nu? Een echte, geregistreerde apotheek. "
-   "MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het register "
-   "van online aanbieders van het ministerie van VWS.\n\n"
+  "caption": ("Wie zit er eigenlijk achter @mijnpil.nu? Een echte, geregistreerde apotheek, "
+   "gevestigd in Hardenberg. We staan in het register van online aanbieders van het ministerie "
+   "van VWS.\n\n"
    "Online bestellen betekent bij ons niet dat er minder gecontroleerd wordt. Elke bestelling "
    "wordt samengesteld door een apothekersassistente en gecontroleerd door de apotheker.\n\n"
    "Op dit account vind je heldere uitleg over anticonceptie, je cyclus en alles eromheen. "
@@ -115,42 +115,58 @@ VAST = [
     "Bij je eerste bestelling upload je een foto van je recept, of van een doosje met "
     "apotheeketiket. De apotheker controleert dat.",
     "201905151830-Mijn-pil-visuals_Verification foto 1 - purple.png"),
-   ("3", "Daarna: gewoon <em>nabestellen</em>",
+   ("3", "Snel en <em>discreet</em>",
+    "Op werkdagen voor 15:00 besteld, dan versturen we het dezelfde dag. Altijd discreet "
+    "verzonden.",
+    "Pakketje-bezorgen_1-8.png"),
+   ("4", "Daarna: gewoon <em>nabestellen</em>",
     "Bij een volgende bestelling hoef je niets opnieuw aan te leveren. Liever niet zelf "
     "opletten? Laat je bestelling dan automatisch herhalen.",
     "201905151830-Mijn-pil-visuals_Verification foto 2 - green.png"),
   ],
   "caption": ("Hoe werkt bestellen bij MijnPil.nu? In het kort: je bestelt de anticonceptie die je "
-   "al gebruikt, en wij bezorgen het.\n\n"
+   "al gebruikt, en wij sturen het naar je toe.\n\n"
    "Wij schrijven zelf niets voor. Bij je eerste bestelling vragen we een foto van je recept, of "
    "van een doosje met apotheeketiket, en die controleert de apotheker. Daarna kun je gewoon "
-   "nabestellen zonder opnieuw iets aan te leveren.\n\n"
-   "Liever niet elke keer zelf opletten? Je kunt je bestelling ook automatisch laten herhalen.\n\n"
+   "nabestellen zonder opnieuw iets aan te leveren, of je bestelling automatisch laten herhalen.\n\n"
+   "Op werkdagen voor 15:00 besteld is dezelfde dag verstuurd, en altijd discreet verzonden.\n\n"
    "Alles begint via de link in onze bio."),
   "tags": ["#anticonceptie", "#depil", "#apotheek"] + ST, "first_comment": None},
 
  {"id": "p3", "date": "2026-10-13", "theme": "lavendel", "kicker": "welkom",
-  "lines": ["Onder ons,", "over <em>anticonceptie</em>", "en je cyclus."],
-  "subject": "Vastgezet 3: wat je hier vindt",
+  "lines": ["Van je eerste pil", "tot de <em>overgang</em>."],
+  "subject": "Vastgezet 3: waar we het hier over hebben",
   "slides": [
-   ("1", "<em>Uitleg</em>",
-    "Op maandag, woensdag en vrijdag: heldere uitleg over anticonceptie, je cyclus en je "
-    "intieme gezondheid. Zonder schaamte en zonder vakjargon.",
-    "Vraag-vrouw.png"),
-   ("2", "<em>Onder ons</em>",
-    "Op dinsdag, donderdag en zaterdag: de dingen die iedere vrouw herkent. Om door te sturen "
-    "naar wie het ook overkomt.",
-    "Blije-vrouwen.png"),
-   ("3", "#vrouwen<em>onderelkaar</em>",
-    "Post je zelf iets herkenbaars? Gebruik de hashtag. De leukste delen we in onze stories.",
-    "Vriendschap verschillende vrouwen.png"),
+   ("1", "<em>Anticonceptie</em>",
+    "De pil, de ring, de pleister, het spiraaltje en de prik: wat het is, hoe het werkt en wat "
+    "je kunt verwachten.",
+    "Ring - 2.png"),
+   ("2", "Hormoonvrije <em>anticonceptie</em>",
+    "Liever zonder hormonen? Het koperspiraaltje en condooms, en wat je moet weten als je "
+    "zonder hormonen wilt kiezen.",
+    "Koppel-non-binair_1-8.png"),
+   ("3", "<em>Menstruatie</em>",
+    "Krampen, doorlekken, je cyclus bijhouden en wat wel en niet normaal is. De dingen die je "
+    "elke maand meemaakt.",
+    "Ongesteldheidsklachten-8.png"),
+   ("4", "Intieme <em>gezondheid</em>",
+    "Een schimmelinfectie, droogheid of een gevoelige huid. Zonder schaamte, want je bent echt "
+    "niet de enige.",
+    "Self-care-kleur-8.png"),
+   ("5", "Zwanger worden <em>en overgang</em>",
+    "Stoppen met de pil, je vruchtbare dagen en later de overgang. Wat je nodig hebt verandert, "
+    "en wij bewegen mee.",
+    "Sterke-vrouw-8.png"),
   ],
-  "caption": ("Nieuw hier? Welkom. Op dit account vind je twee soorten posts: uitleg over "
-   "anticonceptie en je cyclus waar je echt iets aan hebt, en posts voor als je denkt: dit ben ik. "
-   "Die laatste zijn gemaakt om door te sturen.\n\n"
+  "caption": ("Nieuw hier? Welkom bij MijnPil.nu. Hier vind je uitleg over alles wat met je "
+   "cyclus en je hormonen te maken heeft, van je eerste pil tot de overgang: anticonceptie, "
+   "hormoonvrije anticonceptie, menstruatie, intieme gezondheid, zwanger worden en de overgang.\n\n"
+   "Op maandag, woensdag en vrijdag delen we uitleg waar je echt iets aan hebt. Op dinsdag, "
+   "donderdag en zaterdag posts om naar je vriendinnen door te sturen, want sommige dingen "
+   "herkent iedere vrouw.\n\n"
    "Wat we hier delen is algemene informatie en geen medisch advies. Heb je een vraag over je "
    "eigen situatie? Je huisarts is daar de beste plek voor.\n\n"
-   "Gebruik #vrouwenonderelkaar als je zelf iets herkenbaars post. De leukste delen we in onze "
+   "Post je zelf iets herkenbaars? Gebruik #vrouwenonderelkaar, de leukste delen we in onze "
    "stories."),
   "tags": ["#anticonceptie", "#cyclus"] + ST, "first_comment": None},
 ]
