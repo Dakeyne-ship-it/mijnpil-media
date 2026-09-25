@@ -104,6 +104,14 @@ Maandag Klare Taal, woensdag Mythe of feit of Anatomie, vrijdag De Vraag of Uit 
 Anticonceptie blijft de kern, met uitstapjes naar cyclus, intieme gezondheid en
 kinderwens. Nieuwe Anatomie-platen: de ring en de minipil.
 
+## Google Bedrijfsprofiel
+
+Om de week op maandag een post, tot en met 15 maart 2027. Tekst, knop en link staan in
+`pipeline/gbp_posts.json`, het beeld in `gbp/<jaar>/<maand>/<datum>.jpg`. Posts met een
+illustratie uit de bibliotheek worden gemaakt met `pipeline/gbp_illu.py`, de rest met de
+pictogrammen in `pipeline/gbp_object.py`. Geen posts over afzonderlijke receptgeneesmiddelen
+met een winkelknop: dat komt te dicht bij publieksreclame.
+
 ## Wat er wanneer moet gebeuren
 
 **Eind november:** de cijfers van de eerste twee maanden bekijken, per categorie. Wat

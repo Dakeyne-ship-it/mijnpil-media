@@ -10,6 +10,8 @@ nothing that makes a prescription medicine the subject of the picture: where a
 method has to be referenced, the picture shows the rhythm of using it (a daily
 dot, a weekly strip) rather than the medicine itself.
 
+De posts met een illustratie uit de bibliotheek staan in gbp_illu.py.
+
     python3 gbp_object.py              render all
     python3 gbp_object.py pakket cup   render some
 """
@@ -77,86 +79,6 @@ def keurmerk():
 """, "een echte apotheek")
 
 
-def zelfbetalen():
-    """Bank card and receipt."""
-    return frame(PEACH, f"""
-  <rect x="80" y="222" width="382" height="248" rx="26" fill="{INDIGO}"/>
-  <rect x="80" y="284" width="382" height="46" fill="{PAPER}"/>
-  <rect x="122" y="378" width="148" height="30" rx="15" fill="{PAPER}"
-        opacity=".6"/>
-  <g transform="rotate(9 470 250)">
-    <path d="M386 104 h190 v252 l-31 -22 l-32 22 l-32 -22 l-32 22 l-32 -22
-             l-31 22 Z" fill="{PAPER}" stroke="{INDIGO}" stroke-width="11"
-          stroke-linejoin="round"/>
-    <rect x="416" y="154" width="130" height="17" rx="9" fill="{INDIGO}"/>
-    <rect x="416" y="198" width="94" height="17" rx="9" fill="{INDIGO}"
-          opacity=".45"/>
-    <rect x="416" y="242" width="130" height="17" rx="9" fill="{PINK}"/>
-  </g>
-""", "jij betaalt zelf")
-
-
-def controle():
-    """Magnifier over a form."""
-    return frame(LILAC, f"""
-  <rect x="104" y="88" width="330" height="424" rx="22" fill="{PAPER}"
-        stroke="{INDIGO}" stroke-width="13"/>
-  <rect x="156" y="152" width="226" height="21" rx="11" fill="{INDIGO}"
-        opacity=".5"/>
-  <rect x="156" y="208" width="160" height="21" rx="11" fill="{INDIGO}"
-        opacity=".5"/>
-  <rect x="156" y="264" width="204" height="21" rx="11" fill="{INDIGO}"
-        opacity=".5"/>
-  <circle cx="386" cy="380" r="126" fill="{SKY}" fill-opacity=".7"
-          stroke="{INDIGO}" stroke-width="17"/>
-  <path d="M478 472 L556 550" stroke="{INDIGO}" stroke-width="32"
-        stroke-linecap="round"/>
-  <path d="M344 380 l30 32 l58 -70" fill="none" stroke="{PINK}"
-        stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-""", "altijd gecontroleerd")
-
-
-# --------------------------------------------- blok 2: de methode is er
-
-def dagelijks():
-    """A clean circular arrow: continuous use, no stop week. No stray strokes,
-    and nothing that resembles a strip of tablets."""
-    return frame(MINT, f"""
-  <path d="M310 122 a178 178 0 1 1 -126 52" fill="none" stroke="{INDIGO}"
-        stroke-width="58" stroke-linecap="butt"/>
-  <path d="M296 40 L400 122 L296 204 Z" fill="{INDIGO}"/>
-  <circle cx="310" cy="300" r="64" fill="{PINK}"/>
-""", "geen stopweek")
-
-
-def ring():
-    """Abstract torus."""
-    return frame(BLUSH, f"""
-  <circle cx="310" cy="300" r="184" fill="none" stroke="{INDIGO}"
-          stroke-width="78"/>
-  <circle cx="310" cy="300" r="184" fill="none" stroke="{PAPER}"
-          stroke-width="16" stroke-dasharray="66 1100"
-          transform="rotate(-54 310 300)" stroke-linecap="round"/>
-""", "drie weken in")
-
-
-def week():
-    """Four weeks as four plain bars: three on, one off. No dots, because a
-    grid of dots in rounded bars reads as a strip of tablets."""
-    rows = ""
-    for r in range(4):
-        y = 178 + r * 96
-        on = r < 3
-        rows += (f"<rect x='68' y='{y}' width='484' height='68' rx='34' "
-                 f"fill='{INDIGO if on else PAPER}' stroke='{INDIGO}' "
-                 f"stroke-width='13'/>")
-        if on:
-            rows += (f"<path d='M118 {y + 34} l22 24 l40 -50' fill='none' "
-                     f"stroke='{PAPER}' stroke-width='15' "
-                     f"stroke-linecap='round' stroke-linejoin='round'/>")
-    return frame(SKY, rows, "3 weken op, 1 af")
-
-
 def voorraad():
     """Boxes with a tick and a cross: see what is available before you order.
     Peach boxes need a field they can sit on, so this one is mint."""
@@ -205,26 +127,6 @@ def maanden():
 
 # ------------------------------------------------------ blok 3: de service
 
-def herhaal():
-    """Month grid with one day circled."""
-    cells = ""
-    for r in range(4):
-        for c in range(6):
-            cells += (f"<circle cx='{118 + c * 73}' cy='{262 + r * 66}' r='14' "
-                      f"fill='{INDIGO}' opacity='.3'/>")
-    return frame(SKY, f"""
-  <rect x="58" y="142" width="504" height="396" rx="30" fill="{PAPER}"
-        stroke="{INDIGO}" stroke-width="13"/>
-  <path d="M58 172 a30 30 0 0 1 30 -30 h444 a30 30 0 0 1 30 30 v56 H58 Z"
-        fill="{INDIGO}"/>
-  <rect x="158" y="98" width="23" height="82" rx="12" fill="{INDIGO}"/>
-  <rect x="440" y="98" width="23" height="82" rx="12" fill="{INDIGO}"/>
-  {cells}
-  <circle cx="410" cy="394" r="48" fill="{PINK}"/>
-  <circle cx="410" cy="394" r="15" fill="{PAPER}"/>
-""", "jij kiest wanneer")
-
-
 def gratis():
     """Package with a struck through price tag."""
     return frame(MINT, f"""
@@ -243,26 +145,6 @@ def gratis():
   </g>
 """, "altijd gratis")
 
-
-def klok():
-    """Clock plus an open sign."""
-    return frame(PEACH, f"""
-  <circle cx="286" cy="284" r="194" fill="{PAPER}" stroke="{INDIGO}"
-          stroke-width="17"/>
-  <circle cx="286" cy="284" r="17" fill="{INDIGO}"/>
-  <path d="M286 284 V162" stroke="{INDIGO}" stroke-width="21"
-        stroke-linecap="round"/>
-  <path d="M286 284 L372 334" stroke="{PINK}" stroke-width="21"
-        stroke-linecap="round"/>
-  <g transform="rotate(-8 456 468)">
-    <rect x="332" y="396" width="252" height="126" rx="20" fill="{INDIGO}"/>
-    <rect x="370" y="436" width="176" height="19" rx="10" fill="{PAPER}"/>
-    <rect x="370" y="474" width="114" height="19" rx="10" fill="{PINK}"/>
-  </g>
-""", "ook 's avonds")
-
-
-# ------------------------------------------- blok 4: aangrenzend assortiment
 
 def cup():
     """Menstrual cup, drawn to shape."""
@@ -297,10 +179,8 @@ def test():
 
 
 OBJECTS = {
-    "pakket": pakket, "keurmerk": keurmerk, "zelfbetalen": zelfbetalen,
-    "controle": controle, "dagelijks": dagelijks, "ring": ring, "week": week,
-    "voorraad": voorraad, "maanden": maanden, "herhaal": herhaal,
-    "gratis": gratis, "klok": klok, "cup": cup, "test": test,
+    "keurmerk": keurmerk, "pakket": pakket, "voorraad": voorraad,
+    "maanden": maanden, "gratis": gratis, "cup": cup, "test": test,
 }
 
 
