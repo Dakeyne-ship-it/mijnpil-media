@@ -2,19 +2,15 @@
   "_meta": {
     "brand": "mijnpil.nu",
     "pillar": "Onder ons",
-    "written": "2026-09-13",
+    "written": "2026-09-25",
     "rhythm": "di 20:00 · do 20:00 · za 11:00, naast de uitlegqueue op ma/wo/vr",
-    "layout": "vullend",
-    "face": "slab",
-    "anchor": "onder",
-    "border": 16,
-    "hashtag_position": "eyebrow",
     "standing_tags": [
       "#vrouwenonderelkaar",
       "#mijnpilnu"
     ],
     "disclaimer": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-    "note": "Elke post is één stille 4:5 plaat voor de feed plus dezelfde plaat bewegend in 9:16 voor Stories. De kleur roteert vast, zodat twee posts achter elkaar nooit hetzelfde vlak hebben."
+    "note": "Vanaf 26 september in stijl H, het briefje. Volgorde op thema, kleur op rasterpositie. Inhakers en de drie vast te pinnen posts staan in memeslots.",
+    "style": "briefje (richting A)"
   },
   "posts": [
     {
@@ -160,210 +156,183 @@
       "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m05-story.mp4"
     },
     {
-      "id": "m06",
-      "source_line": 6,
+      "id": "i01",
       "date": "2026-09-26",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
+      "field": "var(--peach)",
+      "kicker": "26 september · wereld anticonceptiedag",
       "lines": [
-        "<em>Je menstruatie</em>",
-        "heeft nog nooit een",
-        "vakantie overgeslagen."
+        "Past je <em>anticonceptie</em>",
+        "nog bij je leven",
+        "van nu?"
       ],
-      "subject": "Je menstruatie heeft nog nooit een vakantie overgeslagen.",
-      "caption": "Trouwer dan welke reisgenoot ook.\n\nStuur 'm door naar wie je koffer deelt.",
+      "subject": "Wereld Anticonceptiedag: past je anticonceptie nog bij je leven van nu?",
+      "caption": "Vandaag is het Wereld Anticonceptiedag. Een goed moment voor een vraag die bijna niemand zichzelf stelt: past de anticonceptie die je ooit hebt gekozen nog bij je leven van nu?\n\nVeel vrouwen gebruiken jarenlang hetzelfde middel, terwijl er in de tussentijd genoeg verandert. Momenten om er opnieuw naar te kijken:\n\nJe vergeet vaker een pil dan je zou willen.\nJe hebt klachten die je inmiddels normaal bent gaan vinden.\nJe geeft borstvoeding, of je komt richting de overgang.\nJe wilt over een tijdje zwanger worden, of juist helemaal niet meer.\n\nHerken je jezelf hierin? Bespreek het bij je volgende afspraak met je huisarts.\n\nBewaar 'm voor als je die afspraak maakt.",
       "tags": [
-        "#menstruatie",
-        "#vakantie",
-        "#cyclus",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je menstruatie heeft nog nooit een vakantie overgeslagen. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m06.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m06-story.mp4"
-    },
-    {
-      "id": "m07",
-      "source_line": 7,
-      "date": "2026-09-29",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "Het weekendje weg",
-        "stond al geboekt,",
-        "<em>de stopweek</em>",
-        "wist dat allang."
-      ],
-      "subject": "Het weekendje weg stond al geboekt, de stopweek wist dat allang.",
-      "caption": "Geboekt in maart, geregeld in juni, en toch precies die week.\n\nStuur 'm door naar wie het weekend organiseert.",
-      "tags": [
-        "#stopweek",
+        "#wereldanticonceptiedag",
         "#anticonceptie",
-        "#weekendje",
+        "#depil",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "slot": "za 11:00",
+      "concept": "inhaker",
+      "format": "image",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/i01.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/i01-story.mp4"
+    },
+    {
+      "id": "p1",
+      "date": "2026-09-29",
+      "theme": "indigo",
+      "kicker": "over ons",
+      "lines": [
+        "Een echte apotheek.",
+        "Alleen dan <em>online</em>."
+      ],
+      "subject": "Vastgezet 1: wie we zijn",
+      "slides": [
+        [
+          "1",
+          "<em>Geregistreerd</em>",
+          "MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het register van online aanbieders van het ministerie van VWS, in de categorie die receptgeneesmiddelen mag leveren."
+        ],
+        [
+          "2",
+          "Elke bestelling <em>gecontroleerd</em>",
+          "Een apothekersassistente stelt je bestelling samen. Daarna controleert de apotheker alles en tekent af. Pas dan gaat je pakket de deur uit."
+        ]
+      ],
+      "caption": "Wie zit er eigenlijk achter @mijnpil.nu? Een echte, geregistreerde apotheek. MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het register van online aanbieders van het ministerie van VWS.\n\nOnline bestellen betekent bij ons niet dat er minder gecontroleerd wordt. Elke bestelling wordt samengesteld door een apothekersassistente en gecontroleerd door de apotheker.\n\nOp dit account vind je heldere uitleg over anticonceptie, je cyclus en alles eromheen. En af en toe iets om naar je vriendinnen door te sturen.",
+      "tags": [
+        "#apotheek",
+        "#anticonceptie",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Roze vlak met de tekst: Het weekendje weg stond al geboekt, de stopweek wist dat allang. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m07.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m07-story.mp4"
+      "slot": "di 20:00",
+      "concept": "vast",
+      "format": "carousel",
+      "story": false,
+      "image_urls": [
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/p1__1.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/p1__2.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/p1__3.jpg"
+      ]
     },
     {
-      "id": "m08",
-      "source_line": 8,
+      "id": "m19",
       "date": "2026-10-01",
       "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "indigo",
+      "thema": "Tampons en cup",
+      "theme": "roze",
       "lines": [
-        "<em>Je pil</em> valt altijd",
-        "op de enige plek",
-        "waar je niet bij kan."
+        "<em>Je laatste tampon</em>",
+        "ligt altijd los",
+        "onderin je tas."
       ],
-      "subject": "Je pil valt altijd op de enige plek waar je niet bij kan.",
-      "caption": "Achter de wc, onder de kast, tussen de plint. Nooit gewoon op de grond.\n\nTag wie ook wel eens op haar knieën in de badkamer heeft gelegen.",
+      "subject": "Je laatste tampon ligt altijd los onderin je tas.",
+      "caption": "Zonder verpakking, met een kruimel erop, maar hij is er.\n\nTag wie ook altijd de reddende engel is.",
       "tags": [
-        "#depil",
-        "#anticonceptie",
+        "#menstruatie",
+        "#tampon",
         "#herkenbaar",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
-      "first_comment": "Pil echt kwijt? Bel even je apotheek, die kijkt in een minuut met je mee wat handig is. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-      "alt": "Indigo vlak met de tekst: Je pil valt altijd op de enige plek waar je niet bij kan. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
+      "first_comment": null,
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m08.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m08-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19-a-story.mp4"
     },
     {
-      "id": "m09",
-      "source_line": 9,
+      "id": "m31",
       "date": "2026-10-03",
       "slot": "za 11:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Hormonen en humeur",
       "theme": "lavendel",
       "lines": [
-        "<em>De pilstrip</em> zit altijd",
-        "in de tas die je",
-        "vandaag niet meeneemt."
+        "<em>Je huid</em> weet precies",
+        "wanneer je op de",
+        "foto moet."
       ],
-      "subject": "De pilstrip zit altijd in de tas die je vandaag niet meeneemt.",
-      "caption": "De ene tas heeft alles. Vandaag gebruik je de andere.\n\nStuur 'm door naar wie drie tassen heeft en nooit de juiste.",
+      "subject": "Je huid weet precies wanneer je op de foto moet.",
+      "caption": "Drie weken rust, en dan die ene dag.\n\nTag wie ook altijd op het verkeerde moment gefotografeerd wordt.",
       "tags": [
-        "#depil",
-        "#anticonceptie",
-        "#herkenbaar",
+        "#hormonen",
+        "#cyclus",
+        "#huid",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: De pilstrip zit altijd in de tas die je vandaag niet meeneemt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m09.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m09-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m31-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m31-a-story.mp4"
     },
     {
-      "id": "m10",
-      "source_line": 11,
+      "id": "p2",
       "date": "2026-10-06",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
       "theme": "roze",
+      "kicker": "zo werkt het",
       "lines": [
-        "<em>Je pilstrip</em> ligt thuis",
-        "precies op de plek",
-        "waar je nooit kijkt."
+        "Je anticonceptie,",
+        "<em>thuisbezorgd</em>."
       ],
-      "subject": "Je pilstrip ligt thuis precies op de plek waar je nooit kijkt.",
-      "caption": "Je hebt overal gezocht behalve daar, en daar lag hij.\n\nTag wie 'm ook altijd op de gekste plek terugvindt.",
+      "subject": "Vastgezet 2: zo werkt bestellen",
+      "slides": [
+        [
+          "1",
+          "Je hebt al <em>een recept</em>",
+          "Wij schrijven geen anticonceptie voor. Je bestelt wat je al gebruikt, of waarvoor je al een recept hebt."
+        ],
+        [
+          "2",
+          "De eerste keer: <em>een foto</em>",
+          "Bij je eerste bestelling upload je een foto van je recept, of van een doosje met apotheeketiket. De apotheker controleert dat."
+        ],
+        [
+          "3",
+          "Daarna: gewoon <em>nabestellen</em>",
+          "Bij een volgende bestelling hoef je niets opnieuw aan te leveren. Liever niet zelf opletten? Laat je bestelling dan automatisch herhalen."
+        ]
+      ],
+      "caption": "Hoe werkt bestellen bij MijnPil.nu? In het kort: je bestelt de anticonceptie die je al gebruikt, en wij bezorgen het.\n\nWij schrijven zelf niets voor. Bij je eerste bestelling vragen we een foto van je recept, of van een doosje met apotheeketiket, en die controleert de apotheker. Daarna kun je gewoon nabestellen zonder opnieuw iets aan te leveren.\n\nLiever niet elke keer zelf opletten? Je kunt je bestelling ook automatisch laten herhalen.\n\nAlles begint via de link in onze bio.",
       "tags": [
-        "#depil",
         "#anticonceptie",
-        "#herkenbaar",
+        "#depil",
+        "#apotheek",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je pilstrip ligt thuis precies op de plek waar je nooit kijkt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m10.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m10-story.mp4"
-    },
-    {
-      "id": "m11",
-      "source_line": 13,
-      "date": "2026-10-08",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "Niets is zo onzeker",
-        "als de vraag of je 'm",
-        "<em>vanochtend</em>",
-        "genomen hebt."
-      ],
-      "subject": "Niets is zo onzeker als de vraag of je 'm vanochtend genomen hebt.",
-      "caption": "Je weet het zeker. Tot je even naar de strip kijkt.\n\nStuur 'm door naar wie hier ook wel eens over twijfelt.",
-      "tags": [
-        "#depil",
-        "#pilvergeten",
-        "#anticonceptie",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": "Twijfel je of je 'm genomen hebt? Je apotheek denkt hier zo met je mee, en dat is een betere bron dan je geheugen om half twaalf 's avonds. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-      "alt": "Indigo vlak met de tekst: Niets is zo onzeker als de vraag of je 'm vanochtend genomen hebt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m11.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m11-story.mp4"
-    },
-    {
-      "id": "m12",
-      "source_line": 15,
-      "date": "2026-10-10",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>De strip</em> in je",
-        "nachtkastje is altijd",
-        "van vorige maand."
-      ],
-      "subject": "De strip in je nachtkastje is altijd van vorige maand.",
-      "caption": "Leeg, en toch ligt hij er nog steeds.\n\nTag wie haar nachtkastje ook nooit opruimt.",
-      "tags": [
-        "#depil",
-        "#anticonceptie",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: De strip in je nachtkastje is altijd van vorige maand. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m12.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m12-story.mp4"
+      "slot": "di 20:00",
+      "concept": "vast",
+      "format": "carousel",
+      "story": false,
+      "image_urls": [
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__1.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__2.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__3.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__4.jpg"
+      ]
     },
     {
       "id": "m13",
-      "source_line": 16,
-      "date": "2026-10-13",
-      "slot": "di 20:00",
+      "date": "2026-10-08",
+      "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Voorraad en herhaalrecept",
       "theme": "roze",
       "lines": [
         "Je ontdekt dat",
@@ -381,217 +350,177 @@
         "#mijnpilnu"
       ],
       "first_comment": "Praktische tip: zet een herinnering op de dag dat je aan je laatste strip begint. Dan heb je een week speling in plaats van een avond.",
-      "alt": "Roze vlak met de tekst: Je ontdekt dat je strip op is op het moment dat je 'm nodig hebt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13-a-story.mp4"
     },
     {
-      "id": "m14",
-      "source_line": 17,
+      "id": "m25",
+      "date": "2026-10-10",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Krampen",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Krampen</em> wachten",
+        "netjes tot je",
+        "in de trein zit."
+      ],
+      "subject": "Krampen wachten netjes tot je in de trein zit.",
+      "caption": "Thuis niets, perron niets, deuren dicht en daar zijn ze.\n\nTag wie ook altijd in de spits begint.",
+      "tags": [
+        "#menstruatiepijn",
+        "#krampen",
+        "#menstruatie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Krampen die je dag echt in de weg zitten horen er niet gewoon bij. Bespreek het een keer met je huisarts, er is vaak meer mogelijk dan vrouwen denken. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m25-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m25-a-story.mp4"
+    },
+    {
+      "id": "p3",
+      "date": "2026-10-13",
+      "theme": "lavendel",
+      "kicker": "welkom",
+      "lines": [
+        "Onder ons,",
+        "over <em>anticonceptie</em>",
+        "en je cyclus."
+      ],
+      "subject": "Vastgezet 3: wat je hier vindt",
+      "slides": [
+        [
+          "1",
+          "<em>Uitleg</em>",
+          "Op maandag, woensdag en vrijdag: heldere uitleg over anticonceptie, je cyclus en je intieme gezondheid. Zonder schaamte en zonder vakjargon."
+        ],
+        [
+          "2",
+          "<em>Onder ons</em>",
+          "Op dinsdag, donderdag en zaterdag: de dingen die iedere vrouw herkent. Om door te sturen naar wie het ook overkomt."
+        ],
+        [
+          "3",
+          "#vrouwen<em>onderelkaar</em>",
+          "Post je zelf iets herkenbaars? Gebruik de hashtag. De leukste delen we in onze stories."
+        ]
+      ],
+      "caption": "Nieuw hier? Welkom. Op dit account vind je twee soorten posts: uitleg over anticonceptie en je cyclus waar je echt iets aan hebt, en posts voor als je denkt: dit ben ik. Die laatste zijn gemaakt om door te sturen.\n\nWat we hier delen is algemene informatie en geen medisch advies. Heb je een vraag over je eigen situatie? Je huisarts is daar de beste plek voor.\n\nGebruik #vrouwenonderelkaar als je zelf iets herkenbaars post. De leukste delen we in onze stories.",
+      "tags": [
+        "#anticonceptie",
+        "#cyclus",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "slot": "di 20:00",
+      "concept": "vast",
+      "format": "carousel",
+      "story": false,
+      "image_urls": [
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__1.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__2.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__3.jpg",
+        "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__4.jpg"
+      ]
+    },
+    {
+      "id": "m06",
       "date": "2026-10-15",
       "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "indigo",
+      "thema": "Menstruatie dagelijks",
+      "theme": "perzik",
       "lines": [
-        "<em>Het doosje</em>",
-        "voelt vol",
-        "tot je het openmaakt."
+        "<em>Je menstruatie</em>",
+        "heeft nog nooit een",
+        "vakantie overgeslagen."
       ],
-      "subject": "Het doosje voelt vol tot je het openmaakt.",
-      "caption": "Gewicht zegt niets.\n\nTag wie ook op gevoel inschat hoeveel er nog in zit.",
+      "subject": "Je menstruatie heeft nog nooit een vakantie overgeslagen.",
+      "caption": "Trouwer dan welke reisgenoot ook.\n\nStuur 'm door naar wie je koffer deelt.",
       "tags": [
-        "#anticonceptie",
-        "#depil",
-        "#herkenbaar",
+        "#menstruatie",
+        "#vakantie",
+        "#cyclus",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Het doosje voelt vol tot je het openmaakt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m06-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m06-a-story.mp4"
     },
     {
-      "id": "m15",
-      "source_line": 18,
+      "id": "i02",
       "date": "2026-10-17",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
+      "field": "var(--sky)",
+      "kicker": "18 oktober · wereld menopauzedag",
       "lines": [
-        "<em>Je herhaalrecept</em>",
-        "valt altijd in de week",
-        "dat je het al druk hebt."
+        "Merk je de <em>overgang</em>",
+        "als je de pil",
+        "slikt?"
       ],
-      "subject": "Je herhaalrecept valt altijd in de week dat je het al druk hebt.",
-      "caption": "Nooit in die ene rustige week.\n\nStuur 'm door naar wie haar agenda ook niet meer ziet zitten.",
+      "subject": "Wereld Menopauzedag: merk je de overgang als je de pil slikt?",
+      "caption": "Morgen is het Wereld Menopauzedag. Een vraag die we vaak tegenkomen: merk je de overgang eigenlijk wel als je de pil slikt?\n\nVaak minder dan je zou verwachten. Een combinatiepil regelt je bloedingen en levert zelf hormonen, en kan daardoor klachten zoals een onregelmatige cyclus of opvliegers deels maskeren. Je kunt dus al in de overgang zitten zonder dat je het goed merkt.\n\nBen je rond de 45 of ouder en gebruik je hormonale anticonceptie? Bespreek dan met je huisarts tot wanneer je die nog nodig hebt en wat een logisch moment is om te stoppen.\n\nStuur 'm door naar wie hier ook mee bezig is.",
       "tags": [
-        "#herhaalrecept",
-        "#apotheek",
+        "#overgang",
+        "#wereldmenopauzedag",
         "#anticonceptie",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je herhaalrecept valt altijd in de week dat je het al druk hebt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
+      "first_comment": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "slot": "za 11:00",
+      "concept": "inhaker",
+      "format": "image",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m15.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m15-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i02.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i02-story.mp4"
     },
     {
-      "id": "m16",
-      "source_line": 19,
+      "id": "m36",
       "date": "2026-10-20",
       "slot": "di 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "roze",
+      "thema": "Op reis",
+      "theme": "perzik",
       "lines": [
-        "<em>Je badkamerkastje</em>",
-        "is optimistischer",
-        "over je voorraad",
-        "dan de werkelijkheid."
+        "In het vliegtuig weet",
+        "<em>je lichaam</em> precies",
+        "hoe laat het thuis is."
       ],
-      "subject": "Je badkamerkastje is optimistischer over je voorraad dan de werkelijkheid.",
-      "caption": "Vol met van alles, leeg aan het enige wat je zoekt.\n\nTag wie haar kastje ook niet durft op te ruimen.",
+      "subject": "In het vliegtuig weet je lichaam precies hoe laat het thuis is.",
+      "caption": "Jij zit in een andere tijdzone. Je lichaam niet.\n\nStuur 'm door naar wie binnenkort ver weg gaat.",
       "tags": [
-        "#herkenbaar",
-        "#vrouwengezondheid",
-        "#badkamer",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je badkamerkastje is optimistischer over je voorraad dan de werkelijkheid. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m16.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m16-story.mp4"
-    },
-    {
-      "id": "m17",
-      "source_line": 20,
-      "date": "2026-10-22",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "Je hebt nog",
-        "<em>één strip</em>,",
-        "en dat weet je pas",
-        "op zondagavond."
-      ],
-      "subject": "Je hebt nog één strip, en dat weet je pas op zondagavond.",
-      "caption": "Precies als alles dicht is.\n\nStuur 'm door naar wie dit ook op zondag ontdekt.",
-      "tags": [
-        "#depil",
-        "#apotheek",
         "#anticonceptie",
+        "#depil",
+        "#reizen",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je hebt nog één strip, en dat weet je pas op zondagavond. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
+      "first_comment": "Reis je een paar uur naar het oosten of westen? Vraag je apotheek even hoe je je inname het handigst verschuift, dan hoef je daar ter plekke niet over na te denken. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m17.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m17-story.mp4"
-    },
-    {
-      "id": "m18",
-      "source_line": 21,
-      "date": "2026-10-24",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>De apotheek</em>",
-        "is altijd net dicht",
-        "als je eraan denkt."
-      ],
-      "subject": "De apotheek is altijd net dicht als je eraan denkt.",
-      "caption": "Je denkt er de hele dag niet aan, en dan om vijf over zes wel.\n\nTag wie ook altijd net te laat is.",
-      "tags": [
-        "#apotheek",
-        "#herhaalrecept",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: De apotheek is altijd net dicht als je eraan denkt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m18.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m18-story.mp4"
-    },
-    {
-      "id": "m19",
-      "source_line": 22,
-      "date": "2026-10-27",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Je laatste tampon</em>",
-        "ligt altijd los",
-        "onderin je tas."
-      ],
-      "subject": "Je laatste tampon ligt altijd los onderin je tas.",
-      "caption": "Zonder verpakking, met een kruimel erop, maar hij is er.\n\nTag wie ook altijd de reddende engel is.",
-      "tags": [
-        "#menstruatie",
-        "#tampon",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je laatste tampon ligt altijd los onderin je tas. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19-story.mp4"
-    },
-    {
-      "id": "m20",
-      "source_line": 23,
-      "date": "2026-10-29",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Je voorraad</em>",
-        "raakt altijd op",
-        "tijdens de drukste dag."
-      ],
-      "subject": "Je voorraad raakt altijd op tijdens de drukste dag.",
-      "caption": "Niet op dag vier. Op dag twee.\n\nStuur 'm door naar wie dit ook elke keer verkeerd inschat.",
-      "tags": [
-        "#menstruatie",
-        "#maandverband",
-        "#tampon",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je voorraad raakt altijd op tijdens de drukste dag. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m20.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m20-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m36-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m36-a-story.mp4"
     },
     {
       "id": "m21",
-      "source_line": 26,
-      "date": "2026-10-31",
-      "slot": "za 11:00",
+      "date": "2026-10-22",
+      "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "lavendel",
+      "thema": "Tampons en cup",
+      "theme": "roze",
       "lines": [
         "Je neemt altijd",
         "precies <em>één tampon</em>",
@@ -607,19 +536,187 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je neemt altijd precies één tampon te weinig mee. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21-a-story.mp4"
     },
     {
-      "id": "m22",
-      "source_line": 27,
+      "id": "i03",
+      "date": "2026-10-24",
+      "field": "var(--mint)",
+      "kicker": "vannacht gaat de klok een uur terug",
+      "lines": [
+        "Moet je <em>pil</em> nu",
+        "een uur",
+        "opschuiven?"
+      ],
+      "subject": "Wintertijd: moet je pil een uur opschuiven?",
+      "caption": "Vannacht gaat de klok een uur terug. Moet je je pil dan ook anders gaan innemen?\n\nNee, dat hoeft niet. Neem je pil gewoon op je vaste tijd volgens de nieuwe klok. Eén uur verschil valt ruim binnen de marge: bij de meeste pillen is die twaalf uur, en ook bij pillen met een krappere marge van drie uur zit je met één uur nog goed.\n\nBewaar 'm voor maart, als de klok weer vooruit gaat.",
+      "tags": [
+        "#wintertijd",
+        "#depil",
+        "#anticonceptie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "slot": "za 11:00",
+      "concept": "inhaker",
+      "format": "image",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i03.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i03-story.mp4"
+    },
+    {
+      "id": "m52",
+      "date": "2026-10-27",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Herinneringen",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Je herinnering</em> gaat",
+        "altijd af op het",
+        "moment dat je net",
+        "niet kan."
+      ],
+      "subject": "Je herinnering gaat altijd af op het moment dat je net niet kan.",
+      "caption": "Onder de douche, in de auto, midden in een gesprek.\n\nStuur 'm door naar wie 'm ook altijd wegdrukt.",
+      "tags": [
+        "#depil",
+        "#anticonceptie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m52-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m52-a-story.mp4"
+    },
+    {
+      "id": "m32",
+      "date": "2026-10-29",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "perzik",
+      "lines": [
+        "<em>Je humeur</em> begint",
+        "een dag eerder",
+        "dan je cyclus."
+      ],
+      "subject": "Je humeur begint een dag eerder dan je cyclus.",
+      "caption": "Achteraf snap je precies waarom je boos was op die deur.\n\nStuur 'm door naar wie jou die dag verdraagt.",
+      "tags": [
+        "#pms",
+        "#hormonen",
+        "#cyclus",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m32-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m32-a-story.mp4"
+    },
+    {
+      "id": "m14",
+      "date": "2026-10-31",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "roze",
+      "lines": [
+        "<em>Het doosje</em>",
+        "voelt vol",
+        "tot je het openmaakt."
+      ],
+      "subject": "Het doosje voelt vol tot je het openmaakt.",
+      "caption": "Gewicht zegt niets.\n\nTag wie ook op gevoel inschat hoeveel er nog in zit.",
+      "tags": [
+        "#anticonceptie",
+        "#depil",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14-a-story.mp4"
+    },
+    {
+      "id": "m08",
       "date": "2026-11-03",
       "slot": "di 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "roze",
+      "thema": "Pil kwijt of vergeten",
+      "theme": "perzik",
+      "lines": [
+        "<em>Je pil</em> valt altijd",
+        "op de enige plek",
+        "waar je niet bij kan."
+      ],
+      "subject": "Je pil valt altijd op de enige plek waar je niet bij kan.",
+      "caption": "Achter de wc, onder de kast, tussen de plint. Nooit gewoon op de grond.\n\nTag wie ook wel eens op haar knieën in de badkamer heeft gelegen.",
+      "tags": [
+        "#depil",
+        "#anticonceptie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Pil echt kwijt? Bel even je apotheek, die kijkt in een minuut met je mee wat handig is. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m08-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m08-a-story.mp4"
+    },
+    {
+      "id": "m26",
+      "date": "2026-11-05",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Krampen",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Je kruik</em> ligt altijd",
+        "in de kast waar",
+        "je niet bij kan."
+      ],
+      "subject": "Je kruik ligt altijd in de kast waar je niet bij kan.",
+      "caption": "Bovenste plank, achterin, achter de kerstspullen.\n\nStuur 'm door naar wie ook een opstapje nodig heeft.",
+      "tags": [
+        "#krampen",
+        "#menstruatie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26-a-story.mp4"
+    },
+    {
+      "id": "m22",
+      "date": "2026-11-07",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Tampons en cup",
+      "theme": "indigo",
       "lines": [
         "Je vindt <em>overal</em>",
         "tampons, behalve",
@@ -635,19 +732,132 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je vindt overal tampons, behalve als je er een zoekt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22-a-story.mp4"
+    },
+    {
+      "id": "m33",
+      "date": "2026-11-10",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "roze",
+      "lines": [
+        "Je hebt geen idee",
+        "welke dag het is,",
+        "<em>je cyclus</em> wel."
+      ],
+      "subject": "Je hebt geen idee welke dag het is, je cyclus wel.",
+      "caption": "De enige agenda die altijd klopt.\n\nTag wie ook op haar cyclus navigeert.",
+      "tags": [
+        "#cyclus",
+        "#menstruatie",
+        "#hormonen",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33-a-story.mp4"
+    },
+    {
+      "id": "m34",
+      "date": "2026-11-12",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Menstruatie dagelijks",
+      "theme": "indigo",
+      "lines": [
+        "Je onderbroeken zijn",
+        "<em>onderverdeeld</em> in",
+        "twee categorieën, en",
+        "jij weet precies welke."
+      ],
+      "subject": "Je onderbroeken zijn onderverdeeld in twee categorieën, en jij weet precies welke.",
+      "caption": "Iedereen heeft dit systeem, niemand heeft het ooit uitgelegd.\n\nStuur 'm door naar wie precies weet wat je bedoelt.",
+      "tags": [
+        "#menstruatie",
+        "#cyclus",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m34-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m34-a-story.mp4"
+    },
+    {
+      "id": "m09",
+      "date": "2026-11-14",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Pil kwijt of vergeten",
+      "theme": "lavendel",
+      "lines": [
+        "<em>De pilstrip</em> zit altijd",
+        "in de tas die je",
+        "vandaag niet meeneemt."
+      ],
+      "subject": "De pilstrip zit altijd in de tas die je vandaag niet meeneemt.",
+      "caption": "De ene tas heeft alles. Vandaag gebruik je de andere.\n\nStuur 'm door naar wie drie tassen heeft en nooit de juiste.",
+      "tags": [
+        "#depil",
+        "#anticonceptie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m09-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m09-a-story.mp4"
+    },
+    {
+      "id": "m15",
+      "date": "2026-11-17",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "indigo",
+      "lines": [
+        "<em>Je herhaalrecept</em>",
+        "valt altijd in de week",
+        "dat je het al druk hebt."
+      ],
+      "subject": "Je herhaalrecept valt altijd in de week dat je het al druk hebt.",
+      "caption": "Nooit in die ene rustige week.\n\nStuur 'm door naar wie haar agenda ook niet meer ziet zitten.",
+      "tags": [
+        "#herhaalrecept",
+        "#apotheek",
+        "#anticonceptie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m15-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m15-a-story.mp4"
     },
     {
       "id": "m23",
-      "source_line": 28,
-      "date": "2026-11-05",
+      "date": "2026-11-19",
       "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "indigo",
+      "thema": "Tampons en cup",
+      "theme": "perzik",
       "lines": [
         "<em>Je cup</em> ligt altijd",
         "te drogen op het",
@@ -664,103 +874,46 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je cup ligt altijd te drogen op het moment dat je 'm nodig hebt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23-a-story.mp4"
     },
     {
-      "id": "m24",
-      "source_line": 29,
-      "date": "2026-11-07",
+      "id": "m45",
+      "date": "2026-11-21",
       "slot": "za 11:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "Er zit altijd een",
-        "tampon in <em>je jaszak</em>,",
-        "alleen niet in de",
-        "jas van vandaag."
-      ],
-      "subject": "Er zit altijd een tampon in je jaszak, alleen niet in de jas van vandaag.",
-      "caption": "Jassen hebben een eigen systeem en dat is niet het jouwe.\n\nStuur 'm door naar wie ook drie jassen en nul tampons bij zich heeft.",
-      "tags": [
-        "#menstruatie",
-        "#tampon",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Er zit altijd een tampon in je jaszak, alleen niet in de jas van vandaag. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m24.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m24-story.mp4"
-    },
-    {
-      "id": "m25",
-      "source_line": 30,
-      "date": "2026-11-10",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
+      "thema": "Hormonen en humeur",
       "theme": "roze",
       "lines": [
-        "<em>Krampen</em> wachten",
-        "netjes tot je",
-        "in de trein zit."
+        "<em>Je huilt</em> om een",
+        "reclame en weet",
+        "precies waarom."
       ],
-      "subject": "Krampen wachten netjes tot je in de trein zit.",
-      "caption": "Thuis niets, perron niets, deuren dicht en daar zijn ze.\n\nTag wie ook altijd in de spits begint.",
+      "subject": "Je huilt om een reclame en weet precies waarom.",
+      "caption": "Een verzekeringsreclame. Met een hond.\n\nTag wie jou die week het beste kent.",
       "tags": [
-        "#menstruatiepijn",
-        "#krampen",
-        "#menstruatie",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": "Krampen die je dag echt in de weg zitten horen er niet gewoon bij. Bespreek het een keer met je huisarts, er is vaak meer mogelijk dan vrouwen denken. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-      "alt": "Roze vlak met de tekst: Krampen wachten netjes tot je in de trein zit. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m25.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m25-story.mp4"
-    },
-    {
-      "id": "m26",
-      "source_line": 31,
-      "date": "2026-11-12",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Je kruik</em> ligt altijd",
-        "in de kast waar",
-        "je niet bij kan."
-      ],
-      "subject": "Je kruik ligt altijd in de kast waar je niet bij kan.",
-      "caption": "Bovenste plank, achterin, achter de kerstspullen.\n\nStuur 'm door naar wie ook een opstapje nodig heeft.",
-      "tags": [
-        "#krampen",
-        "#menstruatie",
-        "#herkenbaar",
+        "#pms",
+        "#hormonen",
+        "#cyclus",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je kruik ligt altijd in de kast waar je niet bij kan. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m45-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m45-a-story.mp4"
     },
     {
       "id": "m27",
-      "source_line": 32,
-      "date": "2026-11-14",
-      "slot": "za 11:00",
+      "date": "2026-11-24",
+      "slot": "di 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Krampen",
       "theme": "lavendel",
       "lines": [
         "<em>De eerste dag</em>",
@@ -778,271 +931,18 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: De eerste dag valt altijd samen met de dag die je niet kunt verzetten. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27-story.mp4"
-    },
-    {
-      "id": "m28",
-      "source_line": 33,
-      "date": "2026-11-17",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Krampen</em> weten",
-        "precies wanneer",
-        "je moet staan."
-      ],
-      "subject": "Krampen weten precies wanneer je moet staan.",
-      "caption": "In de rij, in de tram, in de supermarkt.\n\nStuur 'm door naar wie vandaag ook op haar tanden bijt.",
-      "tags": [
-        "#menstruatiepijn",
-        "#krampen",
-        "#menstruatie",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": "Warmte helpt vaak meer dan je denkt, en bewegen ook. Blijft het elke maand zo? Dan is het een gesprek met je huisarts waard. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-      "alt": "Roze vlak met de tekst: Krampen weten precies wanneer je moet staan. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m28.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m28-story.mp4"
-    },
-    {
-      "id": "m29",
-      "source_line": 34,
-      "date": "2026-11-19",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Je pijnstillers</em>",
-        "liggen altijd",
-        "in je andere tas."
-      ],
-      "subject": "Je pijnstillers liggen altijd in je andere tas.",
-      "caption": "Samen met je pleisters en je goede voornemens.\n\nTag wie altijd wel iets bij zich heeft.",
-      "tags": [
-        "#krampen",
-        "#menstruatie",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je pijnstillers liggen altijd in je andere tas. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m29.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m29-story.mp4"
-    },
-    {
-      "id": "m30",
-      "source_line": 35,
-      "date": "2026-11-21",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>Je onderrug</em>",
-        "weet het eerder",
-        "dan jij."
-      ],
-      "subject": "Je onderrug weet het eerder dan jij.",
-      "caption": "Nog voor je app iets zegt.\n\nStuur 'm door naar wie het ook altijd in haar rug voelt.",
-      "tags": [
-        "#menstruatie",
-        "#cyclus",
-        "#krampen",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je onderrug weet het eerder dan jij. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m30.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m30-story.mp4"
-    },
-    {
-      "id": "m31",
-      "source_line": 36,
-      "date": "2026-11-24",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Je huid</em> weet precies",
-        "wanneer je op de",
-        "foto moet."
-      ],
-      "subject": "Je huid weet precies wanneer je op de foto moet.",
-      "caption": "Drie weken rust, en dan die ene dag.\n\nTag wie ook altijd op het verkeerde moment gefotografeerd wordt.",
-      "tags": [
-        "#hormonen",
-        "#cyclus",
-        "#huid",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je huid weet precies wanneer je op de foto moet. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m31.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m31-story.mp4"
-    },
-    {
-      "id": "m32",
-      "source_line": 37,
-      "date": "2026-11-26",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Je humeur</em> begint",
-        "een dag eerder",
-        "dan je cyclus."
-      ],
-      "subject": "Je humeur begint een dag eerder dan je cyclus.",
-      "caption": "Achteraf snap je precies waarom je boos was op die deur.\n\nStuur 'm door naar wie jou die dag verdraagt.",
-      "tags": [
-        "#pms",
-        "#hormonen",
-        "#cyclus",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je humeur begint een dag eerder dan je cyclus. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m32.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m32-story.mp4"
-    },
-    {
-      "id": "m33",
-      "source_line": 38,
-      "date": "2026-11-28",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "Je hebt geen idee",
-        "welke dag het is,",
-        "<em>je cyclus</em> wel."
-      ],
-      "subject": "Je hebt geen idee welke dag het is, je cyclus wel.",
-      "caption": "De enige agenda die altijd klopt.\n\nTag wie ook op haar cyclus navigeert.",
-      "tags": [
-        "#cyclus",
-        "#menstruatie",
-        "#hormonen",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je hebt geen idee welke dag het is, je cyclus wel. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33-story.mp4"
-    },
-    {
-      "id": "m34",
-      "source_line": 39,
-      "date": "2026-12-01",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "Je onderbroeken zijn",
-        "<em>onderverdeeld</em> in",
-        "twee categorieën, en",
-        "jij weet precies welke."
-      ],
-      "subject": "Je onderbroeken zijn onderverdeeld in twee categorieën, en jij weet precies welke.",
-      "caption": "Iedereen heeft dit systeem, niemand heeft het ooit uitgelegd.\n\nStuur 'm door naar wie precies weet wat je bedoelt.",
-      "tags": [
-        "#menstruatie",
-        "#cyclus",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je onderbroeken zijn onderverdeeld in twee categorieën, en jij weet precies welke. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m34.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m34-story.mp4"
-    },
-    {
-      "id": "m35",
-      "source_line": 40,
-      "date": "2026-12-03",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Je wasmachine</em>",
-        "kent jouw cyclus",
-        "inmiddels ook."
-      ],
-      "subject": "Je wasmachine kent jouw cyclus inmiddels ook.",
-      "caption": "Elke maand dezelfde afspraak.\n\nTag wie ook maandelijks een extra wasje draait.",
-      "tags": [
-        "#menstruatie",
-        "#cyclus",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je wasmachine kent jouw cyclus inmiddels ook. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35-story.mp4"
-    },
-    {
-      "id": "m36",
-      "source_line": 41,
-      "date": "2026-12-05",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "In het vliegtuig weet",
-        "<em>je lichaam</em> precies",
-        "hoe laat het thuis is."
-      ],
-      "subject": "In het vliegtuig weet je lichaam precies hoe laat het thuis is.",
-      "caption": "Jij zit in een andere tijdzone. Je lichaam niet.\n\nStuur 'm door naar wie binnenkort ver weg gaat.",
-      "tags": [
-        "#anticonceptie",
-        "#depil",
-        "#reizen",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": "Reis je een paar uur naar het oosten of westen? Vraag je apotheek even hoe je je inname het handigst verschuift, dan hoef je daar ter plekke niet over na te denken. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-      "alt": "Lavendel vlak met de tekst: In het vliegtuig weet je lichaam precies hoe laat het thuis is. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m36.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m36-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27-a-story.mp4"
     },
     {
       "id": "m37",
-      "source_line": 43,
-      "date": "2026-12-08",
-      "slot": "di 20:00",
+      "date": "2026-11-26",
+      "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Op reis",
       "theme": "roze",
       "lines": [
         "Je hebt alles ingepakt,",
@@ -1059,441 +959,18 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je hebt alles ingepakt, behalve het enige wat niet kan wachten. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m37.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m37-story.mp4"
-    },
-    {
-      "id": "m38",
-      "source_line": 44,
-      "date": "2026-12-10",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "Op reis is <em>je strip</em>",
-        "het enige wat je",
-        "twee keer controleert."
-      ],
-      "subject": "Op reis is je strip het enige wat je twee keer controleert.",
-      "caption": "Paspoort, sleutels, strip. En dan nog een keer de strip.\n\nStuur 'm door naar wie ook drie keer in haar tas kijkt.",
-      "tags": [
-        "#reizen",
-        "#depil",
-        "#anticonceptie",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Op reis is je strip het enige wat je twee keer controleert. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38-story.mp4"
-    },
-    {
-      "id": "m39",
-      "source_line": 47,
-      "date": "2026-12-12",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>Je koffer</em> heeft altijd",
-        "plek, behalve voor",
-        "het kleinste doosje."
-      ],
-      "subject": "Je koffer heeft altijd plek, behalve voor het kleinste doosje.",
-      "caption": "De föhn past wel.\n\nTag wie ook te groot inpakt en te klein vergeet.",
-      "tags": [
-        "#reizen",
-        "#anticonceptie",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je koffer heeft altijd plek, behalve voor het kleinste doosje. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m39.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m39-story.mp4"
-    },
-    {
-      "id": "m40",
-      "source_line": 48,
-      "date": "2026-12-15",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Je krampen</em> wachten",
-        "netjes tot de",
-        "vergadering begint."
-      ],
-      "subject": "Je krampen wachten netjes tot de vergadering begint.",
-      "caption": "Agendapunt één, en daar zijn ze.\n\nStuur 'm door naar wie vandaag ook een volle agenda heeft.",
-      "tags": [
-        "#krampen",
-        "#werk",
-        "#menstruatie",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je krampen wachten netjes tot de vergadering begint. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m40.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m40-story.mp4"
-    },
-    {
-      "id": "m41",
-      "source_line": 52,
-      "date": "2026-12-17",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Een witte stoel</em>",
-        "voelt in die week als",
-        "een persoonlijke aanval."
-      ],
-      "subject": "Een witte stoel voelt in die week als een persoonlijke aanval.",
-      "caption": "Wie ontwerpt die dingen.\n\nTag wie ook altijd de donkere stoel uitzoekt.",
-      "tags": [
-        "#menstruatie",
-        "#herkenbaar",
-        "#cyclus",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Een witte stoel voelt in die week als een persoonlijke aanval. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m41.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m41-story.mp4"
-    },
-    {
-      "id": "m42",
-      "source_line": 54,
-      "date": "2026-12-19",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "Er bestaat geen",
-        "<em>discrete manier</em> om",
-        "een tampon mee te",
-        "nemen, en toch probeer",
-        "je het."
-      ],
-      "subject": "Er bestaat geen discrete manier om een tampon mee te nemen, en toch probeer je het.",
-      "caption": "Mouw, zak, telefoonhoesje. Het is nooit subtiel.\n\nStuur 'm door naar wie het ook elke keer weer probeert.",
-      "tags": [
-        "#menstruatie",
-        "#tampon",
-        "#werk",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Er bestaat geen discrete manier om een tampon mee te nemen, en toch probeer je het. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42-story.mp4"
-    },
-    {
-      "id": "m43",
-      "source_line": 55,
-      "date": "2026-12-22",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Het spiegelkastje</em>",
-        "zit vol, en toch is er",
-        "nooit wat je zoekt."
-      ],
-      "subject": "Het spiegelkastje zit vol, en toch is er nooit wat je zoekt.",
-      "caption": "Wel drie soorten dagcrème.\n\nTag wie haar kastje ook eindelijk eens gaat uitzoeken.",
-      "tags": [
-        "#herkenbaar",
-        "#badkamer",
-        "#vrouwengezondheid",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Het spiegelkastje zit vol, en toch is er nooit wat je zoekt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m43.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m43-story.mp4"
-    },
-    {
-      "id": "m44",
-      "source_line": 56,
-      "date": "2026-12-24",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>De wasmand</em>",
-        "houdt bij",
-        "welke week het is."
-      ],
-      "subject": "De wasmand houdt bij welke week het is.",
-      "caption": "Een rustige, betrouwbare kalender.\n\nStuur 'm door naar wie dit meteen snapt.",
-      "tags": [
-        "#menstruatie",
-        "#cyclus",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: De wasmand houdt bij welke week het is. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m44.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m44-story.mp4"
-    },
-    {
-      "id": "m45",
-      "source_line": 62,
-      "date": "2026-12-26",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>Je huilt</em> om een",
-        "reclame en weet",
-        "precies waarom."
-      ],
-      "subject": "Je huilt om een reclame en weet precies waarom.",
-      "caption": "Een verzekeringsreclame. Met een hond.\n\nTag wie jou die week het beste kent.",
-      "tags": [
-        "#pms",
-        "#hormonen",
-        "#cyclus",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je huilt om een reclame en weet precies waarom. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m45.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m45-story.mp4"
-    },
-    {
-      "id": "m46",
-      "source_line": 63,
-      "date": "2026-12-29",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "Je hebt <em>nergens</em>",
-        "zin in, behalve",
-        "in alles tegelijk."
-      ],
-      "subject": "Je hebt nergens zin in, behalve in alles tegelijk.",
-      "caption": "Uitgaan, op de bank liggen, verhuizen. Allemaal tegelijk.\n\nStuur 'm door naar wie dit gevoel kent.",
-      "tags": [
-        "#pms",
-        "#hormonen",
-        "#cyclus",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je hebt nergens zin in, behalve in alles tegelijk. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46-story.mp4"
-    },
-    {
-      "id": "m47",
-      "source_line": 64,
-      "date": "2026-12-31",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>De chocola</em> in huis",
-        "weet dat haar tijd",
-        "gekomen is."
-      ],
-      "subject": "De chocola in huis weet dat haar tijd gekomen is.",
-      "caption": "Ze lag daar al weken rustig te wachten.\n\nTag wie haar voorraad ook op peil houdt.",
-      "tags": [
-        "#pms",
-        "#cyclus",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: De chocola in huis weet dat haar tijd gekomen is. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47-story.mp4"
-    },
-    {
-      "id": "m48",
-      "source_line": 66,
-      "date": "2027-01-02",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>Je geduld</em> raakt",
-        "een week eerder op",
-        "dan je strip."
-      ],
-      "subject": "Je geduld raakt een week eerder op dan je strip.",
-      "caption": "En dat is precies te voorspellen.\n\nStuur 'm door naar wie dit van je pikt.",
-      "tags": [
-        "#pms",
-        "#hormonen",
-        "#cyclus",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je geduld raakt een week eerder op dan je strip. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48-story.mp4"
-    },
-    {
-      "id": "m49",
-      "source_line": 67,
-      "date": "2027-01-05",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Alles</em> is irritant,",
-        "en de meeste dingen",
-        "hebben niets gedaan."
-      ],
-      "subject": "Alles is irritant, en de meeste dingen hebben niets gedaan.",
-      "caption": "Sorry tegen de wasmachine, de buurman en die ene app.\n\nTag wie hier deze week begrip voor heeft.",
-      "tags": [
-        "#pms",
-        "#hormonen",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Alles is irritant, en de meeste dingen hebben niets gedaan. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49-story.mp4"
-    },
-    {
-      "id": "m50",
-      "source_line": 68,
-      "date": "2027-01-07",
-      "slot": "do 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "indigo",
-      "lines": [
-        "<em>Je agenda</em> en je zin",
-        "om iets te doen lopen",
-        "die week niet gelijk."
-      ],
-      "subject": "Je agenda en je zin om iets te doen lopen die week niet gelijk.",
-      "caption": "Je hebt het allemaal zelf ingepland, dat is het vervelende.\n\nStuur 'm door naar wie ook wel eens iets afzegt.",
-      "tags": [
-        "#pms",
-        "#cyclus",
-        "#hormonen",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je agenda en je zin om iets te doen lopen die week niet gelijk. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50-story.mp4"
-    },
-    {
-      "id": "m51",
-      "source_line": 69,
-      "date": "2027-01-09",
-      "slot": "za 11:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "lavendel",
-      "lines": [
-        "<em>Je cyclusapp</em> is",
-        "optimistischer over",
-        "je regelmaat dan jij."
-      ],
-      "subject": "Je cyclusapp is optimistischer over je regelmaat dan jij.",
-      "caption": "Zij zegt woensdag. Jij weet wel beter.\n\nTag wie haar app ook niet helemaal gelooft.",
-      "tags": [
-        "#cyclus",
-        "#menstruatie",
-        "#hormonen",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: Je cyclusapp is optimistischer over je regelmaat dan jij. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m51.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m51-story.mp4"
-    },
-    {
-      "id": "m52",
-      "source_line": 70,
-      "date": "2027-01-12",
-      "slot": "di 20:00",
-      "concept": "onder_ons",
-      "format": "image",
-      "theme": "roze",
-      "lines": [
-        "<em>Je herinnering</em> gaat",
-        "altijd af op het",
-        "moment dat je net",
-        "niet kan."
-      ],
-      "subject": "Je herinnering gaat altijd af op het moment dat je net niet kan.",
-      "caption": "Onder de douche, in de auto, midden in een gesprek.\n\nStuur 'm door naar wie 'm ook altijd wegdrukt.",
-      "tags": [
-        "#depil",
-        "#anticonceptie",
-        "#herkenbaar",
-        "#vrouwenonderelkaar",
-        "#mijnpilnu"
-      ],
-      "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je herinnering gaat altijd af op het moment dat je net niet kan. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
-      "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m52.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m52-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m37-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m37-a-story.mp4"
     },
     {
       "id": "m53",
-      "source_line": 72,
-      "date": "2027-01-14",
-      "slot": "do 20:00",
+      "date": "2026-11-28",
+      "slot": "za 11:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Herinneringen",
       "theme": "indigo",
       "lines": [
         "Je zet <em>de herinnering</em>",
@@ -1511,18 +988,386 @@
         "#mijnpilnu"
       ],
       "first_comment": "Pil een keer vergeten? Bij de combinatiepil ben je bij één vergeten pil meestal gewoon beschermd, maar het hangt af van waar je in de strip zit. Bel je apotheek als je twijfelt. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
-      "alt": "Indigo vlak met de tekst: Je zet de herinnering vijf minuten later en dan is het ineens morgen. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m53.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m53-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m53-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m53-a-story.mp4"
+    },
+    {
+      "id": "i04",
+      "date": "2026-12-01",
+      "field": "var(--blush)",
+      "kicker": "1 december · wereld aidsdag",
+      "lines": [
+        "Beschermt de pil",
+        "je ook tegen",
+        "<em>soa's</em>?"
+      ],
+      "subject": "Wereld Aidsdag: beschermt de pil ook tegen soa's?",
+      "caption": "Vandaag is het Wereld Aidsdag. Tijd voor een vraag met een kort antwoord: beschermt de pil je ook tegen soa's?\n\nNee. De pil, de ring, de pleister, het spiraaltje en het staafje beschermen tegen zwangerschap, maar niet tegen soa's zoals chlamydia of hiv. Condooms zijn het enige anticonceptiemiddel dat daar wel tegen beschermt.\n\nHeb je een nieuwe partner, of twijfel je? Laat je testen bij je huisarts of bij het Centrum Seksuele Gezondheid van de GGD.\n\nStuur 'm door naar wie dit wel even mag horen.",
+      "tags": [
+        "#wereldaidsdag",
+        "#soa",
+        "#condoom",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "slot": "di 20:00",
+      "concept": "inhaker",
+      "format": "image",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i04.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i04-story.mp4"
+    },
+    {
+      "id": "m07",
+      "date": "2026-12-03",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Stopweek",
+      "theme": "indigo",
+      "lines": [
+        "Het weekendje weg",
+        "stond al geboekt,",
+        "<em>de stopweek</em>",
+        "wist dat allang."
+      ],
+      "subject": "Het weekendje weg stond al geboekt, de stopweek wist dat allang.",
+      "caption": "Geboekt in maart, geregeld in juni, en toch precies die week.\n\nStuur 'm door naar wie het weekend organiseert.",
+      "tags": [
+        "#stopweek",
+        "#anticonceptie",
+        "#weekendje",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m07-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m07-a-story.mp4"
+    },
+    {
+      "id": "m16",
+      "date": "2026-12-05",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Je badkamerkastje</em>",
+        "is optimistischer",
+        "over je voorraad",
+        "dan de werkelijkheid."
+      ],
+      "subject": "Je badkamerkastje is optimistischer over je voorraad dan de werkelijkheid.",
+      "caption": "Vol met van alles, leeg aan het enige wat je zoekt.\n\nTag wie haar kastje ook niet durft op te ruimen.",
+      "tags": [
+        "#herkenbaar",
+        "#vrouwengezondheid",
+        "#badkamer",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m16-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m16-a-story.mp4"
+    },
+    {
+      "id": "m24",
+      "date": "2026-12-08",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Tampons en cup",
+      "theme": "indigo",
+      "lines": [
+        "Er zit altijd een",
+        "tampon in <em>je jaszak</em>,",
+        "alleen niet in de",
+        "jas van vandaag."
+      ],
+      "subject": "Er zit altijd een tampon in je jaszak, alleen niet in de jas van vandaag.",
+      "caption": "Jassen hebben een eigen systeem en dat is niet het jouwe.\n\nStuur 'm door naar wie ook drie jassen en nul tampons bij zich heeft.",
+      "tags": [
+        "#menstruatie",
+        "#tampon",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m24-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m24-a-story.mp4"
+    },
+    {
+      "id": "m46",
+      "date": "2026-12-10",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "lavendel",
+      "lines": [
+        "Je hebt <em>nergens</em>",
+        "zin in, behalve",
+        "in alles tegelijk."
+      ],
+      "subject": "Je hebt nergens zin in, behalve in alles tegelijk.",
+      "caption": "Uitgaan, op de bank liggen, verhuizen. Allemaal tegelijk.\n\nStuur 'm door naar wie dit gevoel kent.",
+      "tags": [
+        "#pms",
+        "#hormonen",
+        "#cyclus",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46-a-story.mp4"
+    },
+    {
+      "id": "i05",
+      "date": "2026-12-12",
+      "field": "var(--peach)",
+      "kicker": "de feestdagen komen eraan",
+      "lines": [
+        "Valt je <em>stopweek</em>",
+        "precies met",
+        "kerst?"
+      ],
+      "subject": "Feestdagen: valt je stopweek precies met kerst?",
+      "caption": "Kerst komt eraan. Tijd om even in je strip te kijken: valt je stopweek precies op de feestdagen?\n\nBij veel combinatiepillen kun je de stopweek overslaan door meteen met een nieuwe strip te beginnen. De bloeding in je stopweek is een onttrekkingsbloeding en geen echte menstruatie, dus medisch gezien is daar geen bezwaar tegen.\n\nLet op: bij pillen met verschillende fases of met placebopillen in de strip werkt dit anders. Kijk in je bijsluiter of overleg met je huisarts als je het niet zeker weet.\n\nEn check meteen of je genoeg strips in huis hebt, zeker als je een week doorslikt.\n\nBewaar 'm voor je volgende strip.",
+      "tags": [
+        "#stopweek",
+        "#feestdagen",
+        "#depil",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "slot": "za 11:00",
+      "concept": "inhaker",
+      "format": "image",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i05.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i05-story.mp4"
+    },
+    {
+      "id": "m35",
+      "date": "2026-12-15",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Menstruatie dagelijks",
+      "theme": "roze",
+      "lines": [
+        "<em>Je wasmachine</em>",
+        "kent jouw cyclus",
+        "inmiddels ook."
+      ],
+      "subject": "Je wasmachine kent jouw cyclus inmiddels ook.",
+      "caption": "Elke maand dezelfde afspraak.\n\nTag wie ook maandelijks een extra wasje draait.",
+      "tags": [
+        "#menstruatie",
+        "#cyclus",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35-a-story.mp4"
+    },
+    {
+      "id": "m28",
+      "date": "2026-12-17",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Krampen",
+      "theme": "perzik",
+      "lines": [
+        "<em>Krampen</em> weten",
+        "precies wanneer",
+        "je moet staan."
+      ],
+      "subject": "Krampen weten precies wanneer je moet staan.",
+      "caption": "In de rij, in de tram, in de supermarkt.\n\nStuur 'm door naar wie vandaag ook op haar tanden bijt.",
+      "tags": [
+        "#menstruatiepijn",
+        "#krampen",
+        "#menstruatie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Warmte helpt vaak meer dan je denkt, en bewegen ook. Blijft het elke maand zo? Dan is het een gesprek met je huisarts waard. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m28-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m28-a-story.mp4"
+    },
+    {
+      "id": "m10",
+      "date": "2026-12-19",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Pil kwijt of vergeten",
+      "theme": "indigo",
+      "lines": [
+        "<em>Je pilstrip</em> ligt thuis",
+        "precies op de plek",
+        "waar je nooit kijkt."
+      ],
+      "subject": "Je pilstrip ligt thuis precies op de plek waar je nooit kijkt.",
+      "caption": "Je hebt overal gezocht behalve daar, en daar lag hij.\n\nTag wie 'm ook altijd op de gekste plek terugvindt.",
+      "tags": [
+        "#depil",
+        "#anticonceptie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m10-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m10-a-story.mp4"
+    },
+    {
+      "id": "m42",
+      "date": "2026-12-22",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Tampons en cup",
+      "theme": "perzik",
+      "lines": [
+        "Er bestaat geen",
+        "<em>discrete manier</em> om",
+        "een tampon mee te",
+        "nemen, en toch probeer",
+        "je het."
+      ],
+      "subject": "Er bestaat geen discrete manier om een tampon mee te nemen, en toch probeer je het.",
+      "caption": "Mouw, zak, telefoonhoesje. Het is nooit subtiel.\n\nStuur 'm door naar wie het ook elke keer weer probeert.",
+      "tags": [
+        "#menstruatie",
+        "#tampon",
+        "#werk",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42-a-story.mp4"
+    },
+    {
+      "id": "m47",
+      "date": "2026-12-24",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "indigo",
+      "lines": [
+        "<em>De chocola</em> in huis",
+        "weet dat haar tijd",
+        "gekomen is."
+      ],
+      "subject": "De chocola in huis weet dat haar tijd gekomen is.",
+      "caption": "Ze lag daar al weken rustig te wachten.\n\nTag wie haar voorraad ook op peil houdt.",
+      "tags": [
+        "#pms",
+        "#cyclus",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47-a-story.mp4"
+    },
+    {
+      "id": "m17",
+      "date": "2026-12-26",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "roze",
+      "lines": [
+        "Je hebt nog",
+        "<em>één strip</em>,",
+        "en dat weet je pas",
+        "op zondagavond."
+      ],
+      "subject": "Je hebt nog één strip, en dat weet je pas op zondagavond.",
+      "caption": "Precies als alles dicht is.\n\nStuur 'm door naar wie dit ook op zondag ontdekt.",
+      "tags": [
+        "#depil",
+        "#apotheek",
+        "#anticonceptie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m17-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m17-a-story.mp4"
+    },
+    {
+      "id": "m38",
+      "date": "2026-12-29",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Op reis",
+      "theme": "indigo",
+      "lines": [
+        "Op reis is <em>je strip</em>",
+        "het enige wat je",
+        "twee keer controleert."
+      ],
+      "subject": "Op reis is je strip het enige wat je twee keer controleert.",
+      "caption": "Paspoort, sleutels, strip. En dan nog een keer de strip.\n\nStuur 'm door naar wie ook drie keer in haar tas kijkt.",
+      "tags": [
+        "#reizen",
+        "#depil",
+        "#anticonceptie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38-a-story.mp4"
     },
     {
       "id": "m54",
-      "source_line": 73,
-      "date": "2027-01-16",
-      "slot": "za 11:00",
+      "date": "2026-12-31",
+      "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Herinneringen",
       "theme": "lavendel",
       "lines": [
         "De enige datum die je",
@@ -1539,47 +1384,47 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: De enige datum die je uit je hoofd kent, is die van je strip. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m54.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m54-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m54-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m54-a-story.mp4"
     },
     {
-      "id": "m55",
-      "source_line": 74,
-      "date": "2027-01-19",
-      "slot": "di 20:00",
+      "id": "m29",
+      "date": "2027-01-02",
+      "slot": "za 11:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "roze",
+      "thema": "Krampen",
+      "theme": "perzik",
       "lines": [
-        "<em>Je telefoon</em> houdt",
-        "je cyclus beter bij",
-        "dan jij je afspraken."
+        "<em>Je pijnstillers</em>",
+        "liggen altijd",
+        "in je andere tas."
       ],
-      "subject": "Je telefoon houdt je cyclus beter bij dan jij je afspraken.",
-      "caption": "Eén van de twee is in elk geval op orde.\n\nTag wie ook op haar telefoon vertrouwt.",
+      "subject": "Je pijnstillers liggen altijd in je andere tas.",
+      "caption": "Samen met je pleisters en je goede voornemens.\n\nTag wie altijd wel iets bij zich heeft.",
       "tags": [
-        "#cyclus",
+        "#krampen",
         "#menstruatie",
         "#herkenbaar",
         "#vrouwenonderelkaar",
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je telefoon houdt je cyclus beter bij dan jij je afspraken. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m55.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m55-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m29-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m29-a-story.mp4"
     },
     {
       "id": "m56",
-      "source_line": 75,
-      "date": "2027-01-21",
-      "slot": "do 20:00",
+      "date": "2027-01-05",
+      "slot": "di 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
-      "theme": "indigo",
+      "thema": "Tampons en cup",
+      "theme": "roze",
       "lines": [
         "Je weet in <em>elke winkel</em>",
         "precies waar",
@@ -1595,18 +1440,131 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Je weet in elke winkel precies waar het schap staat. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56-a-story.mp4"
+    },
+    {
+      "id": "m48",
+      "date": "2027-01-07",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "perzik",
+      "lines": [
+        "<em>Je geduld</em> raakt",
+        "een week eerder op",
+        "dan je strip."
+      ],
+      "subject": "Je geduld raakt een week eerder op dan je strip.",
+      "caption": "En dat is precies te voorspellen.\n\nStuur 'm door naar wie dit van je pikt.",
+      "tags": [
+        "#pms",
+        "#hormonen",
+        "#cyclus",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48-a-story.mp4"
+    },
+    {
+      "id": "m18",
+      "date": "2027-01-09",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "indigo",
+      "lines": [
+        "<em>De apotheek</em>",
+        "is altijd net dicht",
+        "als je eraan denkt."
+      ],
+      "subject": "De apotheek is altijd net dicht als je eraan denkt.",
+      "caption": "Je denkt er de hele dag niet aan, en dan om vijf over zes wel.\n\nTag wie ook altijd net te laat is.",
+      "tags": [
+        "#apotheek",
+        "#herhaalrecept",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m18-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m18-a-story.mp4"
+    },
+    {
+      "id": "m41",
+      "date": "2027-01-12",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Menstruatie dagelijks",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Een witte stoel</em>",
+        "voelt in die week als",
+        "een persoonlijke aanval."
+      ],
+      "subject": "Een witte stoel voelt in die week als een persoonlijke aanval.",
+      "caption": "Wie ontwerpt die dingen.\n\nTag wie ook altijd de donkere stoel uitzoekt.",
+      "tags": [
+        "#menstruatie",
+        "#herkenbaar",
+        "#cyclus",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m41-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m41-a-story.mp4"
+    },
+    {
+      "id": "m11",
+      "date": "2027-01-14",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Pil kwijt of vergeten",
+      "theme": "roze",
+      "lines": [
+        "Niets is zo onzeker",
+        "als de vraag of je 'm",
+        "<em>vanochtend</em>",
+        "genomen hebt."
+      ],
+      "subject": "Niets is zo onzeker als de vraag of je 'm vanochtend genomen hebt.",
+      "caption": "Je weet het zeker. Tot je even naar de strip kijkt.\n\nStuur 'm door naar wie hier ook wel eens over twijfelt.",
+      "tags": [
+        "#depil",
+        "#pilvergeten",
+        "#anticonceptie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": "Twijfel je of je 'm genomen hebt? Je apotheek denkt hier zo met je mee, en dat is een betere bron dan je geheugen om half twaalf 's avonds. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.",
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m11-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m11-a-story.mp4"
     },
     {
       "id": "m57",
-      "source_line": 76,
-      "date": "2027-01-23",
+      "date": "2027-01-16",
       "slot": "za 11:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Tampons en cup",
       "theme": "lavendel",
       "lines": [
         "<em>De zelfscankassa</em>",
@@ -1624,18 +1582,102 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Lavendel vlak met de tekst: De zelfscankassa vraagt altijd om controle bij precies dat ene product. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57-a-story.mp4"
+    },
+    {
+      "id": "m49",
+      "date": "2027-01-19",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "perzik",
+      "lines": [
+        "<em>Alles</em> is irritant,",
+        "en de meeste dingen",
+        "hebben niets gedaan."
+      ],
+      "subject": "Alles is irritant, en de meeste dingen hebben niets gedaan.",
+      "caption": "Sorry tegen de wasmachine, de buurman en die ene app.\n\nTag wie hier deze week begrip voor heeft.",
+      "tags": [
+        "#pms",
+        "#hormonen",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49-a-story.mp4"
+    },
+    {
+      "id": "m30",
+      "date": "2027-01-21",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Krampen",
+      "theme": "indigo",
+      "lines": [
+        "<em>Je onderrug</em>",
+        "weet het eerder",
+        "dan jij."
+      ],
+      "subject": "Je onderrug weet het eerder dan jij.",
+      "caption": "Nog voor je app iets zegt.\n\nStuur 'm door naar wie het ook altijd in haar rug voelt.",
+      "tags": [
+        "#menstruatie",
+        "#cyclus",
+        "#krampen",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m30-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m30-a-story.mp4"
+    },
+    {
+      "id": "m20",
+      "date": "2027-01-23",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "perzik",
+      "lines": [
+        "<em>Je voorraad</em>",
+        "raakt altijd op",
+        "tijdens de drukste dag."
+      ],
+      "subject": "Je voorraad raakt altijd op tijdens de drukste dag.",
+      "caption": "Niet op dag vier. Op dag twee.\n\nStuur 'm door naar wie dit ook elke keer verkeerd inschat.",
+      "tags": [
+        "#menstruatie",
+        "#maandverband",
+        "#tampon",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m20-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m20-a-story.mp4"
     },
     {
       "id": "m58",
-      "source_line": 77,
       "date": "2027-01-26",
       "slot": "di 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Tampons en cup",
       "theme": "roze",
       "lines": [
         "Je hebt voor",
@@ -1652,19 +1694,215 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Roze vlak met de tekst: Je hebt voor elke tas een noodplan. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58-a-story.mp4"
     },
     {
-      "id": "m59",
-      "source_line": 79,
+      "id": "m50",
       "date": "2027-01-28",
       "slot": "do 20:00",
       "concept": "onder_ons",
+      "style": "briefje",
       "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Je agenda</em> en je zin",
+        "om iets te doen lopen",
+        "die week niet gelijk."
+      ],
+      "subject": "Je agenda en je zin om iets te doen lopen die week niet gelijk.",
+      "caption": "Je hebt het allemaal zelf ingepland, dat is het vervelende.\n\nStuur 'm door naar wie ook wel eens iets afzegt.",
+      "tags": [
+        "#pms",
+        "#cyclus",
+        "#hormonen",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50-a-story.mp4"
+    },
+    {
+      "id": "m39",
+      "date": "2027-01-30",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Op reis",
       "theme": "indigo",
+      "lines": [
+        "<em>Je koffer</em> heeft altijd",
+        "plek, behalve voor",
+        "het kleinste doosje."
+      ],
+      "subject": "Je koffer heeft altijd plek, behalve voor het kleinste doosje.",
+      "caption": "De föhn past wel.\n\nTag wie ook te groot inpakt en te klein vergeet.",
+      "tags": [
+        "#reizen",
+        "#anticonceptie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m39-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m39-a-story.mp4"
+    },
+    {
+      "id": "m55",
+      "date": "2027-02-02",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Herinneringen",
+      "theme": "lavendel",
+      "lines": [
+        "<em>Je telefoon</em> houdt",
+        "je cyclus beter bij",
+        "dan jij je afspraken."
+      ],
+      "subject": "Je telefoon houdt je cyclus beter bij dan jij je afspraken.",
+      "caption": "Eén van de twee is in elk geval op orde.\n\nTag wie ook op haar telefoon vertrouwt.",
+      "tags": [
+        "#cyclus",
+        "#menstruatie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m55-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m55-a-story.mp4"
+    },
+    {
+      "id": "m44",
+      "date": "2027-02-04",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Menstruatie dagelijks",
+      "theme": "perzik",
+      "lines": [
+        "<em>De wasmand</em>",
+        "houdt bij",
+        "welke week het is."
+      ],
+      "subject": "De wasmand houdt bij welke week het is.",
+      "caption": "Een rustige, betrouwbare kalender.\n\nStuur 'm door naar wie dit meteen snapt.",
+      "tags": [
+        "#menstruatie",
+        "#cyclus",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m44-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m44-a-story.mp4"
+    },
+    {
+      "id": "m12",
+      "date": "2027-02-06",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Pil kwijt of vergeten",
+      "theme": "roze",
+      "lines": [
+        "<em>De strip</em> in je",
+        "nachtkastje is altijd",
+        "van vorige maand."
+      ],
+      "subject": "De strip in je nachtkastje is altijd van vorige maand.",
+      "caption": "Leeg, en toch ligt hij er nog steeds.\n\nTag wie haar nachtkastje ook nooit opruimt.",
+      "tags": [
+        "#depil",
+        "#anticonceptie",
+        "#herkenbaar",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m12-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m12-a-story.mp4"
+    },
+    {
+      "id": "m40",
+      "date": "2027-02-09",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Krampen",
+      "theme": "indigo",
+      "lines": [
+        "<em>Je krampen</em> wachten",
+        "netjes tot de",
+        "vergadering begint."
+      ],
+      "subject": "Je krampen wachten netjes tot de vergadering begint.",
+      "caption": "Agendapunt één, en daar zijn ze.\n\nStuur 'm door naar wie vandaag ook een volle agenda heeft.",
+      "tags": [
+        "#krampen",
+        "#werk",
+        "#menstruatie",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m40-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m40-a-story.mp4"
+    },
+    {
+      "id": "m43",
+      "date": "2027-02-11",
+      "slot": "do 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Voorraad en herhaalrecept",
+      "theme": "roze",
+      "lines": [
+        "<em>Het spiegelkastje</em>",
+        "zit vol, en toch is er",
+        "nooit wat je zoekt."
+      ],
+      "subject": "Het spiegelkastje zit vol, en toch is er nooit wat je zoekt.",
+      "caption": "Wel drie soorten dagcrème.\n\nTag wie haar kastje ook eindelijk eens gaat uitzoeken.",
+      "tags": [
+        "#herkenbaar",
+        "#badkamer",
+        "#vrouwengezondheid",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m43-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m43-a-story.mp4"
+    },
+    {
+      "id": "m59",
+      "date": "2027-02-13",
+      "slot": "za 11:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Tampons en cup",
+      "theme": "perzik",
       "lines": [
         "Er ligt ergens in je",
         "huis <em>een tampon</em> die",
@@ -1681,10 +1919,37 @@
         "#mijnpilnu"
       ],
       "first_comment": null,
-      "alt": "Indigo vlak met de tekst: Er ligt ergens in je huis een tampon die je nooit meer terugvindt. Linksboven de hashtag vrouwen onder elkaar, linksonder het logo van MijnPil.nu.",
       "story": true,
-      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m59.jpg",
-      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m59-story.mp4"
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m59-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m59-a-story.mp4"
+    },
+    {
+      "id": "m51",
+      "date": "2027-02-16",
+      "slot": "di 20:00",
+      "concept": "onder_ons",
+      "style": "briefje",
+      "format": "image",
+      "thema": "Hormonen en humeur",
+      "theme": "roze",
+      "lines": [
+        "<em>Je cyclusapp</em> is",
+        "optimistischer over",
+        "je regelmaat dan jij."
+      ],
+      "subject": "Je cyclusapp is optimistischer over je regelmaat dan jij.",
+      "caption": "Zij zegt woensdag. Jij weet wel beter.\n\nTag wie haar app ook niet helemaal gelooft.",
+      "tags": [
+        "#cyclus",
+        "#menstruatie",
+        "#hormonen",
+        "#vrouwenonderelkaar",
+        "#mijnpilnu"
+      ],
+      "first_comment": null,
+      "story": true,
+      "image_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m51-a.jpg",
+      "story_url": "https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m51-a-story.mp4"
     }
   ]
 }

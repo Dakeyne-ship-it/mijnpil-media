@@ -50,12 +50,21 @@ def shot(browser, name, html, size):
     return out
 
 
-def clip(browser, post_id, name, scenes, size):
-    """Render a list of (html, duration) scenes into one MP4."""
+def clip(browser, post_id, name, scenes, size, cover=False):
+    """Render a list of (html, duration) scenes into one MP4.
+
+    cover=True also writes <name>-cover.jpg: the last frame of the first scene,
+    when everything in it has landed. Reels pass that as cover_url, because
+    Instagram otherwise takes frame 0, which is an empty field."""
     dirs = []
     for i, (html, dur) in enumerate(scenes):
         d, _ = render_clip(browser, f"{name}_{i}", html, dur, size[0], size[1])
         dirs.append(d)
+    if cover:
+        last = sorted(dirs[0].glob("*.jpg"))[-1]
+        cv = PROD / post_id / f"{name}-cover.jpg"
+        cv.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(last, cv)
     mp4 = encode(dirs, name)
     dest = PROD / post_id / f"{name}.mp4"
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -72,7 +81,7 @@ def build(browser, p):
     if concept == "klare_taal":
         scenes = [C.reel_scene_v(s["kind"], s["lines"], s.get("small", ""), w=VERT[0], h=VERT[1])
                   for s in p["scenes"]]
-        return [clip(browser, pid, pid, scenes, VERT)]
+        return [clip(browser, pid, pid, scenes, VERT, cover=True)]
 
     if concept == "mythe_feit":
         return [
@@ -88,7 +97,7 @@ def build(browser, p):
                                         field=p.get("field", "var(--mint)"), w=FEED[0], h=FEED[1]), FEED)]
         return [clip(browser, pid, pid,
                      [C.de_vraag_v(p["kicker"], p["lines"],
-                                   field=p.get("field", "var(--mint)"), w=VERT[0], h=VERT[1])], VERT)]
+                                   field=p.get("field", "var(--mint)"), w=VERT[0], h=VERT[1])], VERT, cover=True)]
 
     if concept == "anatomie":
         v = p["variant"]
@@ -101,9 +110,14 @@ def build(browser, p):
     if concept == "de_cyclus":
         return [clip(browser, pid, pid,
                      [C.cyclus_v(p.get("variant", "hormonen"),
-                                 w=VERT[0], h=VERT[1])], VERT)]
+                                 w=VERT[0], h=VERT[1])], VERT, cover=True)]
 
     if concept == "onder_ons":
+        if p.get("style") == "briefje":
+            out = [shot(browser, f"{pid}-a", C.briefje(p["lines"], p["theme"])[0], FEED)]
+            html, dur = C.briefje(p["lines"], p["theme"], anim=True, w=VERT[0], h=VERT[1])
+            out.append(clip(browser, pid, f"{pid}-a-story", [(html, dur)], VERT))
+            return out
         out = [shot(browser, pid,
                     C.onder_ons(p["lines"], "vullend", p["theme"],
                                 w=FEED[0], h=FEED[1], tag="eyebrow",
@@ -116,9 +130,25 @@ def build(browser, p):
                                            border=16)], VERT))
         return out
 
+    if concept == "inhaker":
+        return [shot(browser, pid, C.de_vraag_img(p["kicker"], p["lines"], field=p["field"],
+                                                  w=FEED[0], h=FEED[1]), FEED),
+                clip(browser, pid, f"{pid}-story",
+                     [C.de_vraag_v(p["kicker"], p["lines"], field=p["field"],
+                                   w=VERT[0], h=VERT[1])], VERT)]
+
+    if concept == "vast":
+        n = 1 + len(p["slides"])
+        out = [shot(browser, f"{pid}__1", C.vast_cover(p["kicker"], p["lines"], p["theme"]), FEED)]
+        for k, (num, title, body) in enumerate(p["slides"]):
+            out.append(shot(browser, f"{pid}__{k+2}",
+                            C.vast_slide(num, title, body, f"{k+2} / {n}"), FEED))
+        return out
+
     if concept == "uit_de_dm":
         return [clip(browser, pid, pid,
-                     [C.uit_de_dm_v(p["vraag"], p["antwoord"], w=VERT[0], h=VERT[1])], VERT)]
+                     [C.uit_de_dm_v(p["vraag"], p["antwoord"], w=VERT[0], h=VERT[1])], VERT,
+                     cover=True)]
 
     raise ValueError(f"unknown concept: {concept}")
 

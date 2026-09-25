@@ -1,28 +1,41 @@
 # Onder ons, publiceerklaar
-De memepijler van @mijnpil.nu. Negenenvijftig posts, drie per week op
-dinsdag, donderdag en zaterdag, van 15 september 2026 tot en met
-28 januari 2027. De uitlegqueue op maandag, woensdag en vrijdag staat hier
-los van en heeft zijn eigen document.
+
+De dinsdag-, donderdag- en zaterdagslots van @mijnpil.nu. Bijgewerkt 25 september
+2026. Loopt tot en met 16 februari 2027. De uitlegqueue op maandag,
+woensdag en vrijdag staat hier los van en heeft zijn eigen document.
+
+In deze slots staan drie soorten posts: memes (Onder ons, id begint met m),
+inhakers (id begint met i) en drie posts die bovenaan het profiel worden
+vastgepind (id begint met p). Per post staat hieronder precies wat er moet gebeuren.
+
 Alle beelden en stories staan al op de beeldhost. Er hoeft niets gebouwd of
 gepusht te worden. De werkomgeving kan de host zelf niet bereiken, dus een
 mislukte curl zegt niets: Instagram haalt de bestanden wel op.
+
 ## Vaste werkwijze per post
+
 1. Zoek hieronder het kopje met de datum van vandaag in Europe/Amsterdam.
-   Staat die datum er niet, dan is er vandaag geen memepost.
-2. Feed: connector `instagram`, account `17841408082040893`, actie
-   `create_image_post` met image_url en de letterlijke caption.
+   Staat die datum er niet, dan is er vandaag niets te doen.
+2. Feed: connector `instagram`, account `17841408082040893`. Gebruik de actie
+   die bij de post staat (`create_image_post` of `create_carousel_post`) met de
+   URL's en de letterlijke caption.
 3. Staat er een eerste reactie bij, plaats die direct met `create_comment`,
    media_id is wat stap 2 teruggaf.
-4. Story: actie `create_story` met video_url. Stories kennen geen caption.
-   Mislukt de story, laat de feedpost dan staan en meld alleen de story.
+4. Staat er een story bij: actie `create_story` met video_url. Stories kennen
+   geen caption. Mislukt de story, laat de feedpost dan staan en meld alleen de
+   story. Staat er geen story bij, sla deze stap over.
+5. Staat er bij de post "vastpinnen", meld dan in de pushmelding dat Alexander
+   deze post handmatig bovenaan het profiel moet vastzetten. De API kan niet pinnen.
+
 Vaste hashtags: #vrouwenonderelkaar #mijnpilnu. Die staan al in elke caption
 hieronder, dus neem de caption letterlijk over en voeg niets toe.
+
 ---
 
 # september 2026
 
 ## 2026-09-15 · m01 · dinsdag 20:00
-Kleur: roze. Regel: De stopweek weet precies wanneer je op vakantie gaat.
+Meme. Kleur: roze. Regel: De stopweek weet precies wanneer je op vakantie gaat.
 - Feed, `create_image_post`
   image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m01.jpg
 - Story, `create_story`
@@ -45,7 +58,7 @@ Even voor de duidelijkheid: de bloeding in je stopweek is een onttrekkingsbloedi
 ```
 
 ## 2026-09-17 · m02 · donderdag 20:00
-Kleur: indigo. Regel: Je menstruatie kent je agenda beter dan jij.
+Meme. Kleur: indigo. Regel: Je menstruatie kent je agenda beter dan jij.
 - Feed, `create_image_post`
   image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m02.jpg
 - Story, `create_story`
@@ -64,7 +77,7 @@ Tag iemand die dit ook elke maand meemaakt.
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
 ## 2026-09-19 · m03 · zaterdag 11:00
-Kleur: lavendel. Regel: Je menstruatie wacht netjes tot je iets wits aanhebt.
+Meme. Kleur: lavendel. Regel: Je menstruatie wacht netjes tot je iets wits aanhebt.
 - Feed, `create_image_post`
   image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m03.jpg
 - Story, `create_story`
@@ -83,7 +96,7 @@ Stuur 'm door naar wie het toch nog een keer gaat proberen.
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
 ## 2026-09-22 · m04 · dinsdag 20:00
-Kleur: roze. Regel: De stopweek begint standaard op de dag dat je iets leuks hebt.
+Meme. Kleur: roze. Regel: De stopweek begint standaard op de dag dat je iets leuks hebt.
 - Feed, `create_image_post`
   image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m04.jpg
 - Story, `create_story`
@@ -106,7 +119,7 @@ Bij veel combinatiepillen kun je die week gewoon overslaan, zodat de bloeding op
 ```
 
 ## 2026-09-24 · m05 · donderdag 20:00
-Kleur: indigo. Regel: Je cyclus weet eerder dan jij wanneer het zwembadweer wordt.
+Meme. Kleur: indigo. Regel: Je cyclus weet eerder dan jij wanneer het zwembadweer wordt.
 - Feed, `create_image_post`
   image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m05.jpg
 - Story, `create_story`
@@ -124,155 +137,131 @@ Tag je zwemmaatje.
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-09-26 · m06 · zaterdag 11:00
-Kleur: lavendel. Regel: Je menstruatie heeft nog nooit een vakantie overgeslagen.
+## 2026-09-26 · i01 · zaterdag 11:00
+Inhaker. Wereld Anticonceptiedag: past je anticonceptie nog bij je leven van nu?
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m06.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/i01.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m06-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/i01-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Trouwer dan welke reisgenoot ook.
+Vandaag is het Wereld Anticonceptiedag. Een goed moment voor een vraag die bijna niemand zichzelf stelt: past de anticonceptie die je ooit hebt gekozen nog bij je leven van nu?
 
-Stuur 'm door naar wie je koffer deelt.
+Veel vrouwen gebruiken jarenlang hetzelfde middel, terwijl er in de tussentijd genoeg verandert. Momenten om er opnieuw naar te kijken:
 
-#menstruatie #vakantie #cyclus #vrouwenonderelkaar #mijnpilnu
+Je vergeet vaker een pil dan je zou willen.
+Je hebt klachten die je inmiddels normaal bent gaan vinden.
+Je geeft borstvoeding, of je komt richting de overgang.
+Je wilt over een tijdje zwanger worden, of juist helemaal niet meer.
+
+Herken je jezelf hierin? Bespreek het bij je volgende afspraak met je huisarts.
+
+Bewaar 'm voor als je die afspraak maakt.
+
+#wereldanticonceptiedag #anticonceptie #depil #vrouwenonderelkaar #mijnpilnu
 ```
 
-Geen eerste reactie. Deze post doet geen medische uitspraak.
+**Eerste reactie eronder**
 
-## 2026-09-29 · m07 · dinsdag 20:00
-Kleur: roze. Regel: Het weekendje weg stond al geboekt, de stopweek wist dat allang.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m07.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/m07-story.mp4
+```
+Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2026-09-29 · p1 · dinsdag 20:00
+Vastpinnen. Vastgezet 1: wie we zijn. Na publicatie handmatig bovenaan het profiel vastzetten.
+- Feed, `create_carousel_post`, image_urls in deze volgorde:
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/p1__1.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/p1__2.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/09/p1__3.jpg
+- Geen story.
 
 **Caption, letterlijk**
 
 ```
-Geboekt in maart, geregeld in juni, en toch precies die week.
+Wie zit er eigenlijk achter @mijnpil.nu? Een echte, geregistreerde apotheek. MijnPil.nu werkt onder de vergunning van Service Apotheek Hardenberg en staat in het register van online aanbieders van het ministerie van VWS.
 
-Stuur 'm door naar wie het weekend organiseert.
+Online bestellen betekent bij ons niet dat er minder gecontroleerd wordt. Elke bestelling wordt samengesteld door een apothekersassistente en gecontroleerd door de apotheker.
 
-#stopweek #anticonceptie #weekendje #vrouwenonderelkaar #mijnpilnu
+Op dit account vind je heldere uitleg over anticonceptie, je cyclus en alles eromheen. En af en toe iets om naar je vriendinnen door te sturen.
+
+#apotheek #anticonceptie #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
 # oktober 2026
 
-## 2026-10-01 · m08 · donderdag 20:00
-Kleur: indigo. Regel: Je pil valt altijd op de enige plek waar je niet bij kan.
+## 2026-10-01 · m19 · donderdag 20:00
+Meme. Kleur: roze. Regel: Je laatste tampon ligt altijd los onderin je tas.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m08.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m08-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19-a-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Achter de wc, onder de kast, tussen de plint. Nooit gewoon op de grond.
+Zonder verpakking, met een kruimel erop, maar hij is er.
 
-Tag wie ook wel eens op haar knieën in de badkamer heeft gelegen.
+Tag wie ook altijd de reddende engel is.
 
-#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-**Eerste reactie eronder**
-
-```
-Pil echt kwijt? Bel even je apotheek, die kijkt in een minuut met je mee wat handig is. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
-```
-
-## 2026-10-03 · m09 · zaterdag 11:00
-Kleur: lavendel. Regel: De pilstrip zit altijd in de tas die je vandaag niet meeneemt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m09.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m09-story.mp4
-
-**Caption, letterlijk**
-
-```
-De ene tas heeft alles. Vandaag gebruik je de andere.
-
-Stuur 'm door naar wie drie tassen heeft en nooit de juiste.
-
-#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-10-06 · m10 · dinsdag 20:00
-Kleur: roze. Regel: Je pilstrip ligt thuis precies op de plek waar je nooit kijkt.
+## 2026-10-03 · m31 · zaterdag 11:00
+Meme. Kleur: lavendel. Regel: Je huid weet precies wanneer je op de foto moet.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m10.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m31-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m10-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m31-a-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Je hebt overal gezocht behalve daar, en daar lag hij.
+Drie weken rust, en dan die ene dag.
 
-Tag wie 'm ook altijd op de gekste plek terugvindt.
+Tag wie ook altijd op het verkeerde moment gefotografeerd wordt.
 
-#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+#hormonen #cyclus #huid #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-10-08 · m11 · donderdag 20:00
-Kleur: indigo. Regel: Niets is zo onzeker als de vraag of je 'm vanochtend genomen hebt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m11.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m11-story.mp4
+## 2026-10-06 · p2 · dinsdag 20:00
+Vastpinnen. Vastgezet 2: zo werkt bestellen. Na publicatie handmatig bovenaan het profiel vastzetten.
+- Feed, `create_carousel_post`, image_urls in deze volgorde:
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__1.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__2.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__3.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p2__4.jpg
+- Geen story.
 
 **Caption, letterlijk**
 
 ```
-Je weet het zeker. Tot je even naar de strip kijkt.
+Hoe werkt bestellen bij MijnPil.nu? In het kort: je bestelt de anticonceptie die je al gebruikt, en wij bezorgen het.
 
-Stuur 'm door naar wie hier ook wel eens over twijfelt.
+Wij schrijven zelf niets voor. Bij je eerste bestelling vragen we een foto van je recept, of van een doosje met apotheeketiket, en die controleert de apotheker. Daarna kun je gewoon nabestellen zonder opnieuw iets aan te leveren.
 
-#depil #pilvergeten #anticonceptie #vrouwenonderelkaar #mijnpilnu
-```
+Liever niet elke keer zelf opletten? Je kunt je bestelling ook automatisch laten herhalen.
 
-**Eerste reactie eronder**
+Alles begint via de link in onze bio.
 
-```
-Twijfel je of je 'm genomen hebt? Je apotheek denkt hier zo met je mee, en dat is een betere bron dan je geheugen om half twaalf 's avonds. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
-```
-
-## 2026-10-10 · m12 · zaterdag 11:00
-Kleur: lavendel. Regel: De strip in je nachtkastje is altijd van vorige maand.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m12.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m12-story.mp4
-
-**Caption, letterlijk**
-
-```
-Leeg, en toch ligt hij er nog steeds.
-
-Tag wie haar nachtkastje ook nooit opruimt.
-
-#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+#anticonceptie #depil #apotheek #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-10-13 · m13 · dinsdag 20:00
-Kleur: roze. Regel: Je ontdekt dat je strip op is op het moment dat je 'm nodig hebt.
+## 2026-10-08 · m13 · donderdag 20:00
+Meme. Kleur: roze. Regel: Je ontdekt dat je strip op is op het moment dat je 'm nodig hebt.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m13-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -290,223 +279,12 @@ Stuur 'm door naar wie dit ook maandelijks overkomt.
 Praktische tip: zet een herinnering op de dag dat je aan je laatste strip begint. Dan heb je een week speling in plaats van een avond.
 ```
 
-## 2026-10-15 · m14 · donderdag 20:00
-Kleur: indigo. Regel: Het doosje voelt vol tot je het openmaakt.
+## 2026-10-10 · m25 · zaterdag 11:00
+Meme. Kleur: lavendel. Regel: Krampen wachten netjes tot je in de trein zit.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m25-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14-story.mp4
-
-**Caption, letterlijk**
-
-```
-Gewicht zegt niets.
-
-Tag wie ook op gevoel inschat hoeveel er nog in zit.
-
-#anticonceptie #depil #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-17 · m15 · zaterdag 11:00
-Kleur: lavendel. Regel: Je herhaalrecept valt altijd in de week dat je het al druk hebt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m15.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m15-story.mp4
-
-**Caption, letterlijk**
-
-```
-Nooit in die ene rustige week.
-
-Stuur 'm door naar wie haar agenda ook niet meer ziet zitten.
-
-#herhaalrecept #apotheek #anticonceptie #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-20 · m16 · dinsdag 20:00
-Kleur: roze. Regel: Je badkamerkastje is optimistischer over je voorraad dan de werkelijkheid.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m16.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m16-story.mp4
-
-**Caption, letterlijk**
-
-```
-Vol met van alles, leeg aan het enige wat je zoekt.
-
-Tag wie haar kastje ook niet durft op te ruimen.
-
-#herkenbaar #vrouwengezondheid #badkamer #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-22 · m17 · donderdag 20:00
-Kleur: indigo. Regel: Je hebt nog één strip, en dat weet je pas op zondagavond.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m17.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m17-story.mp4
-
-**Caption, letterlijk**
-
-```
-Precies als alles dicht is.
-
-Stuur 'm door naar wie dit ook op zondag ontdekt.
-
-#depil #apotheek #anticonceptie #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-24 · m18 · zaterdag 11:00
-Kleur: lavendel. Regel: De apotheek is altijd net dicht als je eraan denkt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m18.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m18-story.mp4
-
-**Caption, letterlijk**
-
-```
-Je denkt er de hele dag niet aan, en dan om vijf over zes wel.
-
-Tag wie ook altijd net te laat is.
-
-#apotheek #herhaalrecept #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-27 · m19 · dinsdag 20:00
-Kleur: roze. Regel: Je laatste tampon ligt altijd los onderin je tas.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m19-story.mp4
-
-**Caption, letterlijk**
-
-```
-Zonder verpakking, met een kruimel erop, maar hij is er.
-
-Tag wie ook altijd de reddende engel is.
-
-#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-29 · m20 · donderdag 20:00
-Kleur: indigo. Regel: Je voorraad raakt altijd op tijdens de drukste dag.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m20.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m20-story.mp4
-
-**Caption, letterlijk**
-
-```
-Niet op dag vier. Op dag twee.
-
-Stuur 'm door naar wie dit ook elke keer verkeerd inschat.
-
-#menstruatie #maandverband #tampon #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-10-31 · m21 · zaterdag 11:00
-Kleur: lavendel. Regel: Je neemt altijd precies één tampon te weinig mee.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21-story.mp4
-
-**Caption, letterlijk**
-
-```
-Twee leek genoeg. Twee was niet genoeg.
-
-Tag je noodcontact voor precies dit moment.
-
-#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-# november 2026
-
-## 2026-11-03 · m22 · dinsdag 20:00
-Kleur: roze. Regel: Je vindt overal tampons, behalve als je er een zoekt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22-story.mp4
-
-**Caption, letterlijk**
-
-```
-In je jas, in de auto, in die ene la. Nooit nu.
-
-Stuur 'm door naar wie ook overal voorraad heeft, behalve bij zich.
-
-#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-05 · m23 · donderdag 20:00
-Kleur: indigo. Regel: Je cup ligt altijd te drogen op het moment dat je 'm nodig hebt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23-story.mp4
-
-**Caption, letterlijk**
-
-```
-Schoon, klaar, en aan de verkeerde kant van het huis.
-
-Tag je cupvriendin.
-
-#menstruatiecup #menstruatie #duurzaam #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-07 · m24 · zaterdag 11:00
-Kleur: lavendel. Regel: Er zit altijd een tampon in je jaszak, alleen niet in de jas van vandaag.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m24.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m24-story.mp4
-
-**Caption, letterlijk**
-
-```
-Jassen hebben een eigen systeem en dat is niet het jouwe.
-
-Stuur 'm door naar wie ook drie jassen en nul tampons bij zich heeft.
-
-#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-10 · m25 · dinsdag 20:00
-Kleur: roze. Regel: Krampen wachten netjes tot je in de trein zit.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m25.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m25-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m25-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -524,208 +302,81 @@ Tag wie ook altijd in de spits begint.
 Krampen die je dag echt in de weg zitten horen er niet gewoon bij. Bespreek het een keer met je huisarts, er is vaak meer mogelijk dan vrouwen denken. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
 ```
 
-## 2026-11-12 · m26 · donderdag 20:00
-Kleur: indigo. Regel: Je kruik ligt altijd in de kast waar je niet bij kan.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26-story.mp4
+## 2026-10-13 · p3 · dinsdag 20:00
+Vastpinnen. Vastgezet 3: wat je hier vindt. Na publicatie handmatig bovenaan het profiel vastzetten.
+- Feed, `create_carousel_post`, image_urls in deze volgorde:
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__1.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__2.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__3.jpg
+  - https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/p3__4.jpg
+- Geen story.
 
 **Caption, letterlijk**
 
 ```
-Bovenste plank, achterin, achter de kerstspullen.
+Nieuw hier? Welkom. Op dit account vind je twee soorten posts: uitleg over anticonceptie en je cyclus waar je echt iets aan hebt, en posts voor als je denkt: dit ben ik. Die laatste zijn gemaakt om door te sturen.
 
-Stuur 'm door naar wie ook een opstapje nodig heeft.
+Wat we hier delen is algemene informatie en geen medisch advies. Heb je een vraag over je eigen situatie? Je huisarts is daar de beste plek voor.
 
-#krampen #menstruatie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+Gebruik #vrouwenonderelkaar als je zelf iets herkenbaars post. De leukste delen we in onze stories.
+
+#anticonceptie #cyclus #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-11-14 · m27 · zaterdag 11:00
-Kleur: lavendel. Regel: De eerste dag valt altijd samen met de dag die je niet kunt verzetten.
+## 2026-10-15 · m06 · donderdag 20:00
+Meme. Kleur: perzik. Regel: Je menstruatie heeft nog nooit een vakantie overgeslagen.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m06-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m06-a-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Presentatie, rijexamen, bruiloft. Kies maar.
+Trouwer dan welke reisgenoot ook.
 
-Tag wie dit ook een keer heeft meegemaakt.
+Stuur 'm door naar wie je koffer deelt.
 
-#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
+#menstruatie #vakantie #cyclus #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-11-17 · m28 · dinsdag 20:00
-Kleur: roze. Regel: Krampen weten precies wanneer je moet staan.
+## 2026-10-17 · i02 · zaterdag 11:00
+Inhaker. Wereld Menopauzedag: merk je de overgang als je de pil slikt?
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m28.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i02.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m28-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i02-story.mp4
 
 **Caption, letterlijk**
 
 ```
-In de rij, in de tram, in de supermarkt.
+Morgen is het Wereld Menopauzedag. Een vraag die we vaak tegenkomen: merk je de overgang eigenlijk wel als je de pil slikt?
 
-Stuur 'm door naar wie vandaag ook op haar tanden bijt.
+Vaak minder dan je zou verwachten. Een combinatiepil regelt je bloedingen en levert zelf hormonen, en kan daardoor klachten zoals een onregelmatige cyclus of opvliegers deels maskeren. Je kunt dus al in de overgang zitten zonder dat je het goed merkt.
 
-#menstruatiepijn #krampen #menstruatie #vrouwenonderelkaar #mijnpilnu
+Ben je rond de 45 of ouder en gebruik je hormonale anticonceptie? Bespreek dan met je huisarts tot wanneer je die nog nodig hebt en wat een logisch moment is om te stoppen.
+
+Stuur 'm door naar wie hier ook mee bezig is.
+
+#overgang #wereldmenopauzedag #anticonceptie #vrouwenonderelkaar #mijnpilnu
 ```
 
 **Eerste reactie eronder**
 
 ```
-Warmte helpt vaak meer dan je denkt, en bewegen ook. Blijft het elke maand zo? Dan is het een gesprek met je huisarts waard. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
 ```
 
-## 2026-11-19 · m29 · donderdag 20:00
-Kleur: indigo. Regel: Je pijnstillers liggen altijd in je andere tas.
+## 2026-10-20 · m36 · dinsdag 20:00
+Meme. Kleur: perzik. Regel: In het vliegtuig weet je lichaam precies hoe laat het thuis is.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m29.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m36-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m29-story.mp4
-
-**Caption, letterlijk**
-
-```
-Samen met je pleisters en je goede voornemens.
-
-Tag wie altijd wel iets bij zich heeft.
-
-#krampen #menstruatie #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-21 · m30 · zaterdag 11:00
-Kleur: lavendel. Regel: Je onderrug weet het eerder dan jij.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m30.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m30-story.mp4
-
-**Caption, letterlijk**
-
-```
-Nog voor je app iets zegt.
-
-Stuur 'm door naar wie het ook altijd in haar rug voelt.
-
-#menstruatie #cyclus #krampen #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-24 · m31 · dinsdag 20:00
-Kleur: roze. Regel: Je huid weet precies wanneer je op de foto moet.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m31.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m31-story.mp4
-
-**Caption, letterlijk**
-
-```
-Drie weken rust, en dan die ene dag.
-
-Tag wie ook altijd op het verkeerde moment gefotografeerd wordt.
-
-#hormonen #cyclus #huid #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-26 · m32 · donderdag 20:00
-Kleur: indigo. Regel: Je humeur begint een dag eerder dan je cyclus.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m32.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m32-story.mp4
-
-**Caption, letterlijk**
-
-```
-Achteraf snap je precies waarom je boos was op die deur.
-
-Stuur 'm door naar wie jou die dag verdraagt.
-
-#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-11-28 · m33 · zaterdag 11:00
-Kleur: lavendel. Regel: Je hebt geen idee welke dag het is, je cyclus wel.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33-story.mp4
-
-**Caption, letterlijk**
-
-```
-De enige agenda die altijd klopt.
-
-Tag wie ook op haar cyclus navigeert.
-
-#cyclus #menstruatie #hormonen #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-# december 2026
-
-## 2026-12-01 · m34 · dinsdag 20:00
-Kleur: roze. Regel: Je onderbroeken zijn onderverdeeld in twee categorieën, en jij weet precies welke.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m34.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m34-story.mp4
-
-**Caption, letterlijk**
-
-```
-Iedereen heeft dit systeem, niemand heeft het ooit uitgelegd.
-
-Stuur 'm door naar wie precies weet wat je bedoelt.
-
-#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-03 · m35 · donderdag 20:00
-Kleur: indigo. Regel: Je wasmachine kent jouw cyclus inmiddels ook.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35-story.mp4
-
-**Caption, letterlijk**
-
-```
-Elke maand dezelfde afspraak.
-
-Tag wie ook maandelijks een extra wasje draait.
-
-#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-05 · m36 · zaterdag 11:00
-Kleur: lavendel. Regel: In het vliegtuig weet je lichaam precies hoe laat het thuis is.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m36.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m36-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m36-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -743,299 +394,56 @@ Stuur 'm door naar wie binnenkort ver weg gaat.
 Reis je een paar uur naar het oosten of westen? Vraag je apotheek even hoe je je inname het handigst verschuift, dan hoef je daar ter plekke niet over na te denken. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
 ```
 
-## 2026-12-08 · m37 · dinsdag 20:00
-Kleur: roze. Regel: Je hebt alles ingepakt, behalve het enige wat niet kan wachten.
+## 2026-10-22 · m21 · donderdag 20:00
+Meme. Kleur: roze. Regel: Je neemt altijd precies één tampon te weinig mee.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m37.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m37-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m21-a-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Drie paar schoenen wel.
+Twee leek genoeg. Twee was niet genoeg.
 
-Tag wie pas op het vliegveld nadenkt.
+Tag je noodcontact voor precies dit moment.
 
-#reizen #anticonceptie #depil #vrouwenonderelkaar #mijnpilnu
+#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2026-12-10 · m38 · donderdag 20:00
-Kleur: indigo. Regel: Op reis is je strip het enige wat je twee keer controleert.
+## 2026-10-24 · i03 · zaterdag 11:00
+Inhaker. Wintertijd: moet je pil een uur opschuiven?
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i03.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/i03-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Paspoort, sleutels, strip. En dan nog een keer de strip.
+Vannacht gaat de klok een uur terug. Moet je je pil dan ook anders gaan innemen?
 
-Stuur 'm door naar wie ook drie keer in haar tas kijkt.
+Nee, dat hoeft niet. Neem je pil gewoon op je vaste tijd volgens de nieuwe klok. Eén uur verschil valt ruim binnen de marge: bij de meeste pillen is die twaalf uur, en ook bij pillen met een krappere marge van drie uur zit je met één uur nog goed.
 
-#reizen #depil #anticonceptie #vrouwenonderelkaar #mijnpilnu
+Bewaar 'm voor maart, als de klok weer vooruit gaat.
+
+#wintertijd #depil #anticonceptie #vrouwenonderelkaar #mijnpilnu
 ```
 
-Geen eerste reactie. Deze post doet geen medische uitspraak.
+**Eerste reactie eronder**
 
-## 2026-12-12 · m39 · zaterdag 11:00
-Kleur: lavendel. Regel: Je koffer heeft altijd plek, behalve voor het kleinste doosje.
+```
+Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2026-10-27 · m52 · dinsdag 20:00
+Meme. Kleur: lavendel. Regel: Je herinnering gaat altijd af op het moment dat je net niet kan.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m39.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m52-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m39-story.mp4
-
-**Caption, letterlijk**
-
-```
-De föhn past wel.
-
-Tag wie ook te groot inpakt en te klein vergeet.
-
-#reizen #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-15 · m40 · dinsdag 20:00
-Kleur: roze. Regel: Je krampen wachten netjes tot de vergadering begint.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m40.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m40-story.mp4
-
-**Caption, letterlijk**
-
-```
-Agendapunt één, en daar zijn ze.
-
-Stuur 'm door naar wie vandaag ook een volle agenda heeft.
-
-#krampen #werk #menstruatie #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-17 · m41 · donderdag 20:00
-Kleur: indigo. Regel: Een witte stoel voelt in die week als een persoonlijke aanval.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m41.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m41-story.mp4
-
-**Caption, letterlijk**
-
-```
-Wie ontwerpt die dingen.
-
-Tag wie ook altijd de donkere stoel uitzoekt.
-
-#menstruatie #herkenbaar #cyclus #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-19 · m42 · zaterdag 11:00
-Kleur: lavendel. Regel: Er bestaat geen discrete manier om een tampon mee te nemen, en toch probeer je het.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42-story.mp4
-
-**Caption, letterlijk**
-
-```
-Mouw, zak, telefoonhoesje. Het is nooit subtiel.
-
-Stuur 'm door naar wie het ook elke keer weer probeert.
-
-#menstruatie #tampon #werk #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-22 · m43 · dinsdag 20:00
-Kleur: roze. Regel: Het spiegelkastje zit vol, en toch is er nooit wat je zoekt.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m43.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m43-story.mp4
-
-**Caption, letterlijk**
-
-```
-Wel drie soorten dagcrème.
-
-Tag wie haar kastje ook eindelijk eens gaat uitzoeken.
-
-#herkenbaar #badkamer #vrouwengezondheid #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-24 · m44 · donderdag 20:00
-Kleur: indigo. Regel: De wasmand houdt bij welke week het is.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m44.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m44-story.mp4
-
-**Caption, letterlijk**
-
-```
-Een rustige, betrouwbare kalender.
-
-Stuur 'm door naar wie dit meteen snapt.
-
-#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-26 · m45 · zaterdag 11:00
-Kleur: lavendel. Regel: Je huilt om een reclame en weet precies waarom.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m45.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m45-story.mp4
-
-**Caption, letterlijk**
-
-```
-Een verzekeringsreclame. Met een hond.
-
-Tag wie jou die week het beste kent.
-
-#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-29 · m46 · dinsdag 20:00
-Kleur: roze. Regel: Je hebt nergens zin in, behalve in alles tegelijk.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46-story.mp4
-
-**Caption, letterlijk**
-
-```
-Uitgaan, op de bank liggen, verhuizen. Allemaal tegelijk.
-
-Stuur 'm door naar wie dit gevoel kent.
-
-#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2026-12-31 · m47 · donderdag 20:00
-Kleur: indigo. Regel: De chocola in huis weet dat haar tijd gekomen is.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47-story.mp4
-
-**Caption, letterlijk**
-
-```
-Ze lag daar al weken rustig te wachten.
-
-Tag wie haar voorraad ook op peil houdt.
-
-#pms #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-# januari 2027
-
-## 2027-01-02 · m48 · zaterdag 11:00
-Kleur: lavendel. Regel: Je geduld raakt een week eerder op dan je strip.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48-story.mp4
-
-**Caption, letterlijk**
-
-```
-En dat is precies te voorspellen.
-
-Stuur 'm door naar wie dit van je pikt.
-
-#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2027-01-05 · m49 · dinsdag 20:00
-Kleur: roze. Regel: Alles is irritant, en de meeste dingen hebben niets gedaan.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49-story.mp4
-
-**Caption, letterlijk**
-
-```
-Sorry tegen de wasmachine, de buurman en die ene app.
-
-Tag wie hier deze week begrip voor heeft.
-
-#pms #hormonen #herkenbaar #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2027-01-07 · m50 · donderdag 20:00
-Kleur: indigo. Regel: Je agenda en je zin om iets te doen lopen die week niet gelijk.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50-story.mp4
-
-**Caption, letterlijk**
-
-```
-Je hebt het allemaal zelf ingepland, dat is het vervelende.
-
-Stuur 'm door naar wie ook wel eens iets afzegt.
-
-#pms #cyclus #hormonen #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2027-01-09 · m51 · zaterdag 11:00
-Kleur: lavendel. Regel: Je cyclusapp is optimistischer over je regelmaat dan jij.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m51.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m51-story.mp4
-
-**Caption, letterlijk**
-
-```
-Zij zegt woensdag. Jij weet wel beter.
-
-Tag wie haar app ook niet helemaal gelooft.
-
-#cyclus #menstruatie #hormonen #vrouwenonderelkaar #mijnpilnu
-```
-
-Geen eerste reactie. Deze post doet geen medische uitspraak.
-
-## 2027-01-12 · m52 · dinsdag 20:00
-Kleur: roze. Regel: Je herinnering gaat altijd af op het moment dat je net niet kan.
-- Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m52.jpg
-- Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m52-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m52-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1049,12 +457,265 @@ Stuur 'm door naar wie 'm ook altijd wegdrukt.
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2027-01-14 · m53 · donderdag 20:00
-Kleur: indigo. Regel: Je zet de herinnering vijf minuten later en dan is het ineens morgen.
+## 2026-10-29 · m32 · donderdag 20:00
+Meme. Kleur: perzik. Regel: Je humeur begint een dag eerder dan je cyclus.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m53.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m32-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m53-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m32-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Achteraf snap je precies waarom je boos was op die deur.
+
+Stuur 'm door naar wie jou die dag verdraagt.
+
+#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-10-31 · m14 · zaterdag 11:00
+Meme. Kleur: roze. Regel: Het doosje voelt vol tot je het openmaakt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/10/m14-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Gewicht zegt niets.
+
+Tag wie ook op gevoel inschat hoeveel er nog in zit.
+
+#anticonceptie #depil #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+# november 2026
+
+## 2026-11-03 · m08 · dinsdag 20:00
+Meme. Kleur: perzik. Regel: Je pil valt altijd op de enige plek waar je niet bij kan.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m08-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m08-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Achter de wc, onder de kast, tussen de plint. Nooit gewoon op de grond.
+
+Tag wie ook wel eens op haar knieën in de badkamer heeft gelegen.
+
+#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+**Eerste reactie eronder**
+
+```
+Pil echt kwijt? Bel even je apotheek, die kijkt in een minuut met je mee wat handig is. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2026-11-05 · m26 · donderdag 20:00
+Meme. Kleur: lavendel. Regel: Je kruik ligt altijd in de kast waar je niet bij kan.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m26-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Bovenste plank, achterin, achter de kerstspullen.
+
+Stuur 'm door naar wie ook een opstapje nodig heeft.
+
+#krampen #menstruatie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-07 · m22 · zaterdag 11:00
+Meme. Kleur: indigo. Regel: Je vindt overal tampons, behalve als je er een zoekt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m22-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+In je jas, in de auto, in die ene la. Nooit nu.
+
+Stuur 'm door naar wie ook overal voorraad heeft, behalve bij zich.
+
+#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-10 · m33 · dinsdag 20:00
+Meme. Kleur: roze. Regel: Je hebt geen idee welke dag het is, je cyclus wel.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m33-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+De enige agenda die altijd klopt.
+
+Tag wie ook op haar cyclus navigeert.
+
+#cyclus #menstruatie #hormonen #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-12 · m34 · donderdag 20:00
+Meme. Kleur: indigo. Regel: Je onderbroeken zijn onderverdeeld in twee categorieën, en jij weet precies welke.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m34-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m34-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Iedereen heeft dit systeem, niemand heeft het ooit uitgelegd.
+
+Stuur 'm door naar wie precies weet wat je bedoelt.
+
+#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-14 · m09 · zaterdag 11:00
+Meme. Kleur: lavendel. Regel: De pilstrip zit altijd in de tas die je vandaag niet meeneemt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m09-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m09-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+De ene tas heeft alles. Vandaag gebruik je de andere.
+
+Stuur 'm door naar wie drie tassen heeft en nooit de juiste.
+
+#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-17 · m15 · dinsdag 20:00
+Meme. Kleur: indigo. Regel: Je herhaalrecept valt altijd in de week dat je het al druk hebt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m15-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m15-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Nooit in die ene rustige week.
+
+Stuur 'm door naar wie haar agenda ook niet meer ziet zitten.
+
+#herhaalrecept #apotheek #anticonceptie #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-19 · m23 · donderdag 20:00
+Meme. Kleur: perzik. Regel: Je cup ligt altijd te drogen op het moment dat je 'm nodig hebt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m23-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Schoon, klaar, en aan de verkeerde kant van het huis.
+
+Tag je cupvriendin.
+
+#menstruatiecup #menstruatie #duurzaam #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-21 · m45 · zaterdag 11:00
+Meme. Kleur: roze. Regel: Je huilt om een reclame en weet precies waarom.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m45-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m45-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Een verzekeringsreclame. Met een hond.
+
+Tag wie jou die week het beste kent.
+
+#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-24 · m27 · dinsdag 20:00
+Meme. Kleur: lavendel. Regel: De eerste dag valt altijd samen met de dag die je niet kunt verzetten.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m27-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Presentatie, rijexamen, bruiloft. Kies maar.
+
+Tag wie dit ook een keer heeft meegemaakt.
+
+#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-26 · m37 · donderdag 20:00
+Meme. Kleur: roze. Regel: Je hebt alles ingepakt, behalve het enige wat niet kan wachten.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m37-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m37-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Drie paar schoenen wel.
+
+Tag wie pas op het vliegveld nadenkt.
+
+#reizen #anticonceptie #depil #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-11-28 · m53 · zaterdag 11:00
+Meme. Kleur: indigo. Regel: Je zet de herinnering vijf minuten later en dan is het ineens morgen.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m53-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/11/m53-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1072,12 +733,283 @@ Tag wie dit ook doet en het ontkent.
 Pil een keer vergeten? Bij de combinatiepil ben je bij één vergeten pil meestal gewoon beschermd, maar het hangt af van waar je in de strip zit. Bel je apotheek als je twijfelt. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
 ```
 
-## 2027-01-16 · m54 · zaterdag 11:00
-Kleur: lavendel. Regel: De enige datum die je uit je hoofd kent, is die van je strip.
+# december 2026
+
+## 2026-12-01 · i04 · dinsdag 20:00
+Inhaker. Wereld Aidsdag: beschermt de pil ook tegen soa's?
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m54.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i04.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m54-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i04-story.mp4
+
+**Caption, letterlijk**
+
+```
+Vandaag is het Wereld Aidsdag. Tijd voor een vraag met een kort antwoord: beschermt de pil je ook tegen soa's?
+
+Nee. De pil, de ring, de pleister, het spiraaltje en het staafje beschermen tegen zwangerschap, maar niet tegen soa's zoals chlamydia of hiv. Condooms zijn het enige anticonceptiemiddel dat daar wel tegen beschermt.
+
+Heb je een nieuwe partner, of twijfel je? Laat je testen bij je huisarts of bij het Centrum Seksuele Gezondheid van de GGD.
+
+Stuur 'm door naar wie dit wel even mag horen.
+
+#wereldaidsdag #soa #condoom #vrouwenonderelkaar #mijnpilnu
+```
+
+**Eerste reactie eronder**
+
+```
+Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2026-12-03 · m07 · donderdag 20:00
+Meme. Kleur: indigo. Regel: Het weekendje weg stond al geboekt, de stopweek wist dat allang.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m07-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m07-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Geboekt in maart, geregeld in juni, en toch precies die week.
+
+Stuur 'm door naar wie het weekend organiseert.
+
+#stopweek #anticonceptie #weekendje #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-05 · m16 · zaterdag 11:00
+Meme. Kleur: lavendel. Regel: Je badkamerkastje is optimistischer over je voorraad dan de werkelijkheid.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m16-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m16-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Vol met van alles, leeg aan het enige wat je zoekt.
+
+Tag wie haar kastje ook niet durft op te ruimen.
+
+#herkenbaar #vrouwengezondheid #badkamer #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-08 · m24 · dinsdag 20:00
+Meme. Kleur: indigo. Regel: Er zit altijd een tampon in je jaszak, alleen niet in de jas van vandaag.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m24-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m24-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Jassen hebben een eigen systeem en dat is niet het jouwe.
+
+Stuur 'm door naar wie ook drie jassen en nul tampons bij zich heeft.
+
+#menstruatie #tampon #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-10 · m46 · donderdag 20:00
+Meme. Kleur: lavendel. Regel: Je hebt nergens zin in, behalve in alles tegelijk.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m46-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Uitgaan, op de bank liggen, verhuizen. Allemaal tegelijk.
+
+Stuur 'm door naar wie dit gevoel kent.
+
+#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-12 · i05 · zaterdag 11:00
+Inhaker. Feestdagen: valt je stopweek precies met kerst?
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i05.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/i05-story.mp4
+
+**Caption, letterlijk**
+
+```
+Kerst komt eraan. Tijd om even in je strip te kijken: valt je stopweek precies op de feestdagen?
+
+Bij veel combinatiepillen kun je de stopweek overslaan door meteen met een nieuwe strip te beginnen. De bloeding in je stopweek is een onttrekkingsbloeding en geen echte menstruatie, dus medisch gezien is daar geen bezwaar tegen.
+
+Let op: bij pillen met verschillende fases of met placebopillen in de strip werkt dit anders. Kijk in je bijsluiter of overleg met je huisarts als je het niet zeker weet.
+
+En check meteen of je genoeg strips in huis hebt, zeker als je een week doorslikt.
+
+Bewaar 'm voor je volgende strip.
+
+#stopweek #feestdagen #depil #vrouwenonderelkaar #mijnpilnu
+```
+
+**Eerste reactie eronder**
+
+```
+Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2026-12-15 · m35 · dinsdag 20:00
+Meme. Kleur: roze. Regel: Je wasmachine kent jouw cyclus inmiddels ook.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m35-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Elke maand dezelfde afspraak.
+
+Tag wie ook maandelijks een extra wasje draait.
+
+#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-17 · m28 · donderdag 20:00
+Meme. Kleur: perzik. Regel: Krampen weten precies wanneer je moet staan.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m28-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m28-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+In de rij, in de tram, in de supermarkt.
+
+Stuur 'm door naar wie vandaag ook op haar tanden bijt.
+
+#menstruatiepijn #krampen #menstruatie #vrouwenonderelkaar #mijnpilnu
+```
+
+**Eerste reactie eronder**
+
+```
+Warmte helpt vaak meer dan je denkt, en bewegen ook. Blijft het elke maand zo? Dan is het een gesprek met je huisarts waard. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2026-12-19 · m10 · zaterdag 11:00
+Meme. Kleur: indigo. Regel: Je pilstrip ligt thuis precies op de plek waar je nooit kijkt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m10-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m10-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Je hebt overal gezocht behalve daar, en daar lag hij.
+
+Tag wie 'm ook altijd op de gekste plek terugvindt.
+
+#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-22 · m42 · dinsdag 20:00
+Meme. Kleur: perzik. Regel: Er bestaat geen discrete manier om een tampon mee te nemen, en toch probeer je het.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m42-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Mouw, zak, telefoonhoesje. Het is nooit subtiel.
+
+Stuur 'm door naar wie het ook elke keer weer probeert.
+
+#menstruatie #tampon #werk #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-24 · m47 · donderdag 20:00
+Meme. Kleur: indigo. Regel: De chocola in huis weet dat haar tijd gekomen is.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m47-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Ze lag daar al weken rustig te wachten.
+
+Tag wie haar voorraad ook op peil houdt.
+
+#pms #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-26 · m17 · zaterdag 11:00
+Meme. Kleur: roze. Regel: Je hebt nog één strip, en dat weet je pas op zondagavond.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m17-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m17-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Precies als alles dicht is.
+
+Stuur 'm door naar wie dit ook op zondag ontdekt.
+
+#depil #apotheek #anticonceptie #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-29 · m38 · dinsdag 20:00
+Meme. Kleur: indigo. Regel: Op reis is je strip het enige wat je twee keer controleert.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m38-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Paspoort, sleutels, strip. En dan nog een keer de strip.
+
+Stuur 'm door naar wie ook drie keer in haar tas kijkt.
+
+#reizen #depil #anticonceptie #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2026-12-31 · m54 · donderdag 20:00
+Meme. Kleur: lavendel. Regel: De enige datum die je uit je hoofd kent, is die van je strip.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m54-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2026/12/m54-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1091,31 +1023,33 @@ Stuur 'm door naar wie jouw verjaardag ook vergeet.
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2027-01-19 · m55 · dinsdag 20:00
-Kleur: roze. Regel: Je telefoon houdt je cyclus beter bij dan jij je afspraken.
+# januari 2027
+
+## 2027-01-02 · m29 · zaterdag 11:00
+Meme. Kleur: perzik. Regel: Je pijnstillers liggen altijd in je andere tas.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m55.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m29-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m55-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m29-a-story.mp4
 
 **Caption, letterlijk**
 
 ```
-Eén van de twee is in elk geval op orde.
+Samen met je pleisters en je goede voornemens.
 
-Tag wie ook op haar telefoon vertrouwt.
+Tag wie altijd wel iets bij zich heeft.
 
-#cyclus #menstruatie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+#krampen #menstruatie #herkenbaar #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2027-01-21 · m56 · donderdag 20:00
-Kleur: indigo. Regel: Je weet in elke winkel precies waar het schap staat.
+## 2027-01-05 · m56 · dinsdag 20:00
+Meme. Kleur: roze. Regel: Je weet in elke winkel precies waar het schap staat.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m56-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1129,12 +1063,92 @@ Stuur 'm door naar wie jou hier ooit heen heeft gestuurd.
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2027-01-23 · m57 · zaterdag 11:00
-Kleur: lavendel. Regel: De zelfscankassa vraagt altijd om controle bij precies dat ene product.
+## 2027-01-07 · m48 · donderdag 20:00
+Meme. Kleur: perzik. Regel: Je geduld raakt een week eerder op dan je strip.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m48-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+En dat is precies te voorspellen.
+
+Stuur 'm door naar wie dit van je pikt.
+
+#pms #hormonen #cyclus #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-09 · m18 · zaterdag 11:00
+Meme. Kleur: indigo. Regel: De apotheek is altijd net dicht als je eraan denkt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m18-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m18-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Je denkt er de hele dag niet aan, en dan om vijf over zes wel.
+
+Tag wie ook altijd net te laat is.
+
+#apotheek #herhaalrecept #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-12 · m41 · dinsdag 20:00
+Meme. Kleur: lavendel. Regel: Een witte stoel voelt in die week als een persoonlijke aanval.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m41-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m41-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Wie ontwerpt die dingen.
+
+Tag wie ook altijd de donkere stoel uitzoekt.
+
+#menstruatie #herkenbaar #cyclus #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-14 · m11 · donderdag 20:00
+Meme. Kleur: roze. Regel: Niets is zo onzeker als de vraag of je 'm vanochtend genomen hebt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m11-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m11-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Je weet het zeker. Tot je even naar de strip kijkt.
+
+Stuur 'm door naar wie hier ook wel eens over twijfelt.
+
+#depil #pilvergeten #anticonceptie #vrouwenonderelkaar #mijnpilnu
+```
+
+**Eerste reactie eronder**
+
+```
+Twijfel je of je 'm genomen hebt? Je apotheek denkt hier zo met je mee, en dat is een betere bron dan je geheugen om half twaalf 's avonds. Let op: dit is algemene informatie en geen medisch advies. Twijfel je, of heb je klachten? Overleg met je huisarts of apotheker.
+```
+
+## 2027-01-16 · m57 · zaterdag 11:00
+Meme. Kleur: lavendel. Regel: De zelfscankassa vraagt altijd om controle bij precies dat ene product.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m57-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1148,12 +1162,69 @@ Tag wie dit ook een keer is overkomen.
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2027-01-26 · m58 · dinsdag 20:00
-Kleur: roze. Regel: Je hebt voor elke tas een noodplan.
+## 2027-01-19 · m49 · dinsdag 20:00
+Meme. Kleur: perzik. Regel: Alles is irritant, en de meeste dingen hebben niets gedaan.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m49-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Sorry tegen de wasmachine, de buurman en die ene app.
+
+Tag wie hier deze week begrip voor heeft.
+
+#pms #hormonen #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-21 · m30 · donderdag 20:00
+Meme. Kleur: indigo. Regel: Je onderrug weet het eerder dan jij.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m30-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m30-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Nog voor je app iets zegt.
+
+Stuur 'm door naar wie het ook altijd in haar rug voelt.
+
+#menstruatie #cyclus #krampen #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-23 · m20 · zaterdag 11:00
+Meme. Kleur: perzik. Regel: Je voorraad raakt altijd op tijdens de drukste dag.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m20-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m20-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Niet op dag vier. Op dag twee.
+
+Stuur 'm door naar wie dit ook elke keer verkeerd inschat.
+
+#menstruatie #maandverband #tampon #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-26 · m58 · dinsdag 20:00
+Meme. Kleur: roze. Regel: Je hebt voor elke tas een noodplan.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m58-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1167,12 +1238,147 @@ Stuur 'm door naar wie altijd voorbereid is.
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.
 
-## 2027-01-28 · m59 · donderdag 20:00
-Kleur: indigo. Regel: Er ligt ergens in je huis een tampon die je nooit meer terugvindt.
+## 2027-01-28 · m50 · donderdag 20:00
+Meme. Kleur: lavendel. Regel: Je agenda en je zin om iets te doen lopen die week niet gelijk.
 - Feed, `create_image_post`
-  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m59.jpg
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50-a.jpg
 - Story, `create_story`
-  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m59-story.mp4
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m50-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Je hebt het allemaal zelf ingepland, dat is het vervelende.
+
+Stuur 'm door naar wie ook wel eens iets afzegt.
+
+#pms #cyclus #hormonen #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-01-30 · m39 · zaterdag 11:00
+Meme. Kleur: indigo. Regel: Je koffer heeft altijd plek, behalve voor het kleinste doosje.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m39-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/01/m39-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+De föhn past wel.
+
+Tag wie ook te groot inpakt en te klein vergeet.
+
+#reizen #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+# februari 2027
+
+## 2027-02-02 · m55 · dinsdag 20:00
+Meme. Kleur: lavendel. Regel: Je telefoon houdt je cyclus beter bij dan jij je afspraken.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m55-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m55-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Eén van de twee is in elk geval op orde.
+
+Tag wie ook op haar telefoon vertrouwt.
+
+#cyclus #menstruatie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-02-04 · m44 · donderdag 20:00
+Meme. Kleur: perzik. Regel: De wasmand houdt bij welke week het is.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m44-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m44-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Een rustige, betrouwbare kalender.
+
+Stuur 'm door naar wie dit meteen snapt.
+
+#menstruatie #cyclus #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-02-06 · m12 · zaterdag 11:00
+Meme. Kleur: roze. Regel: De strip in je nachtkastje is altijd van vorige maand.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m12-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m12-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Leeg, en toch ligt hij er nog steeds.
+
+Tag wie haar nachtkastje ook nooit opruimt.
+
+#depil #anticonceptie #herkenbaar #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-02-09 · m40 · dinsdag 20:00
+Meme. Kleur: indigo. Regel: Je krampen wachten netjes tot de vergadering begint.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m40-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m40-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Agendapunt één, en daar zijn ze.
+
+Stuur 'm door naar wie vandaag ook een volle agenda heeft.
+
+#krampen #werk #menstruatie #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-02-11 · m43 · donderdag 20:00
+Meme. Kleur: roze. Regel: Het spiegelkastje zit vol, en toch is er nooit wat je zoekt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m43-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m43-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Wel drie soorten dagcrème.
+
+Tag wie haar kastje ook eindelijk eens gaat uitzoeken.
+
+#herkenbaar #badkamer #vrouwengezondheid #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-02-13 · m59 · zaterdag 11:00
+Meme. Kleur: perzik. Regel: Er ligt ergens in je huis een tampon die je nooit meer terugvindt.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m59-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m59-a-story.mp4
 
 **Caption, letterlijk**
 
@@ -1182,6 +1388,25 @@ Hij duikt op bij de verhuizing.
 Tag wie 'm ooit nog gaat vinden.
 
 #menstruatie #herkenbaar #tampon #vrouwenonderelkaar #mijnpilnu
+```
+
+Geen eerste reactie. Deze post doet geen medische uitspraak.
+
+## 2027-02-16 · m51 · dinsdag 20:00
+Meme. Kleur: roze. Regel: Je cyclusapp is optimistischer over je regelmaat dan jij.
+- Feed, `create_image_post`
+  image_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m51-a.jpg
+- Story, `create_story`
+  video_url: https://dakeyne-ship-it.github.io/mijnpil-media/ig/2027/02/m51-a-story.mp4
+
+**Caption, letterlijk**
+
+```
+Zij zegt woensdag. Jij weet wel beter.
+
+Tag wie haar app ook niet helemaal gelooft.
+
+#cyclus #menstruatie #hormonen #vrouwenonderelkaar #mijnpilnu
 ```
 
 Geen eerste reactie. Deze post doet geen medische uitspraak.

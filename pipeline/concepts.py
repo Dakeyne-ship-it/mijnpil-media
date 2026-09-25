@@ -7,7 +7,7 @@ MARK = "<div class='mark'><span class='dot'></span>mijnpil.nu</div>"
 # Every animated concept sizes itself as (settle time + REST), so the reader
 # always gets this long with the finished frame in front of them.
 # Set by Alexander, 9 sep 2026: 3.0 dragged, 1.5 reads as brisk but legible.
-REST = 1.5
+REST = 1.0
 
 
 # =========================================================== STILLS (4:5 feed)
@@ -488,12 +488,12 @@ def reel_scene_v(kind, lines, small="", w=1080, h=1920):
     .big span{{display:block}}
     .big em{{font-style:normal;color:{ac};font-weight:700}}
     .sm{{margin-top:44px;font-size:38px;font-weight:400;line-height:1.42;
-         opacity:.72;max-width:840px;animation:rise .7s 1.15s}}
-    .mark{{font-size:30px;animation:fade .6s 1.2s}}
+         opacity:.72;max-width:840px;animation:rise .5s .8s}}
+    .mark{{font-size:30px;animation:fade .5s .8s}}
     .dot{{width:20px;height:20px;background:{ac}}}
     """
     ls = "".join(
-        f"<span class='anim' style='animation:rise .7s {0.3 + i*0.26:.2f}s'>{t}</span>"
+        f"<span class='anim' style='animation:rise .5s {0.2 + i*0.16:.2f}s'>{t}</span>"
         for i, t in enumerate(lines))
     sm = f"<div class='sm anim'>{small}</div>" if small else ""
     html = page(f"""<div class='stage'>
@@ -502,8 +502,8 @@ def reel_scene_v(kind, lines, small="", w=1080, h=1920):
       <div class='foot'>{MARK.replace("mark'","mark anim'")}</div>
     </div>""", css, w, h)
     # last thing to land is either the final headline line or the sub-line
-    settle = max(0.3 + (len(lines) - 1) * 0.26 + 0.7,
-                 1.15 + 0.7 if small else 0, 1.8)
+    settle = max(0.2 + (len(lines) - 1) * 0.16 + 0.5,
+                 0.8 + 0.5 if small else 0, 1.3)
     return html, round(settle + REST, 2)
 
 
@@ -732,3 +732,101 @@ def onder_ons_v(lines, layout="vullend", theme="roze", w=1080, h=1920,
     args = (lines, MEME_THEMES[theme], True, w, h)
     html, settle = f(*args, tag=tag, **kw) if layout == "vullend" else f(*args)
     return html, round(settle + REST, 2)
+
+
+# ===================================================== STYLE H, "HET BRIEFJE"
+# Onder ons vanaf 26 september 2026 (richting A, gekozen 25 sep). De regel staat
+# gecentreerd op een licht gekanteld gebroken wit kaartje met een verschoven
+# schaduw, het logo staat op het kaartje zelf. Niets in de linkeronderhoek, want
+# daar legt Instagram het weergavetal over de miniatuur.
+
+BRIEFJE_THEMES = {
+    # veld, tekst naast het kaartje, schaduw, tape
+    "roze":     {"bg": "#ea4f79", "fg": "#fef5ff", "shade": "#2c2e7b", "tape": "#2c2e7b"},
+    "indigo":   {"bg": "#2c2e7b", "fg": "#fef5ff", "shade": "#ea4f79", "tape": "#ea4f79"},
+    "lavendel": {"bg": "#9e9dce", "fg": "#2c2e7b", "shade": "#2c2e7b", "tape": "#ea4f79"},
+    "perzik":   {"bg": "#f9d2b8", "fg": "#2c2e7b", "shade": "#2c2e7b", "tape": "#ea4f79"},
+}
+_SLAB = 0.56
+
+
+def briefje(lines, theme, anim=False, w=1080, h=1350):
+    t = BRIEFJE_THEMES[theme]
+    tall = h > 1400
+    card_w = 900 if tall else 860
+    size = _fit(lines, card_w - 150, 106 if tall else 100, _SLAB)
+    css = f"""
+    body{{background:{t['bg']}}}
+    .wrap{{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}}
+    .card{{position:relative;width:{card_w}px;transform:rotate(-2.5deg)}}
+    .sh{{position:absolute;inset:0;background:{t['shade']};opacity:.28;border-radius:30px;
+        transform:translate(-18px,18px)}}
+    .face{{position:relative;background:#fef5ff;border-radius:30px;
+        padding:{120 if tall else 110}px 75px 70px;text-align:center;color:#2c2e7b}}
+    .tape{{position:absolute;top:-30px;left:50%;margin-left:-110px;width:220px;text-align:center;
+        transform:rotate(3deg);background:{t['tape']};color:#fef5ff;
+        font-family:'RobotoSlab';font-weight:500;font-size:22px;letter-spacing:.28em;
+        text-transform:uppercase;padding:16px 0 16px 6px}}
+    .line{{font-family:'RobotoSlab';font-weight:700;font-size:{size}px;line-height:1.16;
+        letter-spacing:-.018em}}
+    .line span{{display:block;white-space:nowrap}}
+    .line em{{font-style:normal;color:#ea4f79}}
+    .rule{{width:90px;height:4px;background:#ea4f79;opacity:.5;margin:64px auto 40px}}
+    .logo{{margin:0 auto}}
+    .hash{{position:absolute;bottom:{360 if tall else 64}px;left:0;right:0;text-align:center;
+        font-family:'RobotoSlab';font-weight:500;font-size:{28 if tall else 24}px;
+        letter-spacing:.06em;color:{t['fg']};opacity:.85}}
+    """
+    a = (lambda s: f" anim' style='animation:{s}") if anim else (lambda s: "")
+    n = len(lines)
+    t_last = 0.45 + n * 0.14 + 0.5
+    rows = "".join(
+        (f"<span class='anim' style='animation:rise .5s {0.45 + i*0.14:.2f}s'>{x}</span>"
+         if anim else f"<span>{x}</span>") for i, x in enumerate(lines))
+    html = page(f"""<div class='wrap'><div class='pp{a("pop .55s .05s")}'><div class='card'><div class='sh'></div>
+      <div class='face'><div class='tape{a("fade .4s .3s")}'>onder ons</div>
+      <div class='line'>{rows}</div><div class='rule{a(f"wipe .4s {t_last-0.2:.2f}s")}'></div>
+      <div class='lg{a(f"fade .5s {t_last-0.1:.2f}s")}'>{_logo(250 if not tall else 270)}</div></div></div></div></div>
+      <div class='hash{a(f"fade .5s {t_last:.2f}s")}'>#vrouwenonderelkaar</div>""", css, w, h)
+    return html, (round(t_last + 0.5 + REST, 2) if anim else 0)
+
+
+# ===================================================== VASTGEZET
+# Drie posts die bovenaan het profiel vastgepind worden. Omslag in de
+# briefjestijl zodat ze bij Onder ons horen, binnenslides licht en rustig.
+
+def vast_cover(kicker, lines, theme, w=1080, h=1350):
+    t = BRIEFJE_THEMES[theme]
+    size = _fit(lines, w - 200, 112)
+    css = f"""
+    body{{background:{t['bg']};color:{t['fg']}}}
+    .mid{{position:absolute;left:0;right:0;top:0;bottom:200px;display:flex;flex-direction:column;
+        align-items:center;justify-content:center;text-align:center}}
+    .k{{font-family:'RobotoSlab';font-weight:500;font-size:22px;letter-spacing:.28em;
+        text-transform:uppercase;background:{t['tape']};color:#fef5ff;padding:14px 30px;
+        transform:rotate(-2deg);margin-bottom:60px}}
+    .q{{font-family:'Athiti';font-weight:600;font-size:{size}px;line-height:1.04;letter-spacing:-.03em}}
+    .q span{{display:block;white-space:nowrap}}
+    .q em{{font-style:normal;color:{'#ea4f79' if theme!='roze' else '#2c2e7b'};font-weight:700}}
+    .foot{{position:absolute;left:0;right:0;bottom:110px;display:flex;justify-content:center}}
+    .chip{{background:#fef5ff;border-radius:999px;padding:26px 48px}}
+    """
+    return page(f"""<div class='mid'><div class='k'>{kicker}</div>
+      <div class='q'>{''.join(f'<span>{x}</span>' for x in lines)}</div></div>
+      <div class='foot'><div class='chip'>{_logo(270)}</div></div>""", css, w, h)
+
+
+def vast_slide(num, title, body, n="", field="#fef5ff", w=1080, h=1350):
+    css = f"""
+    .stage{{background:{field};color:#2c2e7b;padding:110px 96px}}
+    .num{{width:96px;height:96px;border-radius:50%;background:#ea4f79;color:#fef5ff;
+        font-family:'Athiti';font-weight:700;font-size:52px;display:flex;align-items:center;
+        justify-content:center;margin-bottom:56px}}
+    .t{{font-family:'Athiti';font-weight:600;font-size:84px;line-height:1.05;letter-spacing:-.03em}}
+    .t em{{font-style:normal;color:#ea4f79;font-weight:700}}
+    .b{{margin-top:44px;font-size:38px;line-height:1.5;max-width:860px;opacity:.85}}
+    """
+    return page(f"""<div class='stage'>
+      <div class='mid'><div class='num'>{num}</div><div class='t'>{title}</div>
+        <div class='b'>{body}</div></div>
+      <div class='foot'>{MARK}<div class='note'>{n}</div></div></div>""", css, w, h)
