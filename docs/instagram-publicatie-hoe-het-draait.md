@@ -96,7 +96,7 @@ Wereld Menstruatiedag.
 | di 6 okt | p2 | Zo werkt bestellen: recept, foto, snel en discreet, nabestellen |
 | di 13 okt | p3 | Van je eerste pil tot de overgang: de vijf thema's |
 
-Na publicatie handmatig vastpinnen, p3 als laatste, zodat de volgorde klopt.
+Na publicatie handmatig vastpinnen. Instagram zet de laatst vastgepinde post meestal vooraan. Wil je van links naar rechts p1, p2, p3, maak dan na 13 oktober de vastzetting van alle drie ongedaan en pin ze opnieuw in de volgorde p3, p2, p1.
 
 ## Uitlegbatch 2 (9 november tot en met 15 januari)
 
